@@ -26,7 +26,7 @@ namespace ALX
                 using (SqlConnection con = new SqlConnection(csLogIn))
                 {
 
-                    SqlCommand cmd = new SqlCommand("select UserId from userinformation where UserName=@usernameaun and password=@passwordaun", con);
+                    SqlCommand cmd = new SqlCommand("select UserId from userinformation where UserName=@usernameaun and password=@passwordaun and EmailVerified=1", con);
                     cmd.Parameters.AddWithValue("@usernameaun", txtUserName.Text);
                     cmd.Parameters.AddWithValue("@passwordaun", txtPassword.Text);
 
