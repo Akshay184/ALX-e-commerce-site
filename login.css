@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../alx/images/login.jpg);
+    background-size: cover;
+}
+
+.box{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 400px;
+    padding: 80px;
+    background: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6) ;
+    
+}
+
+.box .align h2{
+    position:absolute;
+    color: white;
+   
+    display: inline-block;
+    left: 60%;
+    bottom: 71%;
+    
+    
+    
+}
+.box .align2 h2{
+    position: relative;
+    color: white;
+    display: inline-block;
+    padding-bottom: 100px;
+    
+}
+
+
+.box .inputbox{
+    position: relative;
+}
+.box .inputbox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+}
+
+.box .inputbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label
+{
+    top: -18px;
+    left: 0;
+    color: blue;
+    font-size: 12px;
+
+
+}
+
+.box input[type="submit"]{
+    border-radius: 18px;
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+   
+
+}
+
+.box input[type="submit"]:hover{
+    background-color: white;
+    color: blue;
+    transition: all 0.2s ease-in;
+}
+
+/* .headings::before{
+    content: '';
+    display: block; */
+    /* width: 100%;
+    height: 5px;
+    background-color:black;
+
+
+    position: absolute;
+    
+    top: 130px;
+    width: 0%;
+    transition: all 0.2s ease-in;
+     
+ }
+.headings:hover::before{
+    width: 100%;
+    transition: all 0.2s ease-in;
+    
+} */
