@@ -48,9 +48,15 @@
                 <asp:ListItem Value="1" Text="Furniture"></asp:ListItem>
                 <asp:ListItem Value="2" Text="Books"></asp:ListItem>
                 <asp:ListItem Value="3" Text="Vehicles"></asp:ListItem>
-                <asp:ListItem Value="4" Text="Others"></asp:ListItem>
+                <asp:ListItem Value="4" Text="Electronics"></asp:ListItem>
             </asp:DropDownList> 
         </p>
+        <p style="text-align: left">
+            Description
+            <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
+        </p>
+        <p style="text-align: left">
+            &nbsp;</p>
 
 
 

@@ -33,12 +33,13 @@ namespace ALX
                 HttpPostedFile postedFile = fileuploadProducts.PostedFile;
                 string fileName = Path.GetFileName(postedFile.FileName);
                 fileuploadProducts.SaveAs(Server.MapPath("~/ImagesUpload/" + fileName));
-                SqlCommand cmd = new SqlCommand("insert into tblProducts values(@ID,@price,@Category,@ProductName,@ImageName)", con);
+                SqlCommand cmd = new SqlCommand("insert into tblProducts values(@ID,@price,@Category,@ProductName,@Description,@ImageName)", con);
                 cmd.Parameters.AddWithValue("@ID", Session["Id"]);
                 cmd.Parameters.AddWithValue("@Price", TextBox2.Text);
                 cmd.Parameters.AddWithValue("@Category",DropDownList1.SelectedItem.Text);
                 cmd.Parameters.AddWithValue("@ProductName", TextBox3.Text);
                 cmd.Parameters.AddWithValue("@ImageName", "ImagesUpload/" + fileName);
+                cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 TextBox2.Text = "";

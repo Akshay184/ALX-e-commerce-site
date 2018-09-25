@@ -21,9 +21,17 @@
             <br />
             CATEGORIES</h1>
         <h1>
+            <p>
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="fURNITURE" />
+                </p>
+            <p>
+            <asp:Button ID="btnBooks" runat="server" OnClick="btnBooks_Click" Text="Books" />
+            </p>
+            <p>
+                <asp:Button ID="btnElectronics" runat="server" OnClick="btnElectronics_Click" Text="Electronics" />
+            </p>
         </h1>
-        <br />
+        
      <%-- <asp:Button ID="Button3" runat="server" Text="Books" OnClick="Button3_Click" />
         <br />
         <br />
@@ -33,9 +41,9 @@
         <asp:Button ID="Button5" runat="server" Text="others" OnClick="Button5_Click" />
         <br />
         <br />    --%>
-        <asp:Repeater ID="Repeater1" runat="server">
+        <asp:Repeater ID="rptProduct" runat="server">
             <ItemTemplate>
-                <table style="border:1px solid black">
+                <table style="border:1px solid black; background-color:aqua">
                     <tr>
                         <td style="width:300px">
                             <asp:Image ID="imgProducts" ImageUrl='<%# Eval("images") %>' runat="server" />
@@ -43,16 +51,40 @@
                         <td style="width:200px">
                             <table>
                                 <tr>
-                                    <td>ProductName</td>
+                                    <td>ProductName:</td>
                                     <td>
                                         <asp:Label ID="lblProductName" Text='<%# Eval("ProductName") %>' runat="server">
                                         </asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Price:</td>
+                                    <td>Description:</td>
                                     <td>
-                                        <asp:Label ID="lblPrice" Text='<%# Eval("Price") %>' runat="server">
+                                        <asp:Label ID="lblDescription" Text='<%# Eval("Description") %>' runat="server">
+                                        </asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td >
+                            <table>
+                                <tr>
+                                    <td>Price</td>
+                                    <td>
+                                        <asp:Label ID="lblPrice" Text='<%# Eval("price") %>' runat="server"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Owner Details:</td>
+                                    <td>
+                                        <asp:Label ID="lblOwnerDetails" Text="XYZ" runat="server"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Owner Contact Number:</td>
+                                    <td>
+                                        <asp:Label ID="lblOwnerContactNumber" Text="XYZ" runat="server">
+
                                         </asp:Label>
                                     </td>
                                 </tr>

@@ -30,66 +30,42 @@ namespace ALX
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            DataSet ds = GetData();
-            Repeater1.DataSource = ds;
-            Repeater1.DataBind();
+            DataSet ds = GetData("Furniture");
+            rptProduct.DataSource = ds;
+            rptProduct.DataBind();
         }
 
-        private DataSet GetData()
+        private DataSet GetData(string category)
         {
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlDataAdapter da = new SqlDataAdapter("Select ProductName,Price,images from tblProducts where CATEGORY='Furniture'", con);
+                SqlDataAdapter da = new SqlDataAdapter("Select ProductName,Price,Description,images from tblProducts where CATEGORY='"+category+"'", con);
+                
                 DataSet ds = new DataSet();
                 da.Fill(ds);
                 return ds;
 
             }
         }
-/*
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(cs))
-            {
-                SqlCommand cmd = new SqlCommand("Select ProductName,Price from tblProducts where CATEGORY='Books'", con);
-                con.Open();
-                GridView1.DataSource = cmd.ExecuteReader();
-                GridView1.DataBind();
 
-            }
-        }
-
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(cs))
-            {
-                SqlCommand cmd = new SqlCommand("Select ProductName,Price from tblProducts where CATEGORY='vehicle'", con);
-                con.Open();
-                GridView1.DataSource = cmd.ExecuteReader();
-                GridView1.DataBind();
-
-            }
-        }
-
-        protected void Button5_Click(object sender, EventArgs e)
-        {
-            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(cs))
-            {
-                SqlCommand cmd = new SqlCommand("Select ProductName,Price from tblProducts where CATEGORY='others'", con);
-                con.Open();
-                GridView1.DataSource = cmd.ExecuteReader();
-                GridView1.DataBind();
-
-            }
-        }
-        */
         protected void Button6_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Profile.aspx");
+        }
+
+        protected void btnBooks_Click(object sender, EventArgs e)
+        {
+            DataSet ds = GetData("Books");
+            rptProduct.DataSource = ds;
+            rptProduct.DataBind();
+        }
+
+        protected void btnElectronics_Click(object sender, EventArgs e)
+        {
+            DataSet ds = GetData("Electronics");
+            rptProduct.DataSource = ds;
+            rptProduct.DataBind();
         }
     }
 }

@@ -49,12 +49,30 @@ namespace ALX {
         protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
-        /// Repeater1 control.
+        /// btnBooks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.Button btnBooks;
+        
+        /// <summary>
+        /// btnElectronics control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnElectronics;
+        
+        /// <summary>
+        /// rptProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptProduct;
     }
 }
