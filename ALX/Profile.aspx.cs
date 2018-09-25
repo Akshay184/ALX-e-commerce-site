@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
-
+using System.IO;
 namespace ALX
 {
     public partial class Profile : System.Web.UI.Page
@@ -30,15 +30,21 @@ namespace ALX
             String cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using(SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("insert into tblProducts values(@ID,@price,@Category,@ProductName)", con);
+                HttpPostedFile postedFile = fileuploadProducts.PostedFile;
+                string fileName = Path.GetFileName(postedFile.FileName);
+                fileuploadProducts.SaveAs(Server.MapPath("~/ImagesUpload/" + fileName));
+                SqlCommand cmd = new SqlCommand("insert into tblProducts values(@ID,@price,@Category,@ProductName,@ImageName)", con);
                 cmd.Parameters.AddWithValue("@ID", Session["Id"]);
                 cmd.Parameters.AddWithValue("@Price", TextBox2.Text);
                 cmd.Parameters.AddWithValue("@Category",DropDownList1.SelectedItem.Text);
                 cmd.Parameters.AddWithValue("@ProductName", TextBox3.Text);
+                cmd.Parameters.AddWithValue("@ImageName", "ImagesUpload/" + fileName);
                 con.Open();
-                cmd.ExecuteScalar();
+                cmd.ExecuteNonQuery();
                 TextBox2.Text = "";
                 TextBox3.Text = "";
+                Response.Write("Uploaded");          
+         
             }
         }
     }

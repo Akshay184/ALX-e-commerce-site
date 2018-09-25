@@ -34,7 +34,8 @@
         <p style="text-align: center">
             &nbsp;</p>
         <p style="text-align: center">
-            &nbsp;</p>
+            <asp:FileUpload ID="fileuploadProducts" runat="server" />
+        </p>
         <p style="text-align: left">
             Product Name<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         </p>
