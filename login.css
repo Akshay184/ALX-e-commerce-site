@@ -11,31 +11,47 @@ body{
     top: 25%;
     left: 35%;
     width: 400px;
-    padding: 80px;
+    padding: 40px 80px;
     background: rgba(0,0,0,0.8);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,0.6) ;
     
 }
 
-.box .align h2{
-    position:absolute;
-    color: white;
-   
-    display: inline-block;
-    left: 60%;
-    bottom: 71%;
-    
-    
-    
-}
-.box .align2 h2{
-    position: relative;
-    color: white;
-    display: inline-block;
-    padding-bottom: 100px;
-    
-}
+
+
+     .align-txt{
+         display: flex;
+         align-items: center;
+        
+        color: white;
+        padding-top: 20%;
+        text-align: center;
+    }
+    .align-txt a{
+        color: red;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+
+    .align-txt a:hover{
+        color: white;
+        transition: all 0.2s ease-in;
+    }
+
+    .align{
+        text-align: center;
+        margin-bottom: 30%;
+    }
+     
+
+     
+
+     .align  h2{
+         color: white;
+         
+     }
+
 
 
 .box .inputbox{
@@ -84,33 +100,14 @@ body{
     border: none;
     padding: 10px 20px;
     font-weight: bold;
+    
    
 
 }
 
-.box input[type="submit"]:hover{
+.box [type="submit"]:hover{
     background-color: white;
     color: blue;
     transition: all 0.2s ease-in;
 }
 
-/* .headings::before{
-    content: '';
-    display: block; */
-    /* width: 100%;
-    height: 5px;
-    background-color:black;
-
-
-    position: absolute;
-    
-    top: 130px;
-    width: 0%;
-    transition: all 0.2s ease-in;
-     
- }
-.headings:hover::before{
-    width: 100%;
-    transition: all 0.2s ease-in;
-    
-} */

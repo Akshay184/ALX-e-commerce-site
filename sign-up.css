@@ -22,18 +22,29 @@ body{
 
 
 
-     .align{
-         display: flex;
-         align-items: center;
-        padding-bottom: 20%;
+.align-txt{
+    display: flex;
+    align-items: center;
+   
+   color: white;
+   padding-top: 5%;
+   /* text-align: center; */
+}
+.align-txt a{
+   color: red;
+   text-decoration: none;
+   padding-left: 10px;
+}
 
-         
-     }
+.align-txt a:hover{
+   color: white;
+   transition: all 0.2s ease-in;
+}
 
-     .align .head-sign{
-         padding-left: 35%;
-     }
-
+.align{
+   text-align: center;
+   margin-bottom: 15%;
+}
      .align a{
          text-decoration: white;
      }
