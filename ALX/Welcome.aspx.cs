@@ -19,6 +19,7 @@ namespace ALX
                 Response.Redirect("~/LogIn.aspx");
             }
             Response.Write(Session["Id"]);
+          
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -29,17 +30,24 @@ namespace ALX
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            DataSet ds = GetData();
+            Repeater1.DataSource = ds;
+            Repeater1.DataBind();
+        }
+
+        private DataSet GetData()
+        {
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            using(SqlConnection con = new SqlConnection(cs))
+            using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("Select ProductName,Price from tblProducts where CATEGORY='Furniture'", con);
-                con.Open();
-                GridView1.DataSource = cmd.ExecuteReader();
-                GridView1.DataBind();
+                SqlDataAdapter da = new SqlDataAdapter("Select ProductName,Price,images from tblProducts where CATEGORY='Furniture'", con);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                return ds;
 
             }
         }
-
+/*
         protected void Button3_Click(object sender, EventArgs e)
         {
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
@@ -78,7 +86,7 @@ namespace ALX
 
             }
         }
-
+        */
         protected void Button6_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Profile.aspx");
