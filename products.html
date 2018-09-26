@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>ALX</title>
+</head>
+
+<body>
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+    <!-- navigation -->
+    <div class="navigation">
+        <a href="alx.html"><img class="logo" src="../alx/images/alx1.png"></a>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="line"><b>BOOKS</b></a></li>
+                <li><a href="#" class="line"><b>CLOTHING</b></a></li>
+                <li><a href="#" class="line"><b>ELECTRONICS</b></a></li>
+                <li><a href="#" class="line"><b>FURNITURE</b></a></li>
+                <li><button class="logo-btn" onclick="openSearch()"><b><i class="fa fa-search"></i></b></button></li>
+                <li><a href="login.html" ><b><i class="fas fa-user-circle"></i></b></a></li>   
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="myOverlay" class="overlay ">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content animate">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>

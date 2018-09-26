@@ -1,6 +1,7 @@
 body{
     margin: 0;
     
+    
 }
 .navigation{
     background-color: white;
@@ -51,6 +52,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     /* padding: 0 20px; */
+}
+.menu ul li button{
+  font-size: 16px;
 }
 .menu ul li a:hover{
     color: blue;
@@ -174,12 +178,12 @@ body{
 .slider{
     overflow: hidden;
     height: 100%;
-   
+    
 }
 .slider figure img{
     width: 20%;
     float: left;
-    height: 800px;
+    height: 500px;
     
     
 }
@@ -231,21 +235,23 @@ body{
 
 
 .container{
-    position:absolute;
-    top: 150%;
-    left: 40%;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    margin-left: 10%;
+    /* position:absolute; */
+    /* top: 150%;
+    left: 40%; */
+    /* padding-bottom: 50px; */
+    padding-left: 10px;
+    margin-left: 50%;
+    padding-top: 50%;
     transform: translate(-50%,-50%);
     width: 1000px;
     display: flex;
     
     
+    
 }
 .container .box{
     position: relative;
-    width: 1500px;
+    width: 2000px;
     height: 500px;
     background: #ccc;
     transition: 0.5s;
@@ -301,7 +307,7 @@ body{
 }
 .container .box .details .content{
     position: absolute;
-    top: 50%;
+    top: calc(50% + 16px);
     transform: translateY(-50%);
     width: 100%;
     padding: 20px;
@@ -310,7 +316,7 @@ body{
     transition: 0.5s;
 }
 .container .box:hover .details .content{
-  top: 50%;
+  top: calc(50%);
 }
 .container .box .details .content .fas{
     font-size: 60px;
@@ -323,6 +329,7 @@ body{
     padding: 0;
     padding: 10px 0;
     color: #fff;
+    font-family: sans-serif; 
 }
 .container .box .details .content a{
     display: inline-block;
@@ -333,6 +340,7 @@ body{
     transition: 0.5s;
     border-radius: 20px;
     transform: scale(0);
+    font-family: sans-serif;
 }
 .container .box:hover .details .content a{
     transform: scale(1);
