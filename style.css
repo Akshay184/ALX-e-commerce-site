@@ -1,14 +1,15 @@
 body{
     margin: 0;
+    background-color:#88CCF1 ;
     
     
 }
 .navigation{
-    background-color: white;
+    background-color: #2274A5;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0,0.4);
     margin: 0;
     position: relative;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     position: fixed;
     top: 0;
     z-index: 1;
@@ -45,7 +46,7 @@ body{
 }
 .menu ul li a{
     text-decoration: none;
-    color: black;
+    color: #EAFFFD;
     display: inline-block;
     font-weight: 50px;
     font-style: bold;
@@ -53,20 +54,17 @@ body{
     font-size: 18px;
     /* padding: 0 20px; */
 }
-.menu ul li button{
-  font-size: 16px;
-}
+
 .menu ul li a:hover{
-    color: blue;
-
-
+    color: #C9F0FF;
+    transition: all 0.2s ease-in;
 }
 .line::before{
     content: '';
     display: block;
     /* width: 100%; */
     height: 5px;
-    background-color:black;
+    background-color:#C9F0FF;
 
 
     position: absolute;
@@ -86,8 +84,14 @@ body{
     background: transparent;
     outline: none;
     border: none;
-    
+    font-size: 16px;
+    color: #EAFFFD
 }
+.logo-btn:hover{
+    color: #C9F0FF;
+    transition: all 0.2s ease-in;
+}
+
 
 
 
@@ -176,8 +180,10 @@ body{
 
 /* header */
 .slider{
+    
     overflow: hidden;
     height: 100%;
+    margin-top: 8%;
     
 }
 .slider figure img{
@@ -241,9 +247,10 @@ body{
     /* padding-bottom: 50px; */
     padding-left: 10px;
     margin-left: 50%;
-    padding-top: 50%;
+    padding-top: 36%;
     transform: translate(-50%,-50%);
-    width: 1000px;
+    
+    width: 90%;
     display: flex;
     
     
@@ -305,6 +312,11 @@ body{
 {
     background: red;
 }
+.container .box:nth-child(5) .details
+{
+    background: green;
+}
+
 .container .box .details .content{
     position: absolute;
     top: calc(50% + 16px);
@@ -341,11 +353,13 @@ body{
     border-radius: 20px;
     transform: scale(0);
     font-family: sans-serif;
+    font-weight: bold;
 }
 .container .box:hover .details .content a{
     transform: scale(1);
+    
 }
 .container .box .details .content a:hover{
     background: #fff;
-    color: #262626;
+    color: #2274A5;
 }
