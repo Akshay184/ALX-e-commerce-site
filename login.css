@@ -8,8 +8,10 @@ body{
 }
 
 .box{
-    position: absolute;
-    top: 25%;
+    /* position: absolute; */
+    margin-left: 37%;
+    margin-top: 15%;
+    margin-bottom: 20%;
     left: 35%;
     width: 400px;
     padding: 40px 80px;
@@ -89,7 +91,7 @@ body{
 {
     top: -18px;
     left: 0;
-    color: blue;
+    color: white;
     font-size: 12px;
 
 

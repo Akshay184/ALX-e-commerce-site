@@ -4,70 +4,10 @@
 	 viewBox="0 0 766 402" style="enable-background:new 0 0 766 402;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:#fff;stroke:#FFFFFF;lack;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:#2274A5;stroke:#FFFFFF;lack;stroke-width:4;stroke-miterlimit:10;}
 
 
-	<!-- html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    background-color:black;
-} -->
-
-.wrapper{
-    position:absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 30%;
-
-}
-  path{
-      stroke: #fff;
-      fill: #FFF;
-      stroke-dasharray: 1800;
-      opacity: 10;
-      animation: animate 6s ease-in-out;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-     
-      
-  }
-
-  @keyframes animate{
-      0%{
-          opacity: 0;
-          fill: none;
-          stroke-dashoffset: 1800;
-
-      }
-
-      30%{
-        opacity: 10;
-        fill: none;
-        stroke-dashoffset: 1800;
-
-      }
-      90%{
-          fill: rgba(255,255,255,0);
-      }
-      100%{
-          opacity: 10;
-          fill: rgba(255,255,255,1);
-          stroke-dashoffset: 0;
-      }
-
-         
-      }
-  }
-
+	
 
 </style>
 
