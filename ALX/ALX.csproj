@@ -199,6 +199,8 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="ADMIN_PANEL\adminHome.aspx" />
+    <Content Include="ADMIN_PANEL\AdminLogin.aspx" />
+    <Content Include="ADMIN_PANEL\ProductsUploaded.aspx" />
     <Content Include="ADMIN_PANEL\UserProfile.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -381,6 +383,20 @@
     </Compile>
     <Compile Include="ADMIN_PANEL\adminHome.aspx.designer.cs">
       <DependentUpon>adminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_PANEL\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_PANEL\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_PANEL\ProductsUploaded.aspx.cs">
+      <DependentUpon>ProductsUploaded.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_PANEL\ProductsUploaded.aspx.designer.cs">
+      <DependentUpon>ProductsUploaded.aspx</DependentUpon>
     </Compile>
     <Compile Include="ADMIN_PANEL\UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>

@@ -31,6 +31,15 @@ namespace ALX.ADMIN_PANEL {
         protected global::System.Web.UI.WebControls.HyperLink hylUserHome;
         
         /// <summary>
+        /// btnLogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnLogout;
+        
+        /// <summary>
         /// hylUserProfile control.
         /// </summary>
         /// <remarks>
@@ -40,30 +49,12 @@ namespace ALX.ADMIN_PANEL {
         protected global::System.Web.UI.WebControls.HyperLink hylUserProfile;
         
         /// <summary>
-        /// txtUsername control.
+        /// hylUploadedProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUsername;
-        
-        /// <summary>
-        /// txtPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
-        
-        /// <summary>
-        /// btnLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.HyperLink hylUploadedProducts;
     }
 }

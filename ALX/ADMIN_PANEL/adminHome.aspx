@@ -20,7 +20,7 @@
             margin:20px;
             font-size:130%;
         }
-        #hylUserHome,#hylUserProfile{
+        #hylUserHome,#hylUserProfile,#hylUploadedProducts,#hylAdminHome,#btnLogout{
             text-decoration:none;
             color:white;
         }
@@ -42,47 +42,17 @@
         <div id="navBar">
         <ul >
             <li><asp:HyperLink ID="hylUserHome" runat="server" NavigateUrl="~/Welcome.aspx">User Home</asp:HyperLink></li> 
-                        <li>Login</li>          
+                        <li>
+                            <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout"></asp:LinkButton>
+                            <%--<asp:HyperLink ID="hylAdminHome" runat="server" NavigateUrl="~/ADMIN_PANEL/adminHome.aspx">Admin Home</asp:HyperLink></li>--%>          
             <li><asp:HyperLink ID="hylUserProfile" runat="server" NavigateUrl="~/ADMIN_PANEL/UserProfile.aspx">User Profile</asp:HyperLink></li>
-            <li>Products Uploaded</li>
+            <li><asp:HyperLink ID="hylUploadedProducts" runat="server" NavigateUrl="~/ADMIN_PANEL/ProductsUploaded.aspx">Products Uploaded</asp:HyperLink></li>
         </ul>
             </div>
         <div id="adminText">
             <h1>Welcome To Admin</h1>
         </div>
-        <div id="adminLogin">
-            <center>
-            <table>
-                <tr >
-                    <th colspan="2" style="text-align:center;font-size:30px" >Admin Login</th>
-                </tr>
-                <tr>
-                    <td>Username</td>
-                    
-                    <td><asp:TextBox ID="txtUsername" runat="server"></asp:TextBox></td>
-                </tr>
-                <tr>
-                    <td>Password</td>
-                    <td> <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td colspan="2"> <center><asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" /></center></td>
-                </tr>
-            </table>
-               
-                </center>
-        </div>
-        
-    </div>
+            </div>
     </form>
 </body>
 </html>

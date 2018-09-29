@@ -10,7 +10,7 @@
 namespace ALX.ADMIN_PANEL {
     
     
-    public partial class UserProfile {
+    public partial class AdminLogin {
         
         /// <summary>
         /// form1 control.
@@ -22,48 +22,39 @@ namespace ALX.ADMIN_PANEL {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// hylUserHome control.
+        /// txtUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hylUserHome;
+        protected global::System.Web.UI.WebControls.TextBox txtUsername;
         
         /// <summary>
-        /// hylAdminHome control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hylAdminHome;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
         
         /// <summary>
-        /// hylUserProfile control.
+        /// btnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hylUserProfile;
+        protected global::System.Web.UI.WebControls.Button btnLogin;
         
         /// <summary>
-        /// hylUploadedProducts control.
+        /// lblLoginText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hylUploadedProducts;
-        
-        /// <summary>
-        /// rptUserProfile control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptUserProfile;
+        protected global::System.Web.UI.WebControls.Label lblLoginText;
     }
 }

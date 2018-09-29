@@ -72,7 +72,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" runat="server"
                 ErrorMessage="Password required" ControlToValidate="TextBox2" ForeColor="Red" Type="string" OnDataBinding="Button1_Click" EnableClientScript="False"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
-                ErrorMessage="RegularExpressionValidator" ControlToValidate="TextBOx2" ForeColor="Red"
+                ErrorMessage="Type Valid Password" ControlToValidate="TextBOx2" ForeColor="Red"
                 Display="Dynamic" ValidationExpression="[A-Z]+[A-Za-z0-9\W]+\W+[0-9]+[A-Za-z0-9]*"
                 runat="server">
 

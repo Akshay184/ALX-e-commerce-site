@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="ALX.ADMIN_PANEL.UserProfile" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductsUploaded.aspx.cs" Inherits="ALX.ADMIN_PANEL.ProductsUploaded" %>
 
 <!DOCTYPE html>
 
@@ -9,23 +9,20 @@
         body{
             background-color:#9fd9e0;
         }
-       #UserProfileText{
-           text-align:center;
-           color:blue;
-           margin-top:2%;
-       }
-       #UserProfile{
-           margin-top:8%;
-       }
-       #UserProfile table, tr ,td,th  {
+        #UploadedProductText{
+            text-align:center;
+            color:blue;
+            margin-top:3%;
+        }
+         #navBar{
+            background-color:#8080ff;
+            color:white;
+        }
+          #UploadedProducts table, tr ,td,th  {
           border:1px solid black;
           border-collapse:collapse;
           font-size:105%;
        }
-       #navBar{
-            background-color:#8080ff;
-            color:white;
-        }
         #navBar ul li{
             display:inline-block;
             margin:20px;
@@ -48,55 +45,60 @@
             <li><asp:HyperLink ID="hylUploadedProducts" runat="server" NavigateUrl="~/ADMIN_PANEL/ProductsUploaded.aspx">Products Uploaded</asp:HyperLink></li>
         </ul>
             </div>
-        <div id="UserProfileText">
-            <h2>Welcome To User Profile Section</h2>
-        </div>   
-        <div id="UserProfile">
-            
-           
-           
+        <div id="UploadedProductText">
+            <h2>Welcome To Products Section</h2>
+        </div>
+        <div id="UploadedProducts">
             <center>
                 <table>
-                     <tr>
-                    <th>User ID</th>
-                    <th>User Name</th>
-                    <th>User Email</th>
-                    <th>Contact Number</th>
-                    <th>Email Verified</th>
-                         <th colspan="2">Edit/Delete</th>
-                </tr>
-                     <asp:Repeater ID="rptUserProfile" runat="server">
+                    <tr>
+                        <th>User ID</th>
+                        <th>Product Id</th>
+                        <th>Category</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Images</th>
+                        <th colspan="2">Edit/Delete</th>
+                    </tr>
+                    <asp:Repeater ID="rptUploadedProducts" runat="server">
                 <ItemTemplate>
                     <tr>
                        <td>
                            <asp:Label ID="lblUserId" runat="server" Text='<%# Eval("UserId") %>'></asp:Label>
                        </td>
                         <td>
-                             <asp:Label ID="lblUserName" runat="server" Text='<%# Eval("UserName") %>'></asp:Label>
+                             <asp:Label ID="lblProductId" runat="server" Text='<%# Eval("ProductId") %>'></asp:Label>
                         </td>
                         <td>
-                             <asp:Label ID="lblUserEmail" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
+                             <asp:Label ID="lblCategory" runat="server" Text='<%# Eval("CATEGORY") %>'></asp:Label>
                         </td>
                         <td>
-                             <asp:Label ID="lblContactNumbar" runat="server" Text='<%# Eval("ContactNumber") %>'></asp:Label>
+                             <asp:Label ID="lblProductName" runat="server" Text='<%# Eval("ProductName") %>'></asp:Label>
                         </td>
                         <td>
-                             <asp:Label ID="lblEmailVerification" runat="server" Text='<%# Eval("EmailVerified") %>'></asp:Label>
+                             <asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label>
+                        </td>
+                        <td>
+                            <asp:Label ID="lblDescription" runat="server" Text='<%# Eval("Description") %>'></asp:Label>
+                        </td>
+                        <td>
+                            <asp:Label ID="lblImages" runat="server" Text="Image"></asp:Label>
                         </td>
                         <td>
                             <asp:LinkButton ID="btnEdit" runat="server" Text="Edit" OnClick="btnEdit_Click"></asp:LinkButton>
                         </td>
                         <td>
-                            <asp:LinkButton ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" OnCommand ="Delete" CommandArgument='<%# Eval("UserId") %>'></asp:LinkButton>
+                            <asp:LinkButton ID="btnDelete" runat="server" Text="Delete"  OnCommand="Delete" CommandArgument= '<%# Eval("ProductId") %>'></asp:LinkButton>
 
                         </td>
                     </tr>
                         </ItemTemplate>
                 </asp:Repeater>
+                   
                 </table>
             </center>
-                
-        </div>
+        </div>  
     </div>
     </form>
 </body>

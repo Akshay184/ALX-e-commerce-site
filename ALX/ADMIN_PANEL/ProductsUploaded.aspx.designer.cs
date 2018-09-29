@@ -10,7 +10,7 @@
 namespace ALX.ADMIN_PANEL {
     
     
-    public partial class UserProfile {
+    public partial class ProductsUploaded {
         
         /// <summary>
         /// form1 control.
@@ -58,12 +58,12 @@ namespace ALX.ADMIN_PANEL {
         protected global::System.Web.UI.WebControls.HyperLink hylUploadedProducts;
         
         /// <summary>
-        /// rptUserProfile control.
+        /// rptUploadedProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptUserProfile;
+        protected global::System.Web.UI.WebControls.Repeater rptUploadedProducts;
     }
 }
