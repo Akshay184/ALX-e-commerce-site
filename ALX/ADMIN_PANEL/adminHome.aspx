@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="adminHome.aspx.cs" Inherits="ALX.ADMIN_PANEL.adminLogin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminHome.aspx.cs" Inherits="ALX.ADMIN_PANEL.adminLogin" %>
 
 <!DOCTYPE html>
 

@@ -198,8 +198,10 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="ADMIN_PANEL\adminHome.aspx" />
+    <Content Include="ADMIN_PANEL\AdminHome.aspx" />
     <Content Include="ADMIN_PANEL\AdminLogin.aspx" />
+    <Content Include="ADMIN_PANEL\ProductsUpdate.aspx" />
+    <Content Include="ADMIN_PANEL\UserProfileUpdate.aspx" />
     <Content Include="ADMIN_PANEL\ProductsUploaded.aspx" />
     <Content Include="ADMIN_PANEL\UserProfile.aspx" />
     <Content Include="Contact.aspx" />
@@ -377,12 +379,12 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ADMIN_PANEL\adminHome.aspx.cs">
-      <DependentUpon>adminHome.aspx</DependentUpon>
+    <Compile Include="ADMIN_PANEL\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ADMIN_PANEL\adminHome.aspx.designer.cs">
-      <DependentUpon>adminHome.aspx</DependentUpon>
+    <Compile Include="ADMIN_PANEL\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="ADMIN_PANEL\AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
@@ -390,6 +392,20 @@
     </Compile>
     <Compile Include="ADMIN_PANEL\AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_PANEL\ProductsUpdate.aspx.cs">
+      <DependentUpon>ProductsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_PANEL\ProductsUpdate.aspx.designer.cs">
+      <DependentUpon>ProductsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_PANEL\UserProfileUpdate.aspx.cs">
+      <DependentUpon>UserProfileUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN_PANEL\UserProfileUpdate.aspx.designer.cs">
+      <DependentUpon>UserProfileUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="ADMIN_PANEL\ProductsUploaded.aspx.cs">
       <DependentUpon>ProductsUploaded.aspx</DependentUpon>

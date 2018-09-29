@@ -84,10 +84,10 @@
                              <asp:Label ID="lblEmailVerification" runat="server" Text='<%# Eval("EmailVerified") %>'></asp:Label>
                         </td>
                         <td>
-                            <asp:LinkButton ID="btnEdit" runat="server" Text="Edit" OnClick="btnEdit_Click"></asp:LinkButton>
+                            <asp:LinkButton ID="btnEdit" runat="server" Text="Edit"  OnCommand="Edit" CommandArgument='<%# Eval("UserId") %>' ></asp:LinkButton>
                         </td>
                         <td>
-                            <asp:LinkButton ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" OnCommand ="Delete" CommandArgument='<%# Eval("UserId") %>'></asp:LinkButton>
+                            <asp:LinkButton ID="btnDelete" runat="server" Text="Delete"  OnCommand ="Delete" CommandArgument='<%# Eval("UserId") %>'></asp:LinkButton>
 
                         </td>
                     </tr>

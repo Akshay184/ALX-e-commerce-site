@@ -86,7 +86,7 @@
                             <asp:Label ID="lblImages" runat="server" Text="Image"></asp:Label>
                         </td>
                         <td>
-                            <asp:LinkButton ID="btnEdit" runat="server" Text="Edit" OnClick="btnEdit_Click"></asp:LinkButton>
+                            <asp:LinkButton ID="btnEdit" runat="server" Text="Edit"  OnCommand="Edit" CommandArgument='<%# Eval("ProductId") %>' ></asp:LinkButton>
                         </td>
                         <td>
                             <asp:LinkButton ID="btnDelete" runat="server" Text="Delete"  OnCommand="Delete" CommandArgument= '<%# Eval("ProductId") %>'></asp:LinkButton>

@@ -14,24 +14,30 @@ namespace ALX.ADMIN_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                if (Convert.ToInt32(Session["AdminId"]) != 1)
+            
+            
+                if(Session["AdminId"] == null)
                 {
-                    Response.Redirect("~/ADMIN_PANEL/AdminLogin.aspx");
-                }
+                Response.Redirect("~/ADMIN_PANEL/AdminLogin.aspx");
+
+            }
                 else
+                {
+                    
+                if (!IsPostBack)
                 {
                     rptUploadedProducts.DataSource = GetData();
                     rptUploadedProducts.DataBind();
-
-                  
                 }
-            }
-        }
-        protected void btnEdit_Click(object sender, EventArgs e)
-        {
 
+
+            }
+            
+        }
+        protected void Edit(object sender, CommandEventArgs e)
+        {
+            string ID = e.CommandArgument.ToString();
+            Response.Redirect("~/ADMIN_PANEL/ProductsUpdate?ProductId=" + ID);
         }
 
         protected DataSet GetData()

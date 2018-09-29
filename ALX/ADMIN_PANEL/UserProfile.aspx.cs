@@ -15,30 +15,33 @@ namespace ALX.ADMIN_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                if (Convert.ToInt32(Session["AdminId"]) != 1)
+
+            
+                if (Session["AdminId"] == null)
                 {
-                    Response.Redirect("~/ADMIN_PANEL/AdminLogin.aspx");
-                }
-                else
+
+                Response.Redirect("~/ADMIN_PANEL/AdminLogin.aspx");
+            }
+            else
                 {
+                if (!IsPostBack)
+                {
+
                     rptUserProfile.DataSource = GetData();
                     rptUserProfile.DataBind();
                 }
-            }
+               
+                }
+            
    
         }
-        protected void btnEdit_Click(object sender, EventArgs e)
+        protected void Edit(object sender, CommandEventArgs e)
         {
-
+            string Id = e.CommandArgument.ToString();
+            Response.Redirect("~/ADMIN_PANEL/UserProfileUpdate.aspx?UserId="+Id);
         }
 
-        protected void btnDelete_Click(object sender, EventArgs e)
-        {
-           
-          
-        }
+      
 
         protected void Delete(object sender,CommandEventArgs e)
         {

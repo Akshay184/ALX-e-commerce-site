@@ -29,7 +29,7 @@ namespace ALX.ADMIN_PANEL
                     cmd.Parameters.AddWithValue("@UserName", txtUsername.Text);
                     cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
                     con.Open();
-                    Session["AdminId"] = (int)cmd.ExecuteScalar();
+                    Session["AdminId"] = cmd.ExecuteScalar();
                     lblLoginText.Text = "Login Successful";
                     Response.Redirect("~/ADMIN_PANEL/adminHome.aspx");
                 }
