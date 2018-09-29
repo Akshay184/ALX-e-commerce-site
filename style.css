@@ -466,13 +466,22 @@ body{
 /* end */
 .end-foot{
     background-color: #2274A5;
-   padding: 1%;
-   
-  
-   
+    display: grid;
+    grid-template-columns:5% 25%;
+    justify-content: end;
+    
+}
+.txt{
+    padding-top: 2px;
+    font-size: .8em;
+}
+.end-logo {
+    padding-top: 18%;
+    font-size: 1em;
+    padding-left: 50px;
+    
 }
 
-.end-foot .far{
-    font-size: 15px;
-}
+
+
 
