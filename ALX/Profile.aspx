@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 76px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -22,6 +27,7 @@
             <SortedDescendingCellStyle BackColor="#EAEAD3" />
             <SortedDescendingHeaderStyle BackColor="#575357" />
             </asp:GridView>
+            <asp:Button ID="btnEditProfle" runat="server" CssClass="auto-style1" OnClick="btnEditProfle_Click" Text="Edit Profile" Width="156px" />
         </h1>
         <p style="text-align: center">
             &nbsp;</p>
@@ -34,9 +40,10 @@
         <p style="text-align: center">
             &nbsp;</p>
         <p style="text-align: center">
-            &nbsp;</p>
+            <asp:FileUpload ID="fileuploadProducts" runat="server" />
+        </p>
         <p style="text-align: left">
-            Product Name<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            Product Name<asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
         </p>
         <p style="text-align: left">
             Price<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
@@ -47,9 +54,16 @@
                 <asp:ListItem Value="1" Text="Furniture"></asp:ListItem>
                 <asp:ListItem Value="2" Text="Books"></asp:ListItem>
                 <asp:ListItem Value="3" Text="Vehicles"></asp:ListItem>
-                <asp:ListItem Value="4" Text="Others"></asp:ListItem>
+                <asp:ListItem Value="4" Text="Electronics"></asp:ListItem>
+                <asp:ListItem Value="5" Text="Clothing"></asp:ListItem>
             </asp:DropDownList> 
         </p>
+        <p style="text-align: left">
+            Description
+            <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
+        </p>
+        <p style="text-align: left">
+            &nbsp;</p>
 
 
 

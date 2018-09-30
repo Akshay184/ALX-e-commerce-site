@@ -21,10 +21,24 @@
             <br />
             CATEGORIES</h1>
         <h1>
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="fURNITURE" />
+            <p>
+            <asp:Button ID="btnFurniture" runat="server" OnClick="btnFurniture_Click" Text="Furniture" Width="93px" />
+                </p>
+            <p>
+            <asp:Button ID="btnBooks" runat="server" OnClick="btnBooks_Click" Text="Books" Width="99px" />
+            </p>
+            <p>
+                <asp:Button ID="btnElectronics" runat="server" OnClick="btnElectronics_Click" Text="Electronics" />
+            </p>
+        <p>
+                <asp:Button ID="btnVehicles" runat="server" OnClick="btnVehicles_Click" Text="Vehicles" Width="94px" />
+            </p>
+        <p>
+                <asp:Button ID="btnClothing" runat="server" OnClick="btnClothing_Click" Text="Clothing" Width="94px" />
+            </p>
         </h1>
-        <br />
-        <asp:Button ID="Button3" runat="server" Text="Books" OnClick="Button3_Click" />
+        
+     <%-- <asp:Button ID="Button3" runat="server" Text="Books" OnClick="Button3_Click" />
         <br />
         <br />
         <asp:Button ID="Button4" runat="server" Text="Vehicles" OnClick="Button4_Click" />
@@ -32,19 +46,67 @@
         <br />
         <asp:Button ID="Button5" runat="server" Text="others" OnClick="Button5_Click" />
         <br />
-        <br />
-        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical">
-            <AlternatingRowStyle BackColor="White" />
-            <FooterStyle BackColor="#CCCC99" />
-            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
-            <RowStyle BackColor="#F7F7DE" />
-            <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#FBFBF2" />
-            <SortedAscendingHeaderStyle BackColor="#848384" />
-            <SortedDescendingCellStyle BackColor="#EAEAD3" />
-            <SortedDescendingHeaderStyle BackColor="#575357" />
-        </asp:GridView>
+        <br />    --%>
+        <asp:Repeater ID="rptProduct" runat="server">
+            <ItemTemplate>
+                <table style="border:1px solid black; background-color:aqua">
+                    <tr>
+                        <td style="width:300px">
+                            <asp:Image ID="imgProducts" ImageUrl='<%# Eval("images") %>' runat="server" />
+                        </td>
+                        <td style="width:200px">
+                            <table>
+                                <tr>
+                                    <td>ProductName:</td>
+                                    <td>
+                                        <asp:Label ID="lblProductName" Text='<%# Eval("ProductName") %>' runat="server">
+                                        </asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Description:</td>
+                                    <td>
+                                        <%--<asp:Label ID="lblDescription" Text='<%# Eval("Description") %>' runat="server">--%>
+                                        <%--</asp:Label>--%>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td >
+                            <table>
+                                <tr>
+                                    <td>Price</td>
+                                    <td>
+                                        <asp:Label ID="lblPrice" Text='<%# Eval("price") %>' runat="server"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Owner Details:</td>
+                                    <td>
+                                        <asp:Label ID="lblOwnerDetails" Text="XYZ" runat="server"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Owner Contact Number:</td>
+                                    <td>
+                                        <asp:Label ID="lblOwnerContactNumber" Text="XYZ" runat="server">
+
+                                        </asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </ItemTemplate>
+        </asp:Repeater>
+        <asp:Repeater ID="rptPager" runat="server">
+    <ItemTemplate>
+        <asp:LinkButton ID="lnkPage" runat="server" Text='<%#Eval("Text") %>' CommandArgument='<%# Eval("Value") %>'
+            CssClass='<%# Convert.ToBoolean(Eval("Enabled")) ? "page_enabled" : "page_disabled" %>'
+            OnClick="Page_Changed" OnClientClick='<%# !Convert.ToBoolean(Eval("Enabled")) ? "return false;" : "" %>'></asp:LinkButton>
+           </ItemTemplate>
+</asp:Repeater>
     </form>
 </body>
 </html>

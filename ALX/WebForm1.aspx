@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="ALX.Categories" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="ALX.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -11,6 +11,7 @@
     <div>
     
     </div>
+        <asp:Image ID="imgProducts" Height="500px" Width="500px" runat="server" />
     </form>
 </body>
 </html>
