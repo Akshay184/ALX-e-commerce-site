@@ -426,10 +426,12 @@ body{
     justify-content: space-around;
     
     
+    
+    
 }
 .foot .foot-box .heading{
     text-align: center;
-    color: #171F46;
+    color: #2274A5;
 }
 .foot .foot-box ul{
     list-style: none;
@@ -468,17 +470,22 @@ body{
     background-color: #2274A5;
     display: grid;
     grid-template-columns:5% 25%;
-    justify-content: end;
+    justify-content: center;
+    /* position: fixed; */
     
 }
 .txt{
-    padding-top: 2px;
+    padding-top: 2.5px ;
     font-size: .8em;
+    padding-left: 17%;
+    color: white;
+    font-family: sans-serif;
 }
 .end-logo {
     padding-top: 18%;
     font-size: 1em;
-    padding-left: 50px;
+    padding-left: 120px;
+    color: #88CCF1;
     
 }
 

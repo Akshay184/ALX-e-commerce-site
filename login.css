@@ -3,7 +3,8 @@ body{
     padding: 0;
     font-family: sans-serif;
     background: url(../alx/images/login.jpg);
-    background-size: cover;
+    display: 100% 100%;
+    /* background-size: cover; */
     
 }
 
@@ -87,8 +88,8 @@ body{
 }
 
 .box .inputbox input:focus ~ label,
-.box .inputbox input:valid ~ label
-{
+.box .inputbox  input:valid ~ label
+{ 
     top: -18px;
     left: 0;
     color: white;
