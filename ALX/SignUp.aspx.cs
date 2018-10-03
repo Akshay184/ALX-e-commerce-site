@@ -35,6 +35,8 @@ namespace ALX
                     SqlParameter Password = new SqlParameter("@Password", TextBox2.Text);
                     SqlParameter Email = new SqlParameter("@Email", TextBox3.Text);
                     SqlParameter ContactNumber = new SqlParameter("@ContactNumber", TextBox4.Text);
+                    SqlParameter Name = new SqlParameter("@Name", txtName.Text);
+
 
                     Session["UserName"] = TextBox1.Text;
 
@@ -42,6 +44,7 @@ namespace ALX
                     cmd.Parameters.Add(Password);
                     cmd.Parameters.Add(Email);
                     cmd.Parameters.Add(ContactNumber);
+                    cmd.Parameters.Add(Name);
 
                     con.Open();
                     int ReturnCount = (int)cmd.ExecuteScalar();
@@ -76,7 +79,7 @@ namespace ALX
             string ActivationCode = "";
             using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("select ActivationCode from UserInformation where UserName=@UserName",con);
+                SqlCommand cmd = new SqlCommand("select ActivationCode from tblUserInformation where UserName=@UserName",con);
                 cmd.Parameters.AddWithValue("@UserName", TextBox1.Text);
                 con.Open();
                  ActivationCode = cmd.ExecuteScalar().ToString();

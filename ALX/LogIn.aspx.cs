@@ -26,7 +26,7 @@ namespace ALX
                 using (SqlConnection con = new SqlConnection(csLogIn))
                 {
 
-                    SqlCommand cmd = new SqlCommand("select UserId from userinformation where UserName=@usernameaun and password=@passwordaun and EmailVerified=1", con);
+                    SqlCommand cmd = new SqlCommand("select UserId from tbluserinformation where UserName=@usernameaun and password=@passwordaun and EmailVerified=1", con);
                     cmd.Parameters.AddWithValue("@usernameaun", txtUserName.Text);
                     cmd.Parameters.AddWithValue("@passwordaun", txtPassword.Text);
 
@@ -57,23 +57,3 @@ namespace ALX
 
 
 
-
-//SqlCommand cmd = new SqlCommand("login", con);
-//cmd.CommandType = CommandType.StoredProcedure;
-
-//                SqlParameter UserName = new SqlParameter("@UserNameAun", txtUserName.Text);
-//SqlParameter Password = new SqlParameter("@PasswordAun", txtPassword.Text);
-
-//cmd.Parameters.Add(UserName);
-//                cmd.Parameters.Add(Password);
-//                con.Open();
-
-//                int Authentication = (int)cmd.ExecuteScalar();
-//                if (Authentication == 1)
-//                {
-//                    Response.Redirect("~/Welcome.aspx");
-//                }
-//                else
-//                {
-//                    Response.Write("Invalid UserName");
-//                }

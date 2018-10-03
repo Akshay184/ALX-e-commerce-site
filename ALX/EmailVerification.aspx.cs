@@ -23,7 +23,7 @@ namespace ALX
                 using (SqlConnection con = new SqlConnection(cs))
 
                 {
-                    SqlCommand cmd = new SqlCommand("Select ActivationCode from USerInformation where UserName = @UserName",con);
+                    SqlCommand cmd = new SqlCommand("Select ActivationCode from tblUserInformation where UserName = @UserName",con);
                     cmd.Parameters.AddWithValue("@UserName", Session["UserName"]);
                     con.Open();
                     Code = cmd.ExecuteScalar().ToString();
@@ -33,7 +33,7 @@ namespace ALX
                     Response.Write("Verified");
                     using (SqlConnection con = new SqlConnection(cs))
                     {
-                        SqlCommand cmd = new SqlCommand("update UserInformation set EmailVerified=1  where UserName=@UserName",con);
+                        SqlCommand cmd = new SqlCommand("update tblUserInformation set EmailVerified=1  where UserName=@UserName",con);
                         cmd.Parameters.AddWithValue("@UserName", Session["UserName"]);
                         con.Open();
                         cmd.ExecuteNonQuery();

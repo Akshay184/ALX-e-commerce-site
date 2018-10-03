@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(images/product.jpg);
+    display: 100% 100%;
+    /* background-size: cover; */
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 13%; 
+    left: 81%;
+}
+
+.dropbtn {
+    background-color: #2274A5;
+    color: white;
+    padding: 20px 110px 20px 20px;
+    font-size: 16px;
+    border:none;
+    cursor: pointer;
+    text-align: right;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #88CCF1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: #D81159;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+
+
+.card1{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    -grid-row-gap:50px ;
+    /* grid-column-gap: 2px; */
+    margin-top: 9%;
+    /* margin-left: 6%; */
+    }
+
+.card {
+  box-shadow: 0 8px 15px 8px rgba(0, 0, 0, 0.2);
+  max-width: 280px;
+  margin:  auto;
+  background-color: #2274A5;
+  
+ 
+  
+  text-align: center;
+  /* font-family: sans-serif; */
+  -webkit-transition: 0.3s ease-in-out, 
+  -webkit-transform 0.3s ease-in-out;
+  -moz-transition:  0.3s ease-in-out, 
+  -moz-transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, 
+  transform 0.3s ease-in-out, ;
+  
+}
+.card:hover{
+    
+        transform: scale(1.05); 
+    
+}
+.card a p,h1{
+  color: white;
+  font-size: 18px;
+  font-family: monospace;
+  
+}
+.card a{
+    text-decoration: none;
+}
+
+.card input {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #FFFFFF;
+  background-color: #13294B;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+  border-radius: 15px;
+  font-family: monospace;
+  
+}
+
+.card input:hover {
+      background-color:#FFFFFF ;
+      color: #13294B;
+      transition: all 0.2s ease-in;
+}
+
+@media (max-width:1274px)
+{
+    .card1{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        
+        }
+}
+@media (max-width:940px)
+{
+    .card1{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+        
+}
+@media (max-width:640px)
+{
+    .card1{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+       margin-left: 25%;
+        }
+}
+
+/* pagination */
+.pagination {
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+.pagination a {
+    color: #13294B;
+    float: left;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.pagination a.active {
+    background-color: #2274A5;
+    color: white;
+    border-radius: 50px;
+    
+}
+
+.pagination a:hover:not(.active) {
+    color: #D81159;
+    transition: all 0.3s ease;
+}
+
+ /* footer */
+
+ .foot{
+     margin-top: 10%;
+    font-family: sans-serif;
+    background-color: #88CCF1;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    /* grid-template-columns:25px 25px 25px 25px; */
+    justify-content: space-around;
+    
+    
+    
+    
+}
+.foot .foot-box .heading{
+    text-align: center;
+    color: #2274A5;
+}
+.foot .foot-box ul{
+    list-style: none;
+    padding-left: 0;
+    
+}
+.foot .foot-box ul li{
+    
+    
+    padding-top: 5%;
+    text-align: center;
+}
+.foot .foot-box ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #2274A5;
+}
+.foot .foot-box .fab{
+    font-size: 20px;
+    color: #2274A5;
+}
+.foot .foot-box p{
+    color: #2274A5;
+    /* padding-top: 10%; */
+    /* text-align: center; */
+    margin-left: 30%;
+}
+#top{
+    padding-top: 5%;
+}
+#fourth{
+    margin-right: 5%;
+}
+/* end */
+.end-foot{
+    background-color: #2274A5;
+    display: grid;
+    grid-template-columns:5% 25%;
+    justify-content: center;
+    /* position: fixed; */
+    
+}
+.txt{
+    padding-top: 2px ;
+    font-size: .8em;
+    padding-left: 17%;
+    color: white;
+    font-family: sans-serif;
+    
+}
+.end-logo {
+    padding-top: 18%;
+    font-size: 1em;
+    padding-left: 120px;
+    color: #88CCF1;
+    
+}

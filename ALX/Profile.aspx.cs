@@ -17,7 +17,7 @@ namespace ALX
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using(SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("Select Username,Email,ContactNumber from UserInformation where UserId=@ID",con);
+                SqlCommand cmd = new SqlCommand("Select Username,Email,ContactNumber from tblUserInformation where UserId=@ID",con);
                 cmd.Parameters.AddWithValue("@ID", Session["Id"]);
                 con.Open();
                 GridView1.DataSource = cmd.ExecuteReader();
@@ -38,7 +38,7 @@ namespace ALX
                 cmd.Parameters.AddWithValue("@Price", TextBox2.Text);
                 cmd.Parameters.AddWithValue("@Category",DropDownList1.SelectedItem.Text);
                 cmd.Parameters.AddWithValue("@ProductName", TextBox3.Text);
-                cmd.Parameters.AddWithValue("@ImageName", "ImagesUpload/" + fileName);
+                cmd.Parameters.AddWithValue("@ImageName", "~/ImagesUpload/" + fileName);
                 cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
                 con.Open();
                 cmd.ExecuteNonQuery();

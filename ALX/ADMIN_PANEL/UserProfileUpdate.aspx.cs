@@ -45,7 +45,7 @@ namespace ALX.ADMIN_PANEL
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using(SqlConnection con = new SqlConnection(cs))
             {
-                SqlDataAdapter da = new SqlDataAdapter("Select * from UserInformation where UserId="+ID+"",con);
+                SqlDataAdapter da = new SqlDataAdapter("Select * from tblUserInformation where UserId="+ID+"",con);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
                 
@@ -60,7 +60,7 @@ namespace ALX.ADMIN_PANEL
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using(SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("update UserInformation set UserName=@UserName,Email=@Email,ContactNumber=@ContactNumber where UserId="+ID+"", con);
+                SqlCommand cmd = new SqlCommand("update tblUserInformation set UserName=@UserName,Email=@Email,ContactNumber=@ContactNumber where UserId="+ID+"", con);
                 cmd.Parameters.AddWithValue("@UserName", txtUserName.Text);
                 cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@ContactNumber", txtContactNumber.Text);

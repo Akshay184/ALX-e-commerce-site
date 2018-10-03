@@ -111,6 +111,9 @@
 
             </asp:RegularExpressionValidator>
         </p>
+        <p class="auto-style2">
+            Name<asp:TextBox ID="txtName" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+        </p>
         <p class="auto-style1">
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Style="height: 29px; text-align: center;" Text="SUBMIT" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

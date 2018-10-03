@@ -218,9 +218,35 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Profile.aspx" />
+    <Content Include="USER_PANEL\ALXHome.aspx" />
+    <Content Include="USER_PANEL\CSS\login.css" />
+    <Content Include="USER_PANEL\CSS\products.css" />
+    <Content Include="USER_PANEL\CSS\sign-up.css" />
+    <Content Include="USER_PANEL\CSS\ss.css" />
+    <Content Include="USER_PANEL\CSS\style.css" />
+    <Content Include="USER_PANEL\images\01.jpeg" />
+    <Content Include="USER_PANEL\images\17924-fashion-illustration-women-wallpapers.jpg" />
+    <Content Include="USER_PANEL\images\49985694-home-electronics-sketch-icons-isolation-white-background-vector-horizontal-banner-electronics-vector.jpg" />
+    <Content Include="USER_PANEL\images\800px_COLOURBOX5227270.jpg" />
+    <Content Include="USER_PANEL\images\915801.jpg" />
+    <Content Include="USER_PANEL\images\9257a5f844a4229.jpg" />
+    <Content Include="USER_PANEL\images\alx-logo.png" />
+    <Content Include="USER_PANEL\images\alx1.png" />
+    <Content Include="USER_PANEL\images\alx1.svg" />
+    <Content Include="USER_PANEL\images\book.jpeg" />
+    <Content Include="USER_PANEL\images\car.jpg" />
+    <Content Include="USER_PANEL\images\Cool-Books-Vector.jpg" />
+    <Content Include="USER_PANEL\images\IMG_0321.JPG" />
+    <Content Include="USER_PANEL\images\interior-decor-background-colored-furniture-icons-cover.png" />
+    <Content Include="USER_PANEL\images\login.jpg" />
+    <Content Include="USER_PANEL\images\login1.png" />
+    <Content Include="USER_PANEL\images\vector_cartoon_children_clothes_hanger_drying_296255.jpg" />
+    <Content Include="USER_PANEL\Login.aspx" />
+    <Content Include="USER_PANEL\Products.aspx" />
+    <Content Include="USER_PANEL\Signup.aspx" />
     <Content Include="Welcome.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="LogIn.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
@@ -456,12 +482,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.aspx.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LogIn.aspx.designer.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
@@ -494,6 +520,34 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="USER_PANEL\ALXHome.aspx.cs">
+      <DependentUpon>ALXHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL\ALXHome.aspx.designer.cs">
+      <DependentUpon>ALXHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_PANEL\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_PANEL\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_PANEL\Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL\Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -512,7 +566,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="ImagesUpload\" />
-    <Folder Include="USER_PANEL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_LocalResources\Login.aspx.resx" />

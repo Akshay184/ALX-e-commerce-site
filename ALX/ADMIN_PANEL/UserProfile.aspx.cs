@@ -49,12 +49,22 @@ namespace ALX.ADMIN_PANEL
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-                string query = "Delete from userInformation where userId=@CurrentId;";
-                query += "Delete from tblProducts where USerId=@CurrentId";
+                
+               string query = "Delete  from tblProducts where USerId=@CurrentId";
+               
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@CurrentId", CurrentUserId);
+               
+                query = "Delete from tbluserInformation where userId=@CurrentId";
+                SqlCommand cmd1 = new SqlCommand(query, con);
+                cmd1.Parameters.AddWithValue("@CurrentId", CurrentUserId);
                 con.Open();
+
+
                 cmd.ExecuteNonQuery();
+
+
+                cmd1.ExecuteNonQuery();
             }
             rptUserProfile.DataSource = GetData();
             rptUserProfile.DataBind();
@@ -66,7 +76,7 @@ namespace ALX.ADMIN_PANEL
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlDataAdapter da = new SqlDataAdapter("select UserId,UserName,Email,ContactNumber,EmailVerified from userinformation ", con);
+                SqlDataAdapter da = new SqlDataAdapter("select UserId,UserName,Email,ContactNumber,EmailVerified from tbluserinformation ", con);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
                 return ds;
