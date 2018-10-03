@@ -287,7 +287,43 @@ namespace ALX
             int pageIndex = int.Parse((sender as LinkButton).CommandArgument);
             this.GetCustomersPageWise(pageIndex);
         }
-       
 
+        protected void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+           
+                string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+                SqlConnection con = new SqlConnection(cs);
+
+
+               
+                if(txtSearch.Text != "")
+            {
+                DataSet ds = new DataSet();
+                SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%'", con);
+               
+                da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
+                da.Fill(ds);
+                rptProduct.DataSource = ds;
+                rptProduct.DataBind();
+               
+            }
+            else
+            {
+                rptProduct.DataBind();
+            }
+               
+            
+            
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,7 +50,7 @@
 
 
 
-            <asp:DropDownList ID="DropDownList1" runat="server" style="margin-bottom: 33px">
+            <asp:DropDownList ID="DropDownList1" runat="server" style="margin-bottom: 33px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                 <asp:ListItem Value="1" Text="Furniture"></asp:ListItem>
                 <asp:ListItem Value="2" Text="Books"></asp:ListItem>
                 <asp:ListItem Value="3" Text="Vehicles"></asp:ListItem>

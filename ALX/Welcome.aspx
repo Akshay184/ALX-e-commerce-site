@@ -5,6 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+        .auto-style2 {
+            margin-left: 15px;
+        }
+        .auto-style3 {
+            margin-left: 83px;
+        }
+        </style>
 </head>
 <body style="text-align: center">
     <form id="form1" runat="server">
@@ -20,12 +31,20 @@
             <br />
             <br />
             CATEGORIES</h1>
-        <h1>
+        <h1 class="auto-style1">
+            <asp:TextBox ID="txtSearch" runat="server" Height="26px" OnTextChanged="txtSearch_TextChanged" Width="244px"></asp:TextBox>
+            <asp:Button ID="btnSearch" runat="server" CssClass="auto-style2" OnClick="btnSearch_Click" Text="SEARCH" Width="104px" />
             <p>
             <asp:Button ID="btnFurniture" runat="server" OnClick="btnFurniture_Click" Text="Furniture" Width="93px" />
                 </p>
             <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="btnBooks" runat="server" OnClick="btnBooks_Click" Text="Books" Width="99px" />
+                <asp:DropDownList ID="DropDownListFilters" runat="server" AutoPostBack="True" CssClass="auto-style3" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                    <asp:ListItem Value="0">Filters</asp:ListItem>
+                    <asp:ListItem Value="1">High-to-Low</asp:ListItem>
+                    <asp:ListItem Value="2">Low-to-High</asp:ListItem>
+                </asp:DropDownList>
             </p>
             <p>
                 <asp:Button ID="btnElectronics" runat="server" OnClick="btnElectronics_Click" Text="Electronics" />
