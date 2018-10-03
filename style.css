@@ -52,6 +52,7 @@ body{
     font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    
     /* padding: 0 20px; */
 }
 
@@ -487,6 +488,21 @@ body{
     padding-left: 120px;
     color: #88CCF1;
     
+}
+
+@media (max-width:940px)
+{
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:640px)
+{
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 

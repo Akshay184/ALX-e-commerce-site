@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="single-product.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Single-product</title>
+</head>
+
+<body>
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+       
+    </script>
+
+    <!-- navigation -->
+    <div class="navigation">
+        <a href="alx.html"><img class="logo" src="../alx/images/alx-logo.png"></a>
+        <div class="menu">
+            <ul>
+                <li><a href="products.html" class="line"><b>BOOKS</b></a></li>
+                <li><a href="products.html" class="line"><b>CLOTHING</b></a></li>
+                <li><a href="products.html" class="line"><b>ELECTRONICS</b></a></li>
+                <li><a href="products.html" class="line"><b>FURNITURE</b></a></li>
+                <li><a href="products.html" class="line"><b>VEHICLES</b></a></li>
+                <li><button class="logo-btn" onclick="openSearch()"><b><i class="fa fa-search"></i></b></button></li>
+                <li><a href="login.html" ><b><i class="fas fa-user-circle"></i></b></a></li>   
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="myOverlay" class="overlay ">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content animate">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- single-product -->
+
+     
+        <div class="card">
+            
+        <div class="picture">
+          <img class="pic" src="images/book.jpeg" alt="Denim Jeans" style="width:100%" >
+          </div>
+          <div class="text">
+          <h1>Tailored Jeans</h1>
+          <p class="price">$19.99</p>
+          <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.s. Super slim and comfy lorem ipsum lorem jeansum.s. Super slim and comfy lorem ipsum lorem jeansum.s. Super slim and comfy lorem ipsum lorem jeansum.s. Super slim and comfy lorem ipsum lorem jeansum.s. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+          
+          </div>
+          <div class="buttons">
+               <button id="cart"><i class="fas fa-shopping-cart"></i></button>
+               <p> <button>8920660469</button></p>
+               <address>
+               <p><a class="link" href="mailto:webmaster@example.com"><button>MAIL</button></p></a>
+            </address>
+
+          </div>
+        <!-- </div> -->
+    </div>
+        
+
+     <!-- Footer -->  
+     <div class="foot">
+        <div class="foot-box ">
+            <h4 class="heading">BUYS</h4>
+            <ul>
+                <li><a href="products.html">Books</a></li>
+                <li><a href="products.html">Clothes</a></li>
+                <li><a href="products.html">Electronics</a></li>
+                <li><a href="products.html">Furniture</a></li>
+                <li><a href="products.html">Vehicles</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-box">
+            <h4 class="heading">Team ALX</h4>
+            <ul>
+                <li><a href="#">ALX?</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-box">
+            <h4 class="heading">Contact US</h4>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                
+            </ul>
+        </div>
+
+        <div class="foot-box" id="fourth">
+                <h4 class="heading">Address</h4>
+                <p id="top">27th KM Milestone,</p>
+                    <p> Delhi - Hapur Bypass Road,</p>
+                    <p>PO Adhyatmik Nagar, Ghaziabad,</p>
+                    <p> Uttar Pradesh 201009</p>
+                
+            </div>
+
+           
+</div>
+
+<div class="end-foot">
+        <div class="end-logo">
+            <i class="far fa-copyright"></i>
+        </div>
+
+        <div class="txt">
+            <p>2018 www.alx.com.All Rights Reserved</p>
+        </div>
+            
+        
+    </div>
+   
+</body>
+
+</html>

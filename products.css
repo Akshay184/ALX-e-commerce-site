@@ -61,6 +61,7 @@ body{
 .card1{
     display:grid;
     grid-template-columns:repeat(4,1fr);
+    /* grid-column-gap: 20px; */
     grid-row-gap:50px ;
     /* grid-column-gap: 2px; */
     margin-top: 9%;
@@ -249,3 +250,18 @@ body{
     color: #88CCF1;
     
 }
+@media (max-width:940px)
+{
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:640px)
+{
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+  
