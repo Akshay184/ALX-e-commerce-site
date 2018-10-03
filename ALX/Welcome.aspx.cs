@@ -293,7 +293,7 @@ namespace ALX
 
         }
 
-        protected void btnSearch_Click(object sender, EventArgs e)
+        protected void btnSearch_Click(object sender, EventArgs e)    //...Search Button function
         {
            
                 string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
@@ -302,15 +302,42 @@ namespace ALX
 
                
                 if(txtSearch.Text != "")
-            {
-                DataSet ds = new DataSet();
-                SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%'", con);
-               
-                da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
-                da.Fill(ds);
-                rptProduct.DataSource = ds;
-                rptProduct.DataBind();
-               
+            {   if (DropDownListFilters.SelectedValue =="0")
+                {
+                    DataSet ds = new DataSet();
+                    SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%'", con);
+
+                    da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
+                    // da.SelectCommand.Parameters.AddWithValue("filter", DropDownListFilters.SelectedItem);
+                    //if(DropDownListFilters.SelectedItem == "High-t)
+                    da.Fill(ds);
+                    rptProduct.DataSource = ds;
+                    rptProduct.DataBind();
+                }
+               else if(DropDownListFilters.SelectedValue == "1")
+                {
+                    DataSet ds = new DataSet();
+                    SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%' Order BY price DESC", con);
+
+                    da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
+                    // da.SelectCommand.Parameters.AddWithValue("filter", DropDownListFilters.SelectedItem);
+                    //if(DropDownListFilters.SelectedItem == "High-t)
+                    da.Fill(ds);
+                    rptProduct.DataSource = ds;
+                    rptProduct.DataBind();
+                }
+            else
+                {
+                    DataSet ds = new DataSet();
+                    SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%' Order BY price ASC", con);
+
+                    da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
+                    // da.SelectCommand.Parameters.AddWithValue("filter", DropDownListFilters.SelectedItem);
+                    //if(DropDownListFilters.SelectedItem == "High-t)
+                    da.Fill(ds);
+                    rptProduct.DataSource = ds;
+                    rptProduct.DataBind();
+                }
             }
             else
             {
