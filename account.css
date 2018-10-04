@@ -6,15 +6,15 @@ body{
     display: 100% 100%;
     /* background-size: cover; */
 }
-.container .head{
+.sell .head{
     text-align: center;
     color: white;
     
 }
-.container{
-    margin-left: 50%;
-    margin-top: 29%;
-    margin-bottom: 5%;
+.sell{
+    margin-left: 37%;
+    margin-top: 7%;
+    margin-bottom: 8%;
     padding-top: -10px;
     
     width: 400px;
@@ -24,12 +24,12 @@ body{
     box-shadow: 0 15px 25px rgba(0,0,0,0.6) ;
 }
 
-.contain textarea{
+.sell textarea{
     width: 100%;
     height: 200px;
 }
 
-.container .contain input,textarea{
+.sell .inputbox input,textarea{
     
     padding: 10px 5px;
     width: 100%;
@@ -41,7 +41,7 @@ opacity: 0.85;
 outline: none;
 border-radius: 5px;
 }
-.container .contain select{
+.sell .inputbox select{
     padding: 10px 5px;
     width: 100%;
 margin-top: 5%;
@@ -52,7 +52,7 @@ opacity: 0.85;
 outline: none;
 border-radius: 5px;
 }
-.container .contain input:hover,textarea:hover,select:hover{
+.sell .inputbox input:hover,textarea:hover,select:hover{
     opacity: 1;
 }
 .up
@@ -68,7 +68,7 @@ border-radius: 5px;
     border: none;
     margin-top: 5%;
 }
-.container button{
+.sell button{
     margin-top: 2em;
     border-radius: 18px;
     color: white;
@@ -81,7 +81,7 @@ border-radius: 5px;
 
 }
 
-.container button:hover{
+.sell button:hover{
     background-color: white;
     color:#2274A5;
     transition: all 0.2s ease-in;
