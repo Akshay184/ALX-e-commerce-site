@@ -13,7 +13,7 @@ body{
 }
 .sell{
     margin-left: 37%;
-    margin-top: 7%;
+    margin-top: 8%;
     margin-bottom: 8%;
     padding-top: -10px;
     
@@ -55,7 +55,7 @@ border-radius: 5px;
 .sell .inputbox input:hover,textarea:hover,select:hover{
     opacity: 1;
 }
-.up
+
 .upload input{
     border: none;
     outline: none;
@@ -68,8 +68,8 @@ border-radius: 5px;
     border: none;
     margin-top: 5%;
 }
-.sell button{
-    margin-top: 2em;
+.sell input[type="submit"]{
+    margin-top: 10%;
     border-radius: 18px;
     color: white;
     background-color: #2274A5;
@@ -81,9 +81,9 @@ border-radius: 5px;
 
 }
 
-.sell button:hover{
+.sell [type="submit"]:hover{
     background-color: white;
-    color:#2274A5;
+    color: #2274A5;
+    border: 1px solid #2274A5; 
     transition: all 0.2s ease-in;
-    border: 1px solid #2274A5;
 }
