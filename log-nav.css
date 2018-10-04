@@ -53,6 +53,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     
+    
     /* padding: 0 20px; */
 }
 
@@ -61,8 +62,8 @@ body{
    position: absolute;
    background-color: #2274A5;
    padding: 10px 0 10px 10px;
-   right: -230%;
-   border-radius: 0 0 0 7px;
+   right: -210%;
+   border-radius: 0 0 7px 7px;
 }
 .menu ul li:hover ul {
     display: block;
@@ -71,11 +72,11 @@ body{
 .menu ul li ul li{
     
     width: 140px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 .menu ul li ul a {
     /* padding: 8px 14px; */
-    letter-spacing: 0.4px;
+    letter-spacing: 0.6px;
     font-size:16px;
 
  }
@@ -85,11 +86,7 @@ body{
     color: #C9F0FF;
     transition: all 0.2s ease-in;
 }
-.fa{
-    padding-right:10px;
 
-    
-}
 .line::before{
     content: '';
     display: block;
