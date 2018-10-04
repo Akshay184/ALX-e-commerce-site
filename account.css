@@ -8,12 +8,14 @@ body{
 }
 .container .head{
     text-align: center;
+    color: white;
     
 }
 .container{
     margin-left: 50%;
-    margin-top: 28%;
+    margin-top: 29%;
     margin-bottom: 5%;
+    padding-top: -10px;
     
     width: 400px;
     padding: 40px 80px;
@@ -22,7 +24,7 @@ body{
     box-shadow: 0 15px 25px rgba(0,0,0,0.6) ;
 }
 
-#area{
+.contain textarea{
     width: 100%;
     height: 200px;
 }
@@ -39,16 +41,28 @@ opacity: 0.85;
 outline: none;
 border-radius: 5px;
 }
-.container .contain input:hover,textarea:hover{
-    opacity: 1;
-    
-    
+.container .contain select{
+    padding: 10px 5px;
+    width: 100%;
+margin-top: 5%;
+font-size: 14px;
+/* border: 1px solid black; */
+border: none;
+opacity: 0.85;
+outline: none;
+border-radius: 5px;
 }
-.upload input,p{
-    color :white;
+.container .contain input:hover,textarea:hover,select:hover{
+    opacity: 1;
+}
+.up
+.upload input{
+    border: none;
+    outline: none;
 }
 .upload p{
     margin-top: 30px;
+    color: white
 }
 #img{
     border: none;

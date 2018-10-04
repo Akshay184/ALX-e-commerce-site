@@ -106,7 +106,7 @@ body{
         z-index: -1;
         background: #fff;
         opacity: 0;
-        transition: all 0.2s ease;
+        transition: all 0.2s ease-in;
         margin: 0;
     }
     .menu ul{
@@ -155,7 +155,7 @@ body{
         font-size: 14px;
         font-weight: 600;
         transform: translateX(-20px);
-        transition: all 0.2s ease;
+        transition: all 0.2s ease-in;
 
     }
     

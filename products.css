@@ -70,9 +70,10 @@ body{
 
 .card {
   box-shadow: 0 8px 15px 8px rgba(0, 0, 0, 0.2);
-  max-width: 280px;
+  width: 280px;
   margin:  auto;
   background-color: #2274A5;
+  
   
  
   
@@ -99,6 +100,11 @@ body{
 }
 .card a{
     text-decoration: none;
+}
+.fit{
+    /* width: 100%; */
+    width: 280px;
+    height: 19b  0px;
 }
 
 .card button {
