@@ -218,12 +218,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Profile.aspx" />
+    <Content Include="USER_PANEL\Account.aspx" />
     <Content Include="USER_PANEL\ALXHome.aspx" />
+    <Content Include="USER_PANEL\CSS\account.css" />
     <Content Include="USER_PANEL\CSS\login.css" />
     <Content Include="USER_PANEL\CSS\products.css" />
     <Content Include="USER_PANEL\CSS\sign-up.css" />
+    <Content Include="USER_PANEL\CSS\single-product.css" />
     <Content Include="USER_PANEL\CSS\ss.css" />
     <Content Include="USER_PANEL\CSS\style.css" />
+    <Content Include="USER_PANEL\Description.aspx" />
     <Content Include="USER_PANEL\images\01.jpeg" />
     <Content Include="USER_PANEL\images\17924-fashion-illustration-women-wallpapers.jpg" />
     <Content Include="USER_PANEL\images\49985694-home-electronics-sketch-icons-isolation-white-background-vector-horizontal-banner-electronics-vector.jpg" />
@@ -240,6 +244,8 @@
     <Content Include="USER_PANEL\images\interior-decor-background-colored-furniture-icons-cover.png" />
     <Content Include="USER_PANEL\images\login.jpg" />
     <Content Include="USER_PANEL\images\login1.png" />
+    <Content Include="USER_PANEL\images\product.jpg" />
+    <Content Include="USER_PANEL\images\product4.jpg" />
     <Content Include="USER_PANEL\images\vector_cartoon_children_clothes_hanger_drying_296255.jpg" />
     <Content Include="USER_PANEL\Login.aspx" />
     <Content Include="USER_PANEL\Products.aspx" />
@@ -520,12 +526,26 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="USER_PANEL\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
     <Compile Include="USER_PANEL\ALXHome.aspx.cs">
       <DependentUpon>ALXHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="USER_PANEL\ALXHome.aspx.designer.cs">
       <DependentUpon>ALXHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_PANEL\Description.aspx.cs">
+      <DependentUpon>Description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL\Description.aspx.designer.cs">
+      <DependentUpon>Description.aspx</DependentUpon>
     </Compile>
     <Compile Include="USER_PANEL\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

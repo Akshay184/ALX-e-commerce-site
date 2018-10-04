@@ -69,10 +69,12 @@ body{
 
 .card {
   box-shadow: 0 8px 15px 8px rgba(0, 0, 0, 0.2);
-  max-width: 280px;
+  width: 280px;
   margin:  auto;
   background-color: #2274A5;
+  width:280px;
   
+
  
   
   text-align: center;
@@ -100,7 +102,7 @@ body{
     text-decoration: none;
 }
 
-.card input {
+.card input{
   border: none;
   outline: 0;
   padding: 12px;
@@ -113,6 +115,10 @@ body{
   border-radius: 15px;
   font-family: monospace;
   
+}
+.fit{
+    width:280px;
+    height:190px;
 }
 
 .card input:hover {

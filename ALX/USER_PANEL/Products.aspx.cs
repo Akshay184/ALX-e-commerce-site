@@ -46,6 +46,12 @@ namespace ALX.USER_PANEL
 
             }
         }
+
+        protected void Description(object sender, CommandEventArgs e)
+        {
+            string Description = e.CommandArgument.ToString();
+            Response.Redirect("~/USER_PANEL/Description.aspx?ProductId="+Description);
+        }
         
         protected void Books(object sender, EventArgs e)
         {

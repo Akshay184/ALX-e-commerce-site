@@ -22,13 +22,13 @@
                 <div class="menu">
                     <ul>
 
-                          <li> <asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></li>
-                 <li>   <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></li>
-                   <li> <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></li>
-                   <li> <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></li>
-                  <li>  <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></li>
-                            <button class="logo-btn" onclick="openSearch()"><i class="fa fa-search"></i></button>
-                        </li>
+                          <li> <asp:LinkButton ID="lnkBooks2" runat="server"  CssClass="line" OnCommand="Books">BOOKS</asp:LinkButton></li>
+                 <li>   <asp:LinkButton ID="lnlClothes" runat="server" class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></li>
+                   <li> <asp:LinkButton ID="lnkElectronics" runat="server" class="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></li>
+                   <li> <asp:LinkButton ID="lnkFurniture" runat="server" class="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></li>
+                  <li>  <asp:LinkButton ID="lnkVehicles" runat="server" class="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></li>
+                           <li> <button class="logo-btn" onclick="openSearch()"><i class="fa fa-search"></i></button></li>
+                        
                         <li>
                             <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/USER_PANEL/Login.aspx"><b><i class="fas fa-user-circle"></i></b></asp:HyperLink></li>
 
@@ -158,9 +158,9 @@
                     <h4 class="heading">Team ALX</h4>
                     <ul>
                         <li>
-                            <asp:HyperLink ID="hyl1" runat="server" class="line">ALX?</asp:HyperLink></li>
+                            <asp:HyperLink ID="hyl1" runat="server" >ALX?</asp:HyperLink></li>
                         <li>
-                            <asp:HyperLink ID="hylOurTeam" runat="server" class="line">OurTeam</asp:HyperLink></li>
+                            <asp:HyperLink ID="hylOurTeam" runat="server" >OurTeam</asp:HyperLink></li>
                     </ul>
                 </div>
 
