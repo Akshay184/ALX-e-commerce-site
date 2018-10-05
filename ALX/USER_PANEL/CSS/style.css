@@ -206,6 +206,7 @@ body{
     left: 0;
     animation: slider 15s infinite;
     background-size: 100% 100%;
+    top: 0px;
 }
 
 @keyframes slider{

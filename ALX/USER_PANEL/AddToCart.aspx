@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="ALX.USER_PANEL.Products" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddToCart.aspx.cs" Inherits="ALX.USER_PANEL.AddToCart" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1" /> 
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1" /> 
     
     <link href="CSS/log-nav.css" rel="stylesheet" />
     <link href="CSS/style.css" rel="stylesheet" />
@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous" />
     <title>products</title>
-</head>
-<body>
-     <script>
+
+    <script>
         function openSearch() {
             document.getElementById("myOverlay").style.display = "block";
         }
@@ -23,9 +22,13 @@
             document.getElementById("myOverlay").style.display = "none";
         }
     </script>
+</head>
+<body>
     <form id="form1" runat="server">
     <div>
-        <!-- navigation -->
+
+
+          <!-- navigation -->
     <div class="navigation">
         <asp:HyperLink ID="HypHomePage" runat="server" NavigateUrl="~/USER_PANEL/ALXHome.aspx">
             <img class="logo" src="images/alx-logo.png">
@@ -86,7 +89,7 @@
                     <h1> <asp:Label ID="lblProducuNmae" runat="server" Text='<%# Eval("ProductName") %>'></asp:Label></h1>
                     <p> <asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label></p>
 
-                    <p class="button"> <asp:Button ID="btnAddToCart" runat="server"  OnCommand="AddToCart" CommandArgument='<%# Eval("ProductId") %>' Text="Add to Cart" />     </p>
+                    <p class="button"> <asp:Button ID="btnAddToCart" runat="server"  OnCommand="AddToCart1" CommandArgument='<%# Eval("ProductId") %>' Text="Add to Cart" />     </p>
                      
                  </asp:LinkButton>
             </div>
@@ -184,6 +187,9 @@
         </div>
     
     
+
+
+
     
     </div>
     </form>

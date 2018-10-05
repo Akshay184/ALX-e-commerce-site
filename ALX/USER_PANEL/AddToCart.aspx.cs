@@ -11,22 +11,14 @@ using System.Web.UI.HtmlControls;
 
 namespace ALX.USER_PANEL
 {
-    public partial class Description : System.Web.UI.Page
+    public partial class AddToCart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
-            ds = GetData();
-            lblDescription.Text = ds.Tables[0].Rows[0]["Description"].ToString();
-            lblProductName.Text = ds.Tables[0].Rows[0]["ProductName"].ToString();
-            lblPrice.Text = ds.Tables[0].Rows[0]["Price"].ToString();
-            imgPic.ImageUrl = ds.Tables[0].Rows[0]["images"].ToString();
-            btnAddToCart.CommandArgument = ds.Tables[0].Rows[0]["ProductId"].ToString();
-            btnContactNumber.Text = ds.Tables[0].Rows[0]["ContactNumber"].ToString();
-            btnEmail.Text = ds.Tables[0].Rows[0]["Email"].ToString();
-
+            GetData();
             if(Session["UserId"] != null)
             {
+
 
                 HtmlGenericControl li1 = new HtmlGenericControl("li");
                 ulLogin.Controls.Add(li1);
@@ -56,12 +48,53 @@ namespace ALX.USER_PANEL
                 link.ID = "lnkLogout";
                 link.Click += new System.EventHandler(lnkLogout_Click);
                 li4.Controls.Add(link);
+
+                try
+                {
+
+
+                    String cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+                    SqlConnection con = new SqlConnection(cs);
+                    string SearchText = Request.QueryString["Text"].ToString();
+                    DataSet ds = new DataSet();
+                    SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%' Order BY price ASC", con);
+
+                    da.SelectCommand.Parameters.AddWithValue("ProductName", SearchText);
+                    da.Fill(ds);
+                    rptProducts.DataSource = ds;
+                    rptProducts.DataBind();
+                }
+                catch
+                {
+
+                }
             }
         }
 
         protected void lnkLogout_Click(object sender, EventArgs e)
         {
             Session["UserId"] = null;
+        }
+
+        protected void AddToCart1(object sender, CommandEventArgs e)
+        {
+            string CurrentProductId = e.CommandArgument.ToString();
+            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                SqlCommand cmd = new SqlCommand("insert into tblAddToCart values(@ProductID,@UserID)", con);
+                cmd.Parameters.AddWithValue("@ProductID", CurrentProductId);
+                cmd.Parameters.AddWithValue("@UserID", Session["UserId"]);
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+            }
+        }
+
+        protected void Description(object sender, CommandEventArgs e)
+        {
+            string Description = e.CommandArgument.ToString();
+            Response.Redirect("~/USER_PANEL/Description.aspx?ProductId=" + Description);
         }
 
         protected void Books(object sender, EventArgs e)
@@ -89,39 +122,6 @@ namespace ALX.USER_PANEL
             Response.Redirect("~/USER_PANEL/Products.aspx?Category=Vehicles");
         }
 
-
-        protected void AddToCart(object sender, CommandEventArgs e)
-        {
-            string CurrentProductId = e.CommandArgument.ToString();
-            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(cs))
-            {
-                SqlCommand cmd = new SqlCommand("insert into tblAddToCart values(@ProductID,@UserID)", con);
-                cmd.Parameters.AddWithValue("@ProductID", CurrentProductId);
-                cmd.Parameters.AddWithValue("@UserID", Session["UserId"]);
-                con.Open();
-                cmd.ExecuteNonQuery();
-
-            }
-        }
-
-        protected DataSet GetData()
-        {
-            string ProductId =   Request.QueryString["ProductId"].ToString();
-            //string  ProductId = "8";
-            //string Category = Request.QueryString["Category"].ToString();
-            string query = "select* from tblProducts inner join tblUserInformation on tblProducts.UserId = tblUserInformation.UserID where tblProducts.ProductId = @ProductId";
-            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            SqlConnection con = new SqlConnection(cs);
-
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            da.SelectCommand.Parameters.AddWithValue("@ProductId", ProductId);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-           
-            return ds;
-        }
-
         protected void btnSearch1_Click(object sender, EventArgs e)    //...Search Button function
         {
 
@@ -133,6 +133,21 @@ namespace ALX.USER_PANEL
             {
                 Response.Redirect("~/USER_PANEL/Products.aspx?Text=" + txtSearch.Text);
             }
+        }
+
+        protected DataSet GetData()
+        {
+            //string Category = Request.QueryString["Category"].ToString();
+            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+            SqlConnection con = new SqlConnection(cs);
+            string query = "select * from tblAddToCart inner join tblProducts on tblAddToCart.ProductId = tblProducts.ProductId   where  tblAddToCart.UserId = @UserId ";
+                                          SqlDataAdapter da = new SqlDataAdapter(query, con);
+            da.SelectCommand.Parameters.AddWithValue("@UserId", Session["UserId"]);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            rptProducts.DataSource = ds;
+            rptProducts.DataBind();
+            return ds;
         }
 
     }

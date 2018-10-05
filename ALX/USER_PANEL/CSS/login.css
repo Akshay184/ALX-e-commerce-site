@@ -2,8 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(../alx/images/login.jpg);
-    background-size: cover;
+    background: url(../images/login.jpg);
+    /*background-size: cover;*/
     
 }
 
@@ -86,9 +86,8 @@ body{
     transition: 0.5s;
 }
 
-.box .inputbox .input:focus ~ span,
-   
-.box .inputbox .input:valid ~ span
+.box .inputbox input:focus ~span,
+.box .inputbox input:valid>span
 {
     top: -18px;
     left: 0;

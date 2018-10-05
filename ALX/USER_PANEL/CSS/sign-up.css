@@ -88,7 +88,7 @@ body{
 }
 
 .box .inputbox input:focus ~ span,
-.box .inputbox input:valid ~ span
+.box .inputbox input:valid>span
 {
     top: -18px;
     left: 0;

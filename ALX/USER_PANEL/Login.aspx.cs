@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Web.UI.HtmlControls;
 
 namespace ALX.USER_PANEL
 {
@@ -13,10 +14,44 @@ namespace ALX.USER_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //string message =  Request.QueryString["EmailVerification"].ToString();
-            //lblEmail.Text = message;
+            if(Session["UserId"] != null)
+            {
+                    HtmlGenericControl li1 = new HtmlGenericControl("li");
+                ulLogin.Controls.Add(li1);
+                HtmlGenericControl anchor1 = new HtmlGenericControl("a");
+                anchor1.Attributes.Add("href", "AddProduct.aspx");
+                anchor1.InnerText = "Sell";
+                li1.Controls.Add(anchor1);
+
+                HtmlGenericControl li2 = new HtmlGenericControl("li");
+                ulLogin.Controls.Add(li2);
+                HtmlGenericControl anchor2 = new HtmlGenericControl("a");
+                anchor2.Attributes.Add("href", "#");
+                anchor2.InnerText = "Profile";
+                li2.Controls.Add(anchor2);
+
+                HtmlGenericControl li3 = new HtmlGenericControl("li");
+                ulLogin.Controls.Add(li3);
+                HtmlGenericControl anchor3 = new HtmlGenericControl("a");
+                anchor3.Attributes.Add("href", "Products.aspx");
+                anchor3.InnerText = "Account";
+                li3.Controls.Add(anchor3);
+
+                HtmlGenericControl li4 = new HtmlGenericControl("li");
+                ulLogin.Controls.Add(li4);
+                LinkButton link = new LinkButton();
+                link.Text = "Logout";
+                link.ID = "lnkLogout";
+                link.Click += new System.EventHandler(lnkLogout_Click);
+                li4.Controls.Add(link);
+
+            }
         }
 
+        protected void lnkLogout_Click(object sender, EventArgs e)
+        {
+            Session["UserId"] = null;
+        }
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             Session["ID"] = 0;
@@ -71,5 +106,18 @@ namespace ALX.USER_PANEL
         {
             Response.Redirect("~/USER_PANEL/Products.aspx?Category=Vehicles");
         }
+        protected void btnSearch1_Click(object sender, EventArgs e)    //...Search Button function
+        {
+
+
+
+
+
+            if (txtSearch.Text != "")
+            {
+                Response.Redirect("~/USER_PANEL/Products.aspx?Text=" + txtSearch.Text);
+            }
+        }
+
     }
 }

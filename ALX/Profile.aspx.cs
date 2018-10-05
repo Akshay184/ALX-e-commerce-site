@@ -8,6 +8,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.IO;
+using System.Web.UI.HtmlControls;
+
 namespace ALX
 {
     public partial class Profile : System.Web.UI.Page
@@ -23,6 +25,7 @@ namespace ALX
                 GridView1.DataSource = cmd.ExecuteReader();
                 GridView1.DataBind();
             }
+           
         }
 
         protected void Button1_Click(object sender, EventArgs e)

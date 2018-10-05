@@ -7,24 +7,15 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.IO;
 using System.Web.UI.HtmlControls;
 
 namespace ALX.USER_PANEL
 {
-    public partial class Description : System.Web.UI.Page
+    public partial class AddProduct : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
-            ds = GetData();
-            lblDescription.Text = ds.Tables[0].Rows[0]["Description"].ToString();
-            lblProductName.Text = ds.Tables[0].Rows[0]["ProductName"].ToString();
-            lblPrice.Text = ds.Tables[0].Rows[0]["Price"].ToString();
-            imgPic.ImageUrl = ds.Tables[0].Rows[0]["images"].ToString();
-            btnAddToCart.CommandArgument = ds.Tables[0].Rows[0]["ProductId"].ToString();
-            btnContactNumber.Text = ds.Tables[0].Rows[0]["ContactNumber"].ToString();
-            btnEmail.Text = ds.Tables[0].Rows[0]["Email"].ToString();
-
             if(Session["UserId"] != null)
             {
 
@@ -63,7 +54,6 @@ namespace ALX.USER_PANEL
         {
             Session["UserId"] = null;
         }
-
         protected void Books(object sender, EventArgs e)
         {
             Response.Redirect("~/USER_PANEL/Products.aspx?Category=Books");
@@ -89,37 +79,28 @@ namespace ALX.USER_PANEL
             Response.Redirect("~/USER_PANEL/Products.aspx?Category=Vehicles");
         }
 
-
-        protected void AddToCart(object sender, CommandEventArgs e)
+        protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            string CurrentProductId = e.CommandArgument.ToString();
-            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+            String cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("insert into tblAddToCart values(@ProductID,@UserID)", con);
-                cmd.Parameters.AddWithValue("@ProductID", CurrentProductId);
-                cmd.Parameters.AddWithValue("@UserID", Session["UserId"]);
+                HttpPostedFile postedFile = fileuploadProducts.PostedFile;
+                string fileName = Path.GetFileName(postedFile.FileName);
+                fileuploadProducts.SaveAs(Server.MapPath("~/ImagesUpload/" + fileName));
+                SqlCommand cmd = new SqlCommand("insert into tblProducts values(@ID,@price,@Category,@ProductName,@Description,@ImageName)", con);
+                cmd.Parameters.AddWithValue("@ID", Session["UserId"]);
+                cmd.Parameters.AddWithValue("@Price", txtPrice.Text);
+                cmd.Parameters.AddWithValue("@Category", DropDownList1.SelectedItem.Text);
+                cmd.Parameters.AddWithValue("@ProductName", txtTitle.Text);
+                cmd.Parameters.AddWithValue("@ImageName", "~/ImagesUpload/" + fileName);
+                cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
                 con.Open();
                 cmd.ExecuteNonQuery();
+                txtTitle.Text = "";
+                txtDescription.Text = "";
+                //Response.Write("Uploaded");
 
             }
-        }
-
-        protected DataSet GetData()
-        {
-            string ProductId =   Request.QueryString["ProductId"].ToString();
-            //string  ProductId = "8";
-            //string Category = Request.QueryString["Category"].ToString();
-            string query = "select* from tblProducts inner join tblUserInformation on tblProducts.UserId = tblUserInformation.UserID where tblProducts.ProductId = @ProductId";
-            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            SqlConnection con = new SqlConnection(cs);
-
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            da.SelectCommand.Parameters.AddWithValue("@ProductId", ProductId);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-           
-            return ds;
         }
 
         protected void btnSearch1_Click(object sender, EventArgs e)    //...Search Button function

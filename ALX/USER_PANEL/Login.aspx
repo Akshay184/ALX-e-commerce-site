@@ -6,6 +6,7 @@
 <head runat="server">
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1" />
     <link href="CSS/login.css" rel="stylesheet" />
+    <link href="CSS/log-nav.css" rel="stylesheet" />
     <link href="CSS/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous" />
@@ -44,16 +45,32 @@
 
                         <%--<asp:Button ID="btnSearch" runat="server"  OnClick="openSearch()" />--%>
                         <li>
-                            <button class="logo-btn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                            <button class="logo-btn" onclick="openSearch();return false;"><i class="fa fa-search"></i></button>
                         </li>
 
 
                         <li>
-                            <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/USER_PANEL/Login.aspx"><b><i class="fas fa-user-circle"></i></b></asp:HyperLink></li>
-
+                            <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/USER_PANEL/Login.aspx"><b><i class="fas fa-user-circle"></i></b></asp:HyperLink>
+                               <ul id="ulLogin" runat="server"  class="dropdown">
+                        <p></p><p></p><p></p>      
+                    </ul>
+                        </li>
+                         <li> <asp:HyperLink ID="hylAddToCart" runat="server" NavigateUrl="~/USER_PANEL/AddToCart.aspx"><i class="fa fa-shopping-cart"></i> </asp:HyperLink></li>
 
                     </ul>
                 </div>
+
+
+                  <div id="myOverlay" class="overlay ">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content animate">
+
+                     <asp:TextBox ID="txtSearch" runat="server"  placeholder="Search.."></asp:TextBox>
+                   <asp:Button ID="btnSearch1" runat="server" OnClick="btnSearch1_Click" Text="Search" />
+
+                </div>
+            </div>
+
             </div>
             <h2>
                 <asp:Label ID="lblEmail" runat="server"></asp:Label>

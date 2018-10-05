@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Web.UI.HtmlControls;
 
 namespace ALX.USER_PANEL
 {
@@ -25,12 +26,67 @@ namespace ALX.USER_PANEL
                     rptProducts.DataSource = GetData();
                     rptProducts.DataBind();
                 }
-              
+                if (Session["UserId"] != null)
+                {
+
+                    HtmlGenericControl li1 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li1);
+                    HtmlGenericControl anchor1 = new HtmlGenericControl("a");
+                    anchor1.Attributes.Add("href", "AddProduct.aspx");
+                    anchor1.InnerText = "Sell";
+                    li1.Controls.Add(anchor1);
+
+                    HtmlGenericControl li2 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li2);
+                    HtmlGenericControl anchor2 = new HtmlGenericControl("a");
+                    anchor2.Attributes.Add("href", "#");
+                    anchor2.InnerText = "Profile";
+                    li2.Controls.Add(anchor2);
+
+                    HtmlGenericControl li3 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li3);
+                    HtmlGenericControl anchor3 = new HtmlGenericControl("a");
+                    anchor3.Attributes.Add("href", "Products.aspx");
+                    anchor3.InnerText = "Account";
+                    li3.Controls.Add(anchor3);
+
+                    HtmlGenericControl li4 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li4);
+                    LinkButton link = new LinkButton();
+                    link.Text = "Logout";
+                    link.ID = "lnkLogout";
+                    link.Click += new System.EventHandler(lnkLogout_Click);
+                    li4.Controls.Add(link);
+
+                    try
+                    {
+
+
+                        String cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+                        SqlConnection con = new SqlConnection(cs);
+                        string SearchText = Request.QueryString["Text"].ToString();
+                        DataSet ds = new DataSet();
+                        SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%' Order BY price ASC", con);
+
+                        da.SelectCommand.Parameters.AddWithValue("ProductName", SearchText);
+                        da.Fill(ds);
+                        rptProducts.DataSource = ds;
+                        rptProducts.DataBind();
+                    }
+                    catch
+                    {
+
+                    }
+                }
+
             }
 
         }
 
-      
+        protected void lnkLogout_Click(object sender, EventArgs e)
+        {
+            Session["UserId"] = null;
+        }
 
         protected void AddToCart(object sender, CommandEventArgs e)
         {
@@ -97,15 +153,60 @@ namespace ALX.USER_PANEL
             {
                 string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
                 SqlConnection con = new SqlConnection(cs);
-                SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts ", con);              
+                SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts ", con);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
                 rptProducts.DataSource = ds;
                 rptProducts.DataBind();
                 return ds;
             }
-           
+
         }
+        protected void btnSearch1_Click(object sender, EventArgs e)    //...Search Button function
+        {
+
+
+
+
+
+            if (txtSearch.Text != "")
+            {
+                Response.Redirect("~/USER_PANEL/Products.aspx?Text=" + txtSearch.Text);
+            }
+        }
+
+
+
+        //if (DropDownListFilters.SelectedValue == "0")
+        //{
+        //    DataSet ds = new DataSet();
+        //    SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%'", con);
+
+        //    da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
+        //    da.Fill(ds);
+        //    rptProduct.DataSource = ds;
+        //    rptProduct.DataBind();
+        //}
+        //else if (DropDownListFilters.SelectedValue == "1")
+        //{
+        //    DataSet ds = new DataSet();
+        //    SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%' Order BY price DESC", con);
+
+        //    da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
+        //    da.Fill(ds);
+        //    rptProduct.DataSource = ds;
+        //    rptProduct.DataBind();
+        //}
+        //else
+        //{
+
+
+        //}
+
+        //else
+        //{
+
+        //}
     }
 
 
