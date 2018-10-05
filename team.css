@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/office.jpg);
+    display: 100% 100%;
+}
+.card1{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap:40px;
+    margin-top: 7%;
+    }
+.card {
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #C9F0FF;
+
+  -webkit-transition: 0.3s ease-in-out, 
+  -webkit-transform 0.3s ease-in-out;
+  -moz-transition:  0.3s ease-in-out, 
+  -moz-transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, 
+  transform 0.3s ease-in-out, ;
+}
+.card:hover{
+    
+    transform: scale(1.05); 
+
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+.card p{
+    color:#2274A5;
+}
+.card h1{
+    color:#2274A5;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #2274A5;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color:#2274A5 ;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
