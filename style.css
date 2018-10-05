@@ -389,6 +389,7 @@ body{
         display: none;
         
     }
+    
 }
     @media (max-width: 768px)
     {
@@ -523,7 +524,13 @@ body{
          font-size: 0;
      }
     }
-
+@media (max-width:500px)
+{
+    .overlay input[type=text]{
+        width: 50%;
+        font-size: 30px;
+    }
+}
 
 
 

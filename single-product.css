@@ -18,7 +18,7 @@ body{
     
     }
     .picture{
-      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+     
       width: 500px;
       height: 360px;
       
@@ -190,8 +190,15 @@ body{
         display: grid;
         grid-template-columns:repeat(2,1fr); 
     }
+    .picture{
+     
+        
+        height: 300px;
+        margin-top: 20%;
+     }
+
 }
-@media (max-width:640px)
+@media (max-width:607px)
 {
     .foot{
         display: grid;
@@ -199,6 +206,18 @@ body{
     }
     .txt{
         font-size:0.5em;
+ }
+ .picture{
+     
+    width: 300px;
+    height: 160px;
+    margin-top: 25%;
+ }
+ .text{
+     margin-left: 10%;
+ }
+ .bottons{
+     margin-left: 0%;
  }
 .end-logo{
   font-size: 0;
@@ -208,4 +227,9 @@ body{
     #cart{
         margin-top: 1%;
     }
+}
+@media (max-width:480px){
+  .picture{
+      margin-top: 75%;
+  }
 }
