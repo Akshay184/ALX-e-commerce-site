@@ -4,11 +4,11 @@
 <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="edit-profile.css">
+    <link rel="stylesheet" href="sell.css">
     <link rel="stylesheet" href="log-nav.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <title>Edit-profile</title>
+    <title>Sell Product</title>
 </head>
 
 <body>
@@ -44,7 +44,8 @@
                        <li><a href="alx.html ">Log-Out</a></li>
                     </ul>
                 </li>  
-                <li><a href="products.html"><i class="fa fa-shopping-cart"></i></a></li>    
+                <li><a href="products.html"><i class="fa fa-shopping-cart"></i></a></li> 
+             
 
             </ul>
         </div>
@@ -60,45 +61,43 @@
         </div>
     </div>
 
-    <!-- Edit-Profile -->
-    
-          <div id="pic" class="sell">
-                <img src="images/profile-picture.jpg" alt="Avatar">
-          </div>
-
-          <div class="sell">
+    <!-- upload form -->
+    <div class="sell">
        
 
-                    <form>
-                            <div class="head">
-                                    <h2>Edit Profile</h2>
-                                </div>
-                        <div class="inputbox">
-                                <input type="text" placeholder="Name" name="" required="">
-                            </div>
-                                <div class="inputbox">
-                                        <input type="text" placeholder="Username" name="" required="">
-                                        
-                            </div>
-                            <div class="inputbox">
-                                    <input type="mail" placeholder="Mail" name="" required="">
-                                    
-                        </div>
-                            <div class="inputbox">
-                                    <input type="number" placeholder="Contact No." name="" required="">
-                                </div>
-                        
-                                         
+        <form>
+                <div class="head">
+                        <h2>SELL IT!</h2>
+                    </div>
+            <div class="inputbox">
+                    <input type="text" placeholder="Title" name="" required="">
+                </div>
+                    <div class="contain">
+                     <textarea  name="message" placeholder="Description...."></textarea>
+                            
+                </div>
+                <div class="inputbox">
+                        <input type="number" placeholder="Price" name="" required="">
+                    </div>
+                <div class="inputbox">
+                        <select name="products">
+                                <option value="books">Books</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="clothes">Clothes</option>
+                                <option value="vehicles">Vehicles</option>
+                                <option value="electronics">Electronics</option>
+                              </select>
                              
-                                <div class="upload">
-                                <p>Change image:</p> 
-                                <input  type="file" name="img">
-                                </div>
-                                <input type="submit" name="" value="Edit">
-                    </form>
-                           </div> 
-    
-
+                               
+                               
+                    </div> 
+                    <div class="upload">
+                    <p>Upload image:</p> 
+                    <input  type="file" name="img">
+                    </div>
+                    <input type="submit" name="" value="Submit">
+        </form>
+               </div>
 
      <!-- Footer -->  
      <div class="foot">
