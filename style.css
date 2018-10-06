@@ -56,9 +56,9 @@ body{
     /* padding: 0 20px; */
 }
 
-.menu ul li a:hover{
+.menu ul li:hover a{
     color: #C9F0FF;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease;
 }
 .line::before{
     content: '';
@@ -72,18 +72,18 @@ body{
     
     top: 60px;
     width: 0%;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease;
      
  }
 .line:hover::before{
     width: 100%;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease;
     
 }
 
 .logo-btn{
     background: transparent;
-    outline: none;
+    outline-style: none;
     border: none;
     font-size: 16px;
     color: #EAFFFD
@@ -254,7 +254,7 @@ body{
     /* top: 150%;
     left: 40%; */
     /* padding-bottom: 50px; */
-    padding-left: 10px;
+    padding-left: 10px;    
     margin-left: 50%;
     margin-top: 30%;
     transform: translate(-50%,-50%);
