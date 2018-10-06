@@ -97,7 +97,8 @@
                      <asp:Image ID="ImgProducts" runat="server" ImageUrl='<%# Eval("images") %>'  class="fit" />
                     <h1> <asp:Label ID="lblProducuNmae" runat="server" Text='<%# Eval("ProductName") %>'></asp:Label></h1>
                     <p> <asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label></p>
-
+                 <%--<i class="fa fa-shopping-cart"></i>--%>
+                 
                     <%--<p class="button"> <asp:Button ID="btnAddToCart" runat="server"  OnCommand="AddToCart1" CommandArgument='<%# Eval("ProductId") %>' Text="Add to Cart" />     </p>--%>
                  </asp:LinkButton>
             </div>

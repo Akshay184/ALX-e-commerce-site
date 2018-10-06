@@ -101,6 +101,10 @@ body{
 .card a{
     text-decoration: none;
 }
+.card .fa{
+    font-size:22px;
+    color: #88CCF1;
+}
 .fit{
     /* width: 100%; */
     width: 280px;

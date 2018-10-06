@@ -16,7 +16,7 @@ namespace ALX.USER_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblFile.Text = "";
           
 
             if (Session["UserId"] == null)
@@ -84,10 +84,10 @@ namespace ALX.USER_PANEL
         protected void lnkLogout_Click(object sender, EventArgs e)
         {
             Session["UserId"] = null;
-            ulLogin.Controls.RemoveAt(0);
             ulLogin.Controls.RemoveAt(1);
-            ulLogin.Controls.RemoveAt(2);
-            ulLogin.Controls.RemoveAt(3);
+            ulLogin.Controls.RemoveAt(1);
+            ulLogin.Controls.RemoveAt(1);
+            ulLogin.Controls.RemoveAt(1);
         }
 
 

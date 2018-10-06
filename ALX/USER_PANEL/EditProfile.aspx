@@ -99,11 +99,12 @@
                             </div>
                                 <div class="inputbox">
                               <asp:TextBox ID="txtUserName" runat="server"  placeholder="UserName" ReadOnly="true"></asp:TextBox>
-                                        
+                                        <p></p>
+                                     <p></p>
                             </div>
                             <div class="inputbox">
                            <asp:TextBox ID="txtMail" runat="server"  placeholder="Mail" ReadOnly="true"></asp:TextBox>
-                                    
+                                     <p></p> <p></p>
                         </div>
                             <div class="inputbox">
                          <asp:TextBox ID="txtContactNumber" runat="server"  placeholder="Contact Number"></asp:TextBox>
@@ -114,7 +115,7 @@
                                          
                              
                                 <div class="upload">
-                                <%--<p>Change image:</p>--%>
+                                <p>Change image:</p>
                                  <asp:fileupload id="ProfileImage" runat="server" />
                                     <asp:Label ID="lblFile" runat="server"></asp:Label>
                                 <%--<input  type="file" name="img">--%>
