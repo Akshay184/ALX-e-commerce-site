@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="keywords" content="freelancer, coder, job, gig, gigs, service online, programmer, designer, developer, advertiser, expert, online hire, hire coder, code job, design job, online job, freelancers , ifreelancer, i want to be freelancer, i am freelancer, how to become freelancer">
+<script src="/cdn-cgi/apps/head/9Qu5j0YVSG6noxW8gBz5ECPz4hw.js"></script><link rel="shortcut icon" href="https://www.codercv.com/images/tag.png" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic' type='text/css' media='all' />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amaranth:400,700' type='text/css' media='all' />
+<meta name="google-site-verification" content="s_J876OIyYAdhXBtY-rq3ozRqazZEXehjN9g9Ehhk14" />
+<link media="all" type="text/css" rel="stylesheet" href="https://www.codercv.com/css/style.css">
+<link media="all" type="text/css" rel="stylesheet" href="https://www.codercv.com/css/font-awesome.min.css">
+<meta name="csrf-token" content="glM40VQR40v6IiiSKFUef5rwKouHWGVb2jQiqWFN" />
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.codercv.com/opensearch.xml" title="CoderCV - Freelancer Marketplace - Hire Freelancer Gigs & Services" />
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.codercv.com",
+            "logo": "https://www.codercv.com/images/logo.png",
+            "name": "CoderCV - Freelancer Marketplace - Hire Freelancer Gigs & Services",
+            "description": "Coder CV - Hire Freelancer Coder, Freelance Designer, Freelance Programmer, SEO SEM Freelancer & other freelancers Freelance Web Developer, Freelance Wordpress Developer at Freelancer Marketplace.",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.codercv.com/job?&q={tag}&tag={tag}&utm_source=google&utm_medium=search&utm_campaign=search_organic",
+                "query-input": "required name=tag"
+            },
+            "sameAs": ["https://www.facebook.com/ifreelancers",
+             "https://twitter.com/ReDoctype"]
+        }
+    </script>
+<style>
+	.chosen-container{position:relative;vertical-align:middle;font-size:14px;zoom:1;display:inline-block;-webkit-user-select:none;-moz-user-select:none;user-select:none;}.chosen-container *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}.chosen-container .chosen-drop{position:absolute;top:95%;left:-9999px;z-index:1010;width:100%;border:1px solid #ccc;border-radius:0 0 4px 4px;background:#fff;}.chosen-container.chosen-with-drop .chosen-drop{left:0;}.chosen-container a{cursor:pointer;}.chosen-container-single{width:100%!important;}.chosen-container-single .chosen-single{display:block;overflow:hidden;height:48px;-webkit-border-radius:3px;background-color:#fff;color:#444;text-decoration:none;white-space:nowrap;line-height:40px;padding:2px 0;}.chosen-container-single .chosen-default{color:#999;}.chosen-container-single .chosen-single span{display:block;overflow:hidden;margin-right:26px;text-overflow:ellipsis;white-space:nowrap;}.chosen-container-single .chosen-single-with-deselect span{margin-right:38px;}.chosen-container-single .chosen-single abbr{position:absolute;top:6px;right:26px;display:block;width:12px;height:12px;background:url(../images/chosen-sprite.png) -42px 1px no-repeat;font-size:1px;}.chosen-container-single .chosen-single div{position:absolute;top:2px;right:0;display:block;width:18px;height:100%;}.chosen-container-single .chosen-single div b{display:block;width:100%;height:100%;background:url(../images/chosen-sprite.png) no-repeat 0 12px;}.chosen-container-single .chosen-search{position:relative;z-index:1010;border-bottom:1px solid #e5e5e5;white-space:nowrap;margin:0;padding:3px 6px 3px 10px;}.chosen-container-single .chosen-search input[type="text"]{width:100%;height:auto;outline:0;border:none;background:url(../images/chosen-sprite.png) no-repeat 98% -20px;font-size:1em;font-family:sans-serif;line-height:normal;border-radius:0;margin:1px 0;padding:5px 20px 5px 10px;}.chosen-container-single .chosen-drop{margin-left:-1px;border-radius:0 0 4px 4px;background-clip:padding-box;}.chosen-container-single.chosen-container-single-nosearch .chosen-search{position:absolute;left:-9999px;}.chosen-container .chosen-results{color:#444;position:relative;overflow-x:hidden;overflow-y:auto;max-height:240px;-webkit-overflow-scrolling:touch;background:none!important;margin:4px;padding:0 0 0 4px;}.chosen-container .chosen-results li{display:none;list-style:none;line-height:15px;word-wrap:break-word;-webkit-touch-callout:none;border-bottom:none;margin:0;padding:5px 12px;}.chosen-container .chosen-results li.active-result{display:list-item;cursor:pointer;}.chosen-container .chosen-results li.highlighted{background-color:#3875d7;background-image:linear-gradient(#3875d7,#2a62bc);color:#fff;}.chosen-container .chosen-results li.no-results{color:#777;display:list-item;background:#f4f4f4;}.chosen-container .chosen-results li.group-result{display:list-item;font-weight:700;cursor:default;}.chosen-container .chosen-results li.group-option{padding-left:15px;}.chosen-container .chosen-results li em{font-style:normal;text-decoration:underline;}.chosen-container-multi .chosen-choices{position:relative;overflow:hidden;width:100%;border:1px solid #aaa;background-color:#fff;background-image:linear-gradient(#eeeeee,#ffffff);cursor:text;margin:0;padding:0 5px;}.chosen-container-multi .chosen-choices li{float:left;list-style:none;}.chosen-container-multi .chosen-choices li.search-field{white-space:nowrap;margin:0;padding:0;}.chosen-container-multi .chosen-choices li.search-field input[type="text"]{height:48px;outline:0;border:0!important;background:transparent!important;box-shadow:none;color:#999;font-size:100%;font-family:sans-serif;line-height:normal;border-radius:0;margin:0;padding:0;}.chosen-container-multi .chosen-choices li.search-choice{position:relative;border:1px solid #aaa;max-width:100%;border-radius:3px;background-color:#eee;background-image:linear-gradient(#f4f4f4,#f0f0f0,#e8e8e8,#eeeeee);background-size:100% 19px;background-repeat:repeat-x;background-clip:padding-box;box-shadow:0 0 2px #FFF inset,0 1px 0 rgba(0,0,0,0.05);color:#333;line-height:13px;cursor:default;margin:3px 5px 3px 0;padding:3px 20px 3px 5px;}.chosen-container-multi .chosen-choices li.search-choice span{word-wrap:break-word;}.chosen-container-multi .chosen-choices li.search-choice .search-choice-close{position:absolute;top:4px;right:3px;display:block;width:12px;height:12px;background:url(../images/chosen-sprite.png) -42px 1px no-repeat;font-size:1px;}.chosen-container-multi .chosen-choices li.search-choice-disabled{padding-right:5px;border:1px solid #ccc;background-color:#e4e4e4;background-image:linear-gradient(top,#f4f4f4,#f0f0f0,#e8e8e8,#eeeeee);color:#666;}.chosen-container-multi .chosen-choices li.search-choice-focus{background:#d4d4d4;}.chosen-container-multi .chosen-results{margin:5px;padding:0;}.chosen-container-active.chosen-with-drop .chosen-single{border:1px solid #fff;-moz-border-radius-bottomright:0;border-bottom-right-radius:0;-moz-border-radius-bottomleft:0;border-bottom-left-radius:0;}.chosen-container-active.chosen-with-drop .chosen-single div{border-left:none;background:transparent;}.chosen-container-active.chosen-with-drop .chosen-single div b{background-position:-18px 8px;}.chosen-container-active .chosen-choices li.search-field input[type="text"]{color:#222!important;}.chosen-disabled{opacity:0.5!important;cursor:default;}.chosen-rtl{text-align:right;}.chosen-rtl .chosen-single{overflow:visible;padding:0 8px 0 0;}.chosen-rtl .chosen-single span{margin-right:0;margin-left:26px;direction:rtl;}.chosen-rtl .chosen-single-with-deselect span{margin-left:38px;}.chosen-rtl .chosen-single div{right:auto;left:3px;}.chosen-rtl .chosen-single abbr{right:auto;left:26px;}.chosen-rtl .chosen-choices li{float:right;}.chosen-rtl .chosen-choices li.search-field input[type="text"]{direction:rtl;}.chosen-rtl .chosen-choices li.search-choice{margin:3px 5px 3px 0;padding:3px 5px 3px 19px;}.chosen-rtl .chosen-choices li.search-choice .search-choice-close{right:auto;left:4px;}.chosen-rtl.chosen-container-single-nosearch .chosen-search,.chosen-rtl .chosen-drop{left:9999px;}.chosen-rtl.chosen-container-single .chosen-results{margin:0 0 4px 4px;padding:0 4px 0 0;}.chosen-rtl .chosen-results li.group-option{padding-right:15px;padding-left:0;}.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div{border-right:none;}.chosen-rtl .chosen-search input[type="text"]{background:url(../images/chosen-sprite.png) no-repeat -30px -20px;direction:rtl;padding:4px 5px 4px 20px;}.chosen-rtl.chosen-container-single .chosen-single div b{background-position:6px 2px;}.chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b{background-position:-12px 2px;}.chosen-container-single .chosen-single abbr:hover,.chosen-container-single.chosen-disabled .chosen-single abbr:hover,.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover,.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close{background-position:-42px -10px;}.chosen-container .chosen-results li.disabled-result,.chosen-container-multi .chosen-drop .result-selected{display:list-item;color:#ccc;cursor:default;}.chosen-disabled .chosen-single,.chosen-disabled .chosen-choices .search-choice .search-choice-close{cursor:default;}.chosen-container-multi .chosen-choices{position:relative;overflow:hidden;margin:0;padding:0 5px;width:100%;height:auto!important;height:1%;border:1px solid #aaa;background-color:#fff;background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(1%,#eeeeee),color-stop(15%,#ffffff));background-image:-webkit-linear-gradient(#eeeeee 1%,#ffffff 15%);background-image:-moz-linear-gradient(#eeeeee 1%,#ffffff 15%);background-image:-o-linear-gradient(#eeeeee 1%,#ffffff 15%);background-image:linear-gradient(#eeeeee 1%,#ffffff 15%);cursor:text;}.chosen-container-multi .chosen-choices li{float:left;list-style:none;}.chosen-container-multi .chosen-choices li.search-field{margin:0;padding:0;white-space:nowrap;}.chosen-container-multi .chosen-choices li.search-field input[type="text"]{margin:1px 0;padding:0;height:25px;outline:0;border:0!important;background:transparent!important;box-shadow:none;color:#999;font-size:100%;font-family:sans-serif;line-height:normal;border-radius:0;}.chosen-container-multi .chosen-choices li.search-choice{position:relative;margin:3px 5px 3px 0;padding:3px 20px 3px 5px;border:1px solid #aaa;max-width:100%;border-radius:3px;background-color:#eeeeee;background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(20%,#f4f4f4),color-stop(50%,#f0f0f0),color-stop(52%,#e8e8e8),color-stop(100%,#eeeeee));background-image:-webkit-linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eeeeee 100%);background-image:-moz-linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eeeeee 100%);background-image:-o-linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eeeeee 100%);background-image:linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eeeeee 100%);background-size:100% 19px;background-repeat:repeat-x;background-clip:padding-box;box-shadow:0 0 2px white inset,0 1px 0 rgba(0,0,0,0.05);color:#333;line-height:13px;cursor:default;}.chosen-container-multi .chosen-choices li.search-choice span{word-wrap:break-word;}.chosen-container-multi .chosen-choices li.search-choice .search-choice-close{position:absolute;top:4px;right:3px;display:block;width:12px;height:12px;background:url('../images/chosen-sprite.png') -42px 1px no-repeat;font-size:1px;}.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover{background-position:-42px -10px;}.chosen-container-multi .chosen-choices li.search-choice-disabled{padding-right:5px;border:1px solid #ccc;background-color:#e4e4e4;background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(20%,#f4f4f4),color-stop(50%,#f0f0f0),color-stop(52%,#e8e8e8),color-stop(100%,#eeeeee));background-image:-webkit-linear-gradient(top,#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eeeeee 100%);background-image:-moz-linear-gradient(top,#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eeeeee 100%);background-image:-o-linear-gradient(top,#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eeeeee 100%);background-image:linear-gradient(top,#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eeeeee 100%);color:#666;}.chosen-container-multi .chosen-choices li.search-choice-focus{background:#d4d4d4;}.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close{background-position:-42px -10px;}.chosen-container-multi .chosen-results{margin:0;padding:0;}.chosen-container-multi .chosen-drop .result-selected{display:list-item;color:#ccc;cursor:default;}@media  only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {.chosen-rtl .chosen-search input[type="text"],.chosen-container-single .chosen-single abbr,.chosen-container-single .chosen-single div b,.chosen-container-single .chosen-search input[type="text"],.chosen-container-multi .chosen-choices .search-choice .search-choice-close,.chosen-container .chosen-results-scroll-down span,.chosen-container .chosen-results-scroll-up span{background-image:url('')!important;background-size:52px 37px!important;background-repeat:no-repeat!important;}}
+	a:hover,a:focus,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.h1 a:hover,.h2 a:hover,.h3 a:hover,.h4 a:hover,.h5 a:hover,.h6 a:hover{color:#A4DE61;}.text-primary{color:#A4DE61;}.bg-primary{background-color:#A4DE61;}.panel-primary{border-color:#A4DE61;}.panel-primary>.panel-heading{background-color:#A4DE61;border-color:#A4DE61;}.panel-primary>.panel-heading+.panel-collapse>.panel-body{border-top-color:#A4DE61;}.panel-primary>.panel-heading .badge{color:#A4DE61;}.panel-primary>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#A4DE61;}.form-control-flat>.radio i,.form-control-flat>.checkbox i{color:#A4DE61;}.form-control-flat .radio i:after{background:#A4DE61;}.form-group .dropdown .dropdown-menu>li>a:focus,.form-group .dropdown .dropdown-menu>li>a:hover{background-color:#A4DE61;}.btn-primary,.widget_newsletterwidget .newsletter-submit{background-color:#A4DE61;}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open>.dropdown-toggle.btn-primary,.widget_newsletterwidget .newsletter-submit:hover,.widget_newsletterwidget .newsletter-submit:focus,.widget_newsletterwidget .newsletter-submit:active,.widget_newsletterwidget .newsletter-submit.active,.open>.dropdown-toggle.widget_newsletterwidget .newsletter-submit{background-color:#A4DE61;}.btn-link:hover,.btn-link:focus{color:#A4DE61;}.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus{background-color:#A4DE61;}.noo-menu li>a:hover,.noo-menu li>a:focus{color:#A4DE61;}.noo-menu li.current-menu-item>a,.noo-menu li.active>a{color:#A4DE61;}.navbar-nav li>a:hover,.navbar-nav li>a:focus{color:#A4DE61;}.navbar-nav li:hover>a,.navbar-nav li .sfHover>a{color:#A4DE61;}.navbar-nav ul.sub-menu li>a:hover{color:#A4DE61;}.navbar-nav ul.sub-menu li:hover .navbar-nav ul.sub-menu li.sfHover>a{color:#A4DE61;}.navbar-nav ul.sub-menu li.current-menu-item>a{color:#A4DE61;}@media (min-width: 768px) {body.page-menu-transparent .navbar:not(.navbar-fixed-top) .navbar-nav>li>a:hover{color:#A4DE61;}}.wigetized .widget a:hover{color:#A4DE61;}.wigetized .widget ul li a:hover,.wigetized .widget ol li a:hover{color:#A4DE61;}.wigetized .widget.widget_recent_entries li a:hover{color:#A4DE61;}.colophon.site-info .footer-menu .noo-menu li a:hover{color:#A4DE61;}.colophon.site-info .footer-more a:hover{color:#A4DE61;}.noo-page-heading .page-title .count{background-color:#A4DE61;}.label-primary{background-color:#A4DE61;}.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{background-color:#A4DE61;}.progress-bar{background-color:#A4DE61;}.hentry.format-quote a:hover,.hentry.format-link a:hover{color:#A4DE61!important;}.single .hentry.format-quote .content-title:hover,.single .hentry.format-link .content-title:hover{color:#A4DE61!important;}.single .hentry.format-quote a:hover,.single .hentry.format-link a:hover{color:#A4DE61!important;}.content-thumb:before{background:#A4DE61;}.content-meta>span>a:hover{color:#A4DE61;}.read-more{background-color:#A4DE61;}.read-more:hover,.read-more:focus,.read-more:active,.read-more.active,.open>.dropdown-toggle.read-more{background-color:#A4DE61;}.single-noo-portfolio .attribute-list>li a:hover{color:#A4DE61;}.post-navigation .prev-post{background:#A4DE61;}.post-navigation .next-post{background:#A4DE61;}.single .sticky_post{color:#A4DE61;}h2.comments-title span{color:#A4DE61;}.comment-author a:hover{color:#A4DE61;}.comment-reply-link:hover{color:#A4DE61;}.form-submit input[type="submit"]{background-color:#A4DE61;}.form-submit input[type="submit"]:hover,.form-submit input[type="submit"]:focus,.form-submit input[type="submit"]:active,.form-submit input[type="submit"].active,.open>.dropdown-toggle.form-submit input[type="submit"]{background-color:#A4DE61;}.loadmore-loading span{background:#A4DE61;}.pagination .page-numbers:hover:not(.disabled),.pagination .page-numbers.current:not(.disabled){background:#A4DE61;}.noo-slider.testimonial-slide .slider-indicators a.selected{border:2px solid #A4DE61;}.noo-slider.about-slider .slider-control:hover{background:#A4DE61;}.masonry-header .masonry-filters ul li a:hover,.masonry-header .masonry-filters ul li a.selected{color:#A4DE61;}.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header .pricing-value .noo-price{border:5px solid #A4DE61;}.noo-pricing-table .noo-pricing-column .pricing-content .pricing-info ul li i{color:#A4DE61;}.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-footer .btn,.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-footer .widget_newsletterwidget .newsletter-submit{border-color:#A4DE61!important;color:#A4DE61!important;}.noo-member .member-avatar .member-social a:hover{color:#A4DE61;}.single-noo_job .job-desc ul li:before,.single-noo_job .more-jobs ul li:before{color:#A4DE61;}.gmap-loading .gmap-loader>div{background:none repeat scroll 0 0 #A4DE61;}.navbar-nav li.menu-item-post-btn>a,.navbar-nav li.menu-item-post-btn>a:hover{background-color:#A4DE61;}.navbar-nav li.menu-item-post-btn>a:hover,.navbar-nav li.menu-item-post-btn>a:hover:hover,.navbar-nav li.menu-item-post-btn>a:focus,.navbar-nav li.menu-item-post-btn>a:hover:focus,.navbar-nav li.menu-item-post-btn>a:active,.navbar-nav li.menu-item-post-btn>a:hover:active,.navbar-nav li.menu-item-post-btn>a.active,.navbar-nav li.menu-item-post-btn>a:hover.active,.open>.dropdown-toggle.navbar-nav li.menu-item-post-btn>a,.open>.dropdown-toggle.navbar-nav li.menu-item-post-btn>a:hover{background-color:#A4DE61;}.login-form-links>span a,.login-form-links>span .fa,.login-form-links>span .noo-vc-accordion .panel-title a:before{color:#A4DE61;}.jsteps li.completed .jstep-num a:before,.jsteps li.active .jstep-num a:before{border:14px solid #A4DE61;}.account-actions a:hover,.account-actions a.active{background:#A4DE61;border-color:#A4DE61;}.jpanel-title{background:#A4DE61;}.member-manage .table tbody tr:hover a:not(.btn-primary):hover{color:#A4DE61;}.add-new-location a{color:#A4DE61;}.job-application-status.job-application-status-pending,.job-application-status.job-application-status-PendingApproval{background:#A4DE61;}.job-action a.bookmark-job i:hover{color:#A4DE61;}.job-action a.bookmark-job.bookmarked{color:#A4DE61;}.job-social a.company_website{color:#A4DE61;}.job-social a.company_website span{border-bottom:1px dotted #A4DE61;color:#A4DE61;}.resume .title-general span{color:#A4DE61;}.download a{color:#A4DE61;border-bottom:1px dashed #A4DE61;}.featured_slider .page a.selected{background:#A4DE61;}a:hover,a:focus,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.h1 a:hover,.h2 a:hover,.h3 a:hover,.h4 a:hover,.h5 a:hover,.h6 a:hover{color:#A4DE61;}h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.h1 a:hover,.h2 a:hover,.h3 a:hover,.h4 a:hover,.h5 a:hover,.h6 a:hover,a:hover,a:focus,.text-primary,a.text-primary:hover,.noo-menu li>a:hover,.noo-menu li>a:active,.noo-menu li.current-menu-item>a,body.page-menu-transparent .navbar:not(.navbar-fixed-top) .navbar-nav>li>a:hover,.navbar-nav li>a:hover,.navbar-nav li>a:focus,.navbar-nav li:hover>a,.navbar-nav li.sfHover>a,.navbar-nav li.current-menu-item>a{color:#A4DE61;}.read-more,.read-more:hover,.noo-page-heading .page-title .count,.posts-loop.grid.staffs .loop-item-title:before,.jpanel-title,.commerce ul.products li.product figure .product-wrap .shop-loop-actions .button:hover,.commerce ul.products li.product figure .product-wrap .shop-loop-actions .shop-loop-quickview:hover,.commerce ul.products li.product figure .product-wrap .shop-loop-actions .yith-wcwl-add-to-wishlist .add_to_wishlist:hover,.commerce ul.products li.product figure .product-wrap .shop-loop-actions .yith-wcwl-add-to-wishlist .add_to_wishlist:hover:before,.commerce ul.products li.product figure .product-wrap .shop-loop-actions .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a:hover,.commerce ul.products li.product figure .product-wrap .shop-loop-actions .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a:hover,.commerce .widget_layered_nav ul li.chosen a:hover,.btn-primary,.form-submit input[type="submit"],.wpcf7-submit,.widget_newsletterwidget .newsletter-submit,.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.form-submit input[type="submit"]:hover,.form-submit input[type="submit"]:focus,.btn-primary.active,.wpcf7-submit:hover,.progress-bar,.noo-step-icon .noo-step-icon-item:after,.noo-step-icon .noo-step-icon-item:before{background-color:#A4DE61;}.bg-primary,.navbar-nav li.menu-item-post-btn>a,.navbar-nav li.menu-item-post-btn>a:hover,.navbar-nav li.menu-item-post-btn>a:focus,.navbar-nav li.menu-item-post-btn>a:hover:hover{background-color:#A4DE61;}@media (min-width: 992px) {.navbar-default .navbar-nav.sf-menu>li>ul.sub-menu{border-top-color:#A4DE61;}.navbar-default .navbar-nav.sf-menu>li>ul.sub-menu:before,.navbar-nav.sf-menu>li.align-center>ul.sub-menu:before,.navbar-nav.sf-menu>li.align-right>ul.sub-menu:before,.navbar-nav.sf-menu>li.align-left>ul.sub-menu:before,.navbar-nav.sf-menu>li.full-width.sfHover>a:before{border-bottom-color:#A4DE61;}}.posts-loop.slider .loop-thumb-content .carousel-indicators li.active{background-color:#A4DE61;border-color:#A4DE61;}.download a,.job-social a.company_website span{border-bottom-color:#A4DE61;color:#A4DE61;}.content-meta>span>a:hover,.hentry.format-quote a:hover,.hentry.format-link a:hover,.single .hentry.format-quote .content-title:hover,.single .hentry.format-link .content-title:hover,.single .hentry.format-quote a:hover,.single .hentry.format-link a:hover,.sticky h2.content-title:before{color:#A4DE61!important;}.account-actions a.active{background-color:#A4DE61;}.navbar-nav ul.sub-menu li>a:hover,.navbar-nav ul.sub-menu li>a:focus,.navbar-nav ul.sub-menu li:hover>a,.navbar-nav ul.sub-menu li.sfHover>a,.navbar-nav ul.sub-menu li.current-menu-item>a,.posts-loop.grid .event-info a:hover,.posts-loop.grid.staffs .loop-item-title a,.job-action a.bookmark-job i:hover,.job-action a.bookmark-job.bookmarked,.resume .title-general span,.member-manage .table tbody tr:hover a:not(.btn-primary):hover,.noo-pricing-table .noo-pricing-column .pricing-content .pricing-info ul li i,.woocommerce ul.products li.product figure .product-wrap .shop-loop-actions a:hover,.woocommerce ul.products li.product figcaption .product_title a:hover,h2.comments-title span,.comment-reply-link,.comment-author a:hover,.wigetized .widget a:hover,.wigetized .widget ul li a:hover,.wigetized .widget ol li a:hover,.wigetized .widget.widget_recent_entries li a:hover,.btn-link:hover,.btn-link:focus,.noo-social a:hover,.login-form-links>span a,.login-form-links>span .fa,.form-control-flat>.radio i,.form-control-flat>.checkbox i{color:#A4DE61;}.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header .pricing-value .noo-price,.jsteps li.completed .jstep-num a:before,.jsteps li.active .jstep-num a:before,.noo-step-icon .noo-step-icon-class:after{border-color:#A4DE61;}.content-thumb:before,.entry-tags a:hover,.pagination .page-numbers:hover:not(.disabled),.pagination .page-numbers.current:not(.disabled),.post-navigation .prev-post,.post-navigation .next-post,.loadmore-loading span,.form-control-flat .radio i:after{background:#A4DE61;}
+        .navbar-nav li.menu-item-post-btn{margin:0px!important;}.navbar-nav li.menu-item-post-btn>a,.navbar-nav li.menu-item-post-btn>a:hover{padding:.7142857142857143em 0.9857142857142856em;}.colophon.site-info .footer-more { padding: 20px 0 0 0; } h4.widget-title {color: #000 !important;} .btn, .content-footer .content-tags a, .widget_newsletterwidget .newsletter-submit, .widget_product_tag_cloud .tagcloud a, .widget_tag_cloud .tagcloud a { border-radius: 1px !important; }.category-menu-second { background: #ebeeef; padding: 10px 2px 2px; margin-bottom: -1px; } .navbar-brand img { max-height: 40px !important; }.flash-message .alert {margin-bottom: 0px !important;}.nav-item-member-profile.login-link{margin-left: 0px !important;}.sf-arrows .sf-with-ul:after{padding-left: 0px !important;}
+    </style>
+<title>I will do HTML, CSS Development or Fix of any bug or error. Job Detail</title>
+<meta name="description" content="I will do HTML, CSS Development or Fix of any bug or error.I can fix HTML, CSS, Javascript or jQuery error on your...">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="I will do HTML, CSS Development or Fix of any bug or error. - Hire Coder Freelancers" />
+<meta property="og:description" content="I will do HTML, CSS Development or Fix of any bug or error.I can fix HTML, CSS, Javascript or jQuery error on your..." />
+<meta property="og:url" content="https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error" />
+<meta property="og:site_name" content="I will do HTML, CSS Development or Fix of any bug or error. - Hire Coder Freelancers" />
+<meta property="og:image" content="https://www.codercv.com/files/c4ca4238a0b923820dcc509a6f75849b_1.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="I will do HTML, CSS Development or Fix of any bug or error.I can fix HTML, CSS, Javascript or jQuery error on your..." />
+<meta name="twitter:title" content="I will do HTML, CSS Development or Fix of any bug or error. - Hire Coder Freelancers" />
+<meta name="twitter:domain" content="https://www.codercv.com" />
+<meta name="twitter:image" content="https://www.codercv.com/files/c4ca4238a0b923820dcc509a6f75849b_1.jpg" />
+<link rel="canonical" href="https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error" />
+<style> @media (min-width: 1200px) { .container { width: 1070px !important; } } .addNow { border-radius: 1px;padding: 24px; } p.chat { margin: 0; } .container-wrap { background: #F5F5F5 !important; } .noo-page-heading { background: none !important; } h4.page-title { color: #44494b !important;font-size: 22px !important; } .noo-page-heading .page-sub-heading-info { color: #000 !important; } .noo-page-heading .page-sub-heading-info .content-meta, .noo-page-heading .page-sub-heading-info .content-meta a, .noo-page-heading .page-sub-heading-info .content-meta>span { color: #000 !important; } .noo-main { background: #FFF !important; }.gig-image img {width:100%;} .company-profile-form .job-manage-toolbar.buttom-toolbar, .job-action, .job-sidebar>div+div { margin-top: 0px !important; }.job-desc { font-family: Arial,sans-serif !important; } .jobs:not(.slider) article:hover, .single-noo_job:not(.slider) article:hover { background: #eaeaea !important;} @media (max-width: 767px) { .content-meta>span { display: inline !important; } }a.btn.btn-success.float-left { position: fixed; bottom: 10px; float: right; right: 10px; border-radius: 20px !important;z-index: 99999;}a.btn.btn-info.float-right { position: fixed; bottom: 10px; float: left; left: 10px; border-radius: 20px !important; z-index: 999999; }
+        </style>
+<script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "product",
+  "brand": "CoderCV",
+  "name": "I will do HTML, CSS Development or Fix of any bug or error.",
+  "image": "https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error",
+  "description": "I will do HTML, CSS Development or Fix of any bug or error.I can fix HTML, CSS, Javascript or jQuery error on your web s...",
+  "aggregateRating": {
+    "@type": "aggregateRating",
+    "ratingValue": "5.00",
+    "reviewCount": "1"
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "http://schema.org/InStock",
+    "price": "5.00",
+    "priceCurrency": "USD"
+  }
+}
+ </script>
+</head>
+<body id="app-layout">
+<div class="site">
+<div class="flash-message"></div>
+<header class="noo-header" id="noo-header">
+<div class="navbar-wrapper">
+<div class="navbar navbar-default fixed-top shrinkable">
+<div class="container-fluid max" style="background: #f9f9f9;">
+<div class="navbar-header">
+<h1 class="sr-only">Codercv</h1>
+<a class="navbar-toggle collapsed" data-toggle="collapse" data-target=".noo-navbar-collapse">
+<span class="sr-only">Navigation</span>
+<i class="fa fa-bars"></i>
+</a>
+<a class="navbar-toggle member-navbar-toggle collapsed" data-toggle="collapse" data-target=".noo-user-navbar-collapse">
+<i class="fa fa-user"></i>
+</a>
+<a href="https://www.codercv.com" class="navbar-brand">
+<h4 style="margin-top: 6px;">CoderCV</h4>
+
+
+</a>
+</div>
+<nav class="collapse navbar-collapse noo-user-navbar-collapse">
+<ul class="navbar-nav sf-menu">
+<li><a href="https://www.codercv.com/login"><i class="fa fa-sign-in"></i> Login</a></li>
+<li><a href="https://www.codercv.com/register"><i class="fa fa-key"></i> Register</a></li>
+</ul>
+</nav>
+<nav class="collapse navbar-collapse noo-navbar-collapse">
+<ul class="navbar-nav sf-menu">
+
+
+<li class="align-left">
+<a href="https://www.codercv.com/job"><i class="fa fa-shopping-cart"></i> Hire Freelancer</a>
+</li>
+<li class="align-left">
+<a href="#"><i class="fa fa-search"></i> Search</a>
+<ul class="sub-menu">
+<li><form method="get" action="https://www.codercv.com/job"><input class="form-control" type="text" name="tag" placeholder="Search gig.."></form></li>
+<li><a href="https://www.codercv.com/post/4/buyer-how-codercv-freelance-marketplace-works">Buyer - how codercv freelance marketplace works ?</a></li>
+<li><a href="https://www.codercv.com/post/5/seller-how-codercv-freelance-marketplace-works">Seller - how codercv freelance marketplace works ?</a></li>
+<li><a href="https://www.codercv.com/blogs">Blogs</a></li>
+<li><a href="https://www.w3clan.com" target="_blank">E-Learning</a></li>
+</ul>
+</li>
+<li class="menu-item-post-btn">
+<a href="#">
+<i class="fa fa-plus-circle"></i> Post <i class="fa fa-caret-down"></i>
+</a>
+<ul class="sub-menu">
+<li><a href="https://www.codercv.com/add/project"><i class="fa fa-file-text-o"></i> Post Requirement</a></li>
+<li><a href="https://www.codercv.com/add/job"><i class="fa fa-bank"></i> Post Gig / Service</a></li>
+</ul>
+</li>
+<li class="nav-item-member-profile login-link align-center">
+<a href="https://www.codercv.com/login" class="member-links member-login-link">
+<i class="fa fa-sign-in"></i>&nbsp;Login
+</a>
+</li>
+<li class="nav-item-member-profile register-link">
+<a class="member-links member-register-link" href="https://www.codercv.com/register">
+<i class="fa fa-key"></i>&nbsp;Register
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="category-menu-second text-center">
+<ul class="list-unstyled list-inline">
+<li><a href="https://www.codercv.com/job" class="text-bold">Select Category:</a></li>
+<li class="dropdown">
+<a id="drop1" href="#" class="dropdown-toggle text-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-newspaper-o"></i> Programming & Tech<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" aria-labelledby="drop1">
+<li><a class="bold black" data-toggle="tooltip" title="HTML & CSS Freelancer" href="https://www.codercv.com/jobs/29/html-css"><i class="fa fa-caret-right"></i> HTML &amp; CSS Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Javascript & jQuery Freelancer" href="https://www.codercv.com/jobs/30/javascript-jquery"><i class="fa fa-caret-right"></i> Javascript &amp; jQuery Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Wordpress Programming Freelancer" href="https://www.codercv.com/jobs/31/wordpress-programming"><i class="fa fa-caret-right"></i> Wordpress Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="PHP Programming Freelancer" href="https://www.codercv.com/jobs/32/php-programming"><i class="fa fa-caret-right"></i> PHP Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Python Programming Freelancer" href="https://www.codercv.com/jobs/33/python-programming"><i class="fa fa-caret-right"></i> Python Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Ruby Programming Freelancer" href="https://www.codercv.com/jobs/34/ruby-programming"><i class="fa fa-caret-right"></i> Ruby Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Java Programming Freelancer" href="https://www.codercv.com/jobs/35/java-programming"><i class="fa fa-caret-right"></i> Java Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Android App Programming Freelancer" href="https://www.codercv.com/jobs/36/android-app-programming"><i class="fa fa-caret-right"></i> Android App Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="iOS App Programming Freelancer" href="https://www.codercv.com/jobs/37/ios-app-programming"><i class="fa fa-caret-right"></i> iOS App Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Database Programming Freelancer" href="https://www.codercv.com/jobs/39/database-programming"><i class="fa fa-caret-right"></i> Database Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="ASP.net & C# Programming Freelancer" href="https://www.codercv.com/jobs/49/aspnet-c-programming"><i class="fa fa-caret-right"></i> ASP.net &amp; C# Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Ecommerce Development Freelancer" href="https://www.codercv.com/jobs/38/ecommerce-development"><i class="fa fa-caret-right"></i> Ecommerce Development Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Dekstop Application Freelancer" href="https://www.codercv.com/jobs/40/dekstop-application"><i class="fa fa-caret-right"></i> Dekstop Application Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Server Application Development Freelancer" href="https://www.codercv.com/jobs/41/server-application-development"><i class="fa fa-caret-right"></i> Server Application Development Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="UI & UX Testing Freelancer" href="https://www.codercv.com/jobs/42/ui-ux-testing"><i class="fa fa-caret-right"></i> UI &amp; UX Testing Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Golang or Go Programming Freelancer" href="https://www.codercv.com/jobs/51/golang-or-go-programming"><i class="fa fa-caret-right"></i> Golang or Go Programming Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Other Programming Freelancer" href="https://www.codercv.com/jobs/43/other-programming"><i class="fa fa-caret-right"></i> Other Programming Freelancer</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="drop1" href="#" class="dropdown-toggle text-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-newspaper-o"></i> Design and Logo<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" aria-labelledby="drop1">
+<li><a class="bold black" data-toggle="tooltip" title="Logo Design Freelancer" href="https://www.codercv.com/jobs/2/logo-design"><i class="fa fa-caret-right"></i> Logo Design Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Illustration Freelancer" href="https://www.codercv.com/jobs/3/illustration"><i class="fa fa-caret-right"></i> Illustration Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Photoshop Editing Freelancer" href="https://www.codercv.com/jobs/4/photoshop-editing"><i class="fa fa-caret-right"></i> Photoshop Editing Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="3D & 2D Models Freelancer" href="https://www.codercv.com/jobs/5/3d-2d-models"><i class="fa fa-caret-right"></i> 3D &amp; 2D Models Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Web UI Design Freelancer" href="https://www.codercv.com/jobs/12/web-ui-design"><i class="fa fa-caret-right"></i> Web UI Design Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Mobile Web UI Design Freelancer" href="https://www.codercv.com/jobs/13/mobile-web-ui-design"><i class="fa fa-caret-right"></i> Mobile Web UI Design Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Android App UI design Freelancer" href="https://www.codercv.com/jobs/14/android-app-ui-design"><i class="fa fa-caret-right"></i> Android App UI design Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="iOS App UI design Freelancer" href="https://www.codercv.com/jobs/15/ios-app-ui-design"><i class="fa fa-caret-right"></i> iOS App UI design Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Windows app UI design Freelancer" href="https://www.codercv.com/jobs/16/windows-app-ui-design"><i class="fa fa-caret-right"></i> Windows app UI design Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Social Media Design Freelancer" href="https://www.codercv.com/jobs/17/social-media-design"><i class="fa fa-caret-right"></i> Social Media Design Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Other Design Freelancer" href="https://www.codercv.com/jobs/18/other-design"><i class="fa fa-caret-right"></i> Other Design Freelancer</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="drop1" href="#" class="dropdown-toggle text-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-newspaper-o"></i> Digital Marketing<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" aria-labelledby="drop1">
+<li><a class="bold black" data-toggle="tooltip" title="Website & Content Analytics Freelancer" href="https://www.codercv.com/jobs/7/website-content-analytics"><i class="fa fa-caret-right"></i> Website &amp; Content Analytics Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Domain Research & Keyword Planning Freelancer" href="https://www.codercv.com/jobs/8/domain-research-keyword-planning"><i class="fa fa-caret-right"></i> Domain Research &amp; Keyword Planning Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Search Engine Optimisation Freelancer" href="https://www.codercv.com/jobs/9/search-engine-optimisation"><i class="fa fa-caret-right"></i> Search Engine Optimisation Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Social Media Marketing Freelancer" href="https://www.codercv.com/jobs/10/social-media-marketing"><i class="fa fa-caret-right"></i> Social Media Marketing Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Youtube & Other Video Advertising Freelancer" href="https://www.codercv.com/jobs/11/youtube-other-video-advertising"><i class="fa fa-caret-right"></i> Youtube &amp; Other Video Advertising Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Content & Email Marketing Freelancer" href="https://www.codercv.com/jobs/19/content-email-marketing"><i class="fa fa-caret-right"></i> Content &amp; Email Marketing Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Mobile App Advertising Freelancer" href="https://www.codercv.com/jobs/20/mobile-app-advertising"><i class="fa fa-caret-right"></i> Mobile App Advertising Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Offline Advertising Agency Freelancer" href="https://www.codercv.com/jobs/21/offline-advertising-agency"><i class="fa fa-caret-right"></i> Offline Advertising Agency Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Other Advertising Freelancer" href="https://www.codercv.com/jobs/22/other-advertising"><i class="fa fa-caret-right"></i> Other Advertising Freelancer</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="drop1" href="#" class="dropdown-toggle text-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-newspaper-o"></i> Video & Animation<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" aria-labelledby="drop1">
+<li><a class="bold black" data-toggle="tooltip" title="Whiteboard & Explainer Videos Freelancer" href="https://www.codercv.com/jobs/24/whiteboard-explainer-videos"><i class="fa fa-caret-right"></i> Whiteboard &amp; Explainer Videos Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Promotional & Brand Videos Freelancer" href="https://www.codercv.com/jobs/25/promotional-brand-videos"><i class="fa fa-caret-right"></i> Promotional &amp; Brand Videos Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Lyrics & Music Videos Freelancer" href="https://www.codercv.com/jobs/26/lyrics-music-videos"><i class="fa fa-caret-right"></i> Lyrics &amp; Music Videos Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Other Videos Freelancer" href="https://www.codercv.com/jobs/27/other-videos"><i class="fa fa-caret-right"></i> Other Videos Freelancer</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="drop1" href="#" class="dropdown-toggle text-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-newspaper-o"></i> Other<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" aria-labelledby="drop1">
+<li><a class="bold black" data-toggle="tooltip" title="Data Writing & Translation Freelancer" href="https://www.codercv.com/jobs/45/data-writing-translation"><i class="fa fa-caret-right"></i> Data Writing &amp; Translation Freelancer</a></li>
+ <li><a class="bold black" data-toggle="tooltip" title="Voice Over Freelancer" href="https://www.codercv.com/jobs/46/voice-over"><i class="fa fa-caret-right"></i> Voice Over Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Online Mentoring Freelancer" href="https://www.codercv.com/jobs/47/online-mentoring"><i class="fa fa-caret-right"></i> Online Mentoring Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Miscellaneous Work Freelancer" href="https://www.codercv.com/jobs/48/miscellaneous-work"><i class="fa fa-caret-right"></i> Miscellaneous Work Freelancer</a></li>
+<li><a class="bold black" data-toggle="tooltip" title="Excel & Reporting Freelancer" href="https://www.codercv.com/jobs/50/excel-reporting"><i class="fa fa-caret-right"></i> Excel &amp; Reporting Freelancer</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<div class="container-wrap">
+<div class="container max p-1 main-content single-noo_job">
+<div class="row" itemscope itemtype="http://schema.org/Product">
+<meta itemprop="description" content="I will do HTML, CSS Development or Fix of any bug or error.I can fix HTML, CSS, Javascript or jQuery error on your web site. It could be misaligned content, wrong positioned elements like display problems, cross browser adaptation, validation or behind the scenes bug or error.&nbsp;&nbsp;If you have a PHP bug: I will fix it.&nbsp;&nbsp;If you have a HTML bug: I will fix it.&nbsp;&nbsp;If you have a CSS bug: I will fix it.&nbsp;&nbsp;If you have a JavaScript bug: I will fix it.&nbsp;&nbsp;If you are using jQuery and need to fix a bug: I will fix it.&nbsp;I offer professional attitude, clean, high quality coding and timely completion of the job. This service includes one HTML or CSS or Javascript or jQuery fix.&nbsp;&nbsp;I can fix:&nbsp;&nbsp;- HTML bugs/errors&nbsp;&nbsp;- CSS bugs/errors&nbsp;&nbsp;- JavaScript / jQuery bugs/errors&nbsp;&nbsp;- W3C Validation problems&nbsp;Briefing Details Please provide following information :-&nbsp;- URL of a website page, where the error occur or the code (in zip).&nbsp;- Any login details necessary to access the source code&nbsp;- Screenshot or detail explanation when the error happen and how it should work.&nbsp;- Name of the browsers where the error occurs&nbsp;- List of web browser name and version where the JavaScript or CSS should works.&nbsp;Provide as many details as possible to help speeding up the fix process.
+">
+<link itemprop="url" href="https://www.codercv.com/user/3/freelancer" rel="author" />
+<div class="noo-main col-md-8">
+<div class="noo-page-heading">
+<div class="page-heading-info">
+<h4 class="page-title">
+<a itemprop="url" href="https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error"><i class="fa fa-shopping-cart"></i> <span itemprop="name">I will do HTML, CSS Development or Fix of any bug or error.</span></a>
+</h4>
+</div>
+<div class="page-sub-heading-info">
+<p class="content-meta">
+<span class="job-type part-time">
+<b data-placement="bottom" class="toggle-tooltip" data-toggle="tooltip" data-title="To be delivered in"><i class="fa fa-clock-o"></i>10 days</b>
+</span>
+<span class="job-location"> <b> <i class="fa fa-map-marker"></i> <a href="#"><em>New Delhi, Delhi (India)</em></a> </b> </span>
+<span> <time class="entry-date"> <b> <i class="fa fa-money"></i> Avg. Hire Cost: (5 - 1500)$ </b> </time> </span>
+<span>
+<b> <i class="fa fa-folder"></i>
+<a itemscope itemtype="http://schema.org/Brand" href="https://www.codercv.com/jobs/29/html-css"> <span itemprop="name">HTML &amp; CSS</span></a>
+ </b>
+</span>
+</p>
+</div>
+</div>
+<div class="job-desc">
+<p class="text-center gig-image"> <img src="https://www.codercv.com/files/c4ca4238a0b923820dcc509a6f75849b_1.jpg" alt="I will do HTML, CSS Development or Fix of any bug or error." class="img-responsive img-thumbnail"> </p>
+<h3><i class="small fa fa-newspaper-o"></i> Gig Description</h3>
+<p class="p-1"> <b>I will do HTML, CSS Development or Fix of any bug or error.<p></p><p>I can fix HTML, CSS, Javascript or jQuery error on your web site. It could be misaligned content, wrong positioned elements like display problems, cross browser adaptation, validation or behind the scenes bug or error.&nbsp;</p><p></p><ul><li><b>&nbsp;If you have a PHP bug: I will fix it.&nbsp;<br></b></li><li><b>&nbsp;If you have a HTML bug: I will fix it.&nbsp;<br></b></li><li><b>&nbsp;If you have a CSS bug: I will fix it.&nbsp;<br></b></li><li><b>&nbsp;If you have a JavaScript bug: I will fix it.&nbsp;<br></b></li><li><b>&nbsp;If you are using jQuery and need to fix a bug: I will fix it.&nbsp;</b></li></ul><p>I offer professional attitude, clean, high quality coding and timely completion of the job. This service includes one HTML or CSS or Javascript or jQuery fix.&nbsp;</p><p>&nbsp;I can fix:&nbsp;</p><p></p><ol><li><b>&nbsp;- HTML bugs/errors&nbsp;<br></b></li><li><b>&nbsp;- CSS bugs/errors&nbsp;<br></b></li><li><b>&nbsp;- JavaScript / jQuery bugs/errors&nbsp;<br></b></li><li><b>&nbsp;- W3C Validation problems&nbsp;</b></li></ol><p><b><br></b></p><p><b><u>Briefing Details Please provide following information :-&nbsp;</u></b></p><p></p><ul><li>- URL of a website page, where the error occur or the code (in zip).&nbsp;<br></li><li>- Any login details necessary to access the source code&nbsp;<br></li><li>- Screenshot or detail explanation when the error happen and how it should work.&nbsp;<br></li><li>- Name of the browsers where the error occurs&nbsp;<br></li><li>- List of web browser name and version where the JavaScript or CSS should works.&nbsp;<br></li></ul><p><br></p><p>Provide as many details as possible to help speeding up the fix process.</p><br></b><br />
+</p>
+</div>
+<div class="job-social clearfix">
+<span class="noo-social-title">
+Share this gig
+</span>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error" class="noo-icon fa fa-facebook" title="Share on Facebook"></a>
+<a href="https://twitter.com/home?status=Check%20out%20I will do HTML, CSS Development or Fix of any bug or error.https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error%20(CoderCV - Freelancer Marketplace - Hire Freelancer Gigs & Services)" class="noo-icon fa fa-twitter" title="Share on Twitter"></a>
+<a href="https://plus.google.com/share?url=https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error" class="noo-icon fa fa-google-plus" title="Share on Google+"></a>
+<a href="https://pinterest.com/pin/create/button/?url=https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error&media=https://www.codercv.com/files/c4ca4238a0b923820dcc509a6f75849b_1.jpg" class="noo-icon fa fa-pinterest" title="Share on Pinterest"></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.codercv.com/job/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error&title=I will do HTML, CSS Development or Fix of any bug or error." class="noo-icon fa fa-linkedin" title="Share on LinkedIn"></a>
+</div>
+<div class="job-action">
+<div id="comments" class="comments-area" itemscope itemtype="http://schema.org/Review">
+<div class="comments-wrap" itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+<h4><span itemprop="reviewCount">1</span> Reivews -
+<i class="fa fa-star text-primary"></i> <i class="fa fa-star text-primary"></i> <i class="fa fa-star text-primary"></i> <i class="fa fa-star text-primary"></i> <i class="fa fa-star text-primary"></i> <span itemprop="ratingValue">5.00</span></h4>
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="CoderCV.com">
+</span>
+<ol class="comments-list">
+<li class="comment">
+<div class="comment-wrap">
+<div class="comment-img">
+<img itemprop="image" alt="" src="https://secure.gravatar.com/avatar/33ac143d04eeb5026ac3ab1585466c1c.jpg?s=80&d=mm&r=g" height="65" width="65">
+</div>
+<div class="comment-block">
+<header class="comment-header">
+<cite class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Dimitry Mczhikov</span> <span class="ispostauthor">Buyer </span> </cite>
+<div class="comment-meta">
+<span>2 years ago </span>
+</div>
+</header>
+<section class="comment-content">
+<p itemprop="reviewBody"> Amazing Work done. </p>
+</section>
+<span class="comment-reply" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+<b>Quality :</b>
+<i class="fa fa-star text-primary"></i>
+<i class="fa fa-star text-primary"></i>
+<i class="fa fa-star text-primary"></i>
+<i class="fa fa-star text-primary"></i>
+<i class="fa fa-star text-primary"></i>
+<b>Communication :</b>
+<i class="fa fa-star text-primary"></i>
+<i class="fa fa-star text-primary"></i>
+<i class="fa fa-star text-primary"></i>
+<i class="fa fa-star text-primary"></i>
+<i class="fa fa-star text-primary"></i>
+</span>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<br>
+<div class="row text-center">
+</div>
+</div>
+</div>
+<div class="noo-sidebar col-md-4">
+<div class="noo-sidebar-wrap">
+<div class="job-action">
+<p class="chat"><a class="btn btn-success white addNow btn-lg btn-block" href="https://www.codercv.com/propose/order/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error"><i class="fa fa-shopping-cart"></i> Order Now</a></p>
+<p><a class="btn btn-info white btn-block" href="https://www.codercv.com/conversation/3/freelancer"><i class="fa fa-envelope"></i> Chat</a></p>
+<br>
+<p class="text-center">
+<span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+<b>Quality :</b>
+ <i class="fa fa-star text-primary fa-lg"></i> <i class="fa fa-star text-primary fa-lg"></i> <i class="fa fa-star text-primary fa-lg"></i> <i class="fa fa-star text-primary fa-lg"></i> <i class="fa fa-star text-primary fa-lg"></i> <small itemprop="ratingValue">(5)</small>
+<meta itemprop="ratingCount" content="1">
+<br>
+<b>Communication :</b>
+<i class="fa fa-star text-primary fa-lg"></i> <i class="fa fa-star text-primary fa-lg"></i> <i class="fa fa-star text-primary fa-lg"></i> <i class="fa fa-star text-primary fa-lg"></i> <i class="fa fa-star text-primary fa-lg"></i> <small>(5)</small>
+</span>
+</p>
+<hr>
+</div>
+<div class="job-custom-fields text-center">
+<h4>Avg. Hire Cost</h4>
+<h5 class="text-success">
+<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+<i class="fa fa-money"></i>
+<b><span itemprop="price">5</span> <span itemprop="priceCurrency">$</span> - 1500 $</b>
+</span>
+</h5>
+</div>
+<hr>
+<h3 class="text-center">
+<i class="fa fa-clock-o"></i>
+<b>10 days</b>
+<br>
+<small>Avg. Job Delivery</small>
+</h3>
+<hr>
+<div class="company-desc">
+<div class="company-header">
+<div class="company-featured" style="width: 25% !important">
+<a href="https://www.codercv.com/user/3/freelancer">
+<img class="img-responsive" width="300" height="300" src="https://www.codercv.com/files/freelancer_3.jpg" alt="" />
+</a>
+</div>
+<h3 class="company-title" style="width: 75% !important;margin-top:0px;">
+<a style="word-break: break-all" href="https://www.codercv.com/user/3/freelancer">Freelancer</a>
+<br>
+<small style="word-break: break-all">Full Stack Programmer and Engineer</small>
+</h3>
+</div>
+<div class="company-info">
+I am full stack programmer and engineer
+<br><p class="text-center"><a class="btn btn-success white" href="https://www.codercv.com/conversation/3/freelancer"><i class="fa fa-envelope"></i> Contact</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="visible-xs visible-sm"> <a href="https://www.codercv.com/propose/order/1/i-will-do-html-css-development-or-fix-of-any-bug-or-error" onclick="return confirm('Click Ok! To start Order')" class="btn btn-success white float-left" data-toggle="tooltip"><i class="fa fa-shopping-cart"></i> Order</a><a href="https://www.codercv.com/user/3/freelancer" onclick="return confirm('Click Ok! To start Chat!')" class="btn btn-info white float-right"><i class="fa fa-envelope"></i> Chat</a> </div>
+<div class="row">
+<div class="pt-1">
+<div class="panel panel-default">
+<div class="panel-heading">Related Gigs</div>
+<div class="panel-body">
+<div class="col-sm-6 col-xs-12 col-md-3">
+<article class="p-1">
+<div class="content-featured">
+<a class="content-thumb" href="https://www.codercv.com/job/109/i-will-create-ico-website">
+<img class="img-thumbnail img-responsive" src="https://www.codercv.com/files/2723d092b63885e0d7c260cc007e8b9d_678.png" alt="I Will create ICO website">
+</a>
+</div>
+<header>
+<p class="text-bold text-center p-1">
+<a href="https://www.codercv.com/job/109/i-will-create-ico-website" data-toggle="tooltip" data-original-title="I Will create ICO website">I Will create ICO website</a>
+</p>
+<div class="text-center">
+<a href="https://www.codercv.com/job/109/i-will-create-ico-website"><div class="btn-group btn-group-justified"><button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 50.00 $</button></div></a>
+</div>
+</header>
+</article>
+</div>
+<div class="col-sm-6 col-xs-12 col-md-3">
+<article class="p-1">
+<div class="content-featured">
+<a class="content-thumb" href="https://www.codercv.com/job/136/i-will-fix-your-html-css-problems-and-related-bugs">
+<img class="img-thumbnail img-responsive" src="https://www.codercv.com/files/42a0e188f5033bc65bf8d78622277c4e_792.jpg" alt="I Will Fix Your Html Css Problems And Related Bugs">
+</a>
+</div>
+<header>
+<p class="text-bold text-center p-1">
+<a href="https://www.codercv.com/job/136/i-will-fix-your-html-css-problems-and-related-bugs" data-toggle="tooltip" data-original-title="I Will Fix Your Html Css Problems And Related Bugs">I Will Fix Your Html Css Problems And Related Bugs</a>
+</p>
+<div class="text-center">
+<a href="https://www.codercv.com/job/136/i-will-fix-your-html-css-problems-and-related-bugs"><div class="btn-group btn-group-justified"><button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 5.00 $</button></div></a>
+</div>
+</header>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wigetized bg-gray p-3">
+<div class="container-boxed max">
+<div class="row">
+<div class="col-sm-3">
+<div class="widget widget_text">
+<h4 class="widget-title">CoderCV Know-How</h4>
+<div class="textwidget">
+<ul class="list-unstyled">
+<li><a href="https://codercv.com/blogs"><i class="fa fa-fax"></i> Blogs</a></li>
+<li><a href="https://www.codercv.com/add/project" target="_blank"><i class="fa fa-file-text-o"></i> Post Project ?</a></li>
+<li><a href="https://www.codercv.com/post/8/codercv-fees-commission"><i class="fa fa-money"></i> Fees & Commission</a></li>
+</ul>
+</div>
+</div>
+<div class="widget widget_text">
+<h4 class="widget-title">Thanks Giving</h4>
+<div class="textwidget">
+<ul class="list-unstyled">
+<li><a target="_blank" href="http://www.fbstart.com/?utm_source=codercv.com"><i class="fa fa-facebook-official"></i> FBStart</a></li>
+<li><a href="http://provlem.com/?utm_source=codercv.com" target="_blank"><i class="fa fa-comments-o"></i> Share Provlem</a></li>
+<li><a href="https://m.do.co/c/5b28c38da55b" target="_blank"><i class="fa fa-diamond"></i> Digital Ocean</a></li>
+<li><a href="http://www.iHindustan.com"><i class="fa fa-puzzle-piece"></i> iHindustan</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="widget widget_text">
+<h4 class="widget-title">About CoderCV</h4>
+<div class="textwidget">
+<ul class="list-unstyled">
+<li><a href="https://codercv.com/post/2/about-us">About us</a></li>
+<li><a href="https://codercv.com/post/4/buyer-how-codercv-freelance-marketplace-works">[How to] Buyer</a></li>
+<li><a href="https://codercv.com/post/5/seller-how-codercv-freelance-marketplace-works">[How to] Seller</a></li>
+</ul>
+</div>
+</div>
+<div class="widget widget_text">
+<h4 class="widget-title">Connected Sites</h4>
+<div class="textwidget">
+<ul class="list-unstyled">
+<li><a target="_blank" href="https://www.ducument.com"><i class="fa fa-shopping-cart"></i> E-Document (Ducument)</a></li>
+<li><a target="_blank" href="https://www.redoctype.com"><i class="fa fa-graduation-cap"></i> Online E-Learning</a></li>
+<li><a target="_blank" href="https://www.w3clan.com"><i class="fa fa-stethoscope"></i> w3clan Network</a></li>
+<li><a target="_blank" href="https://www.usercv.com"><i class="fa fa-android"></i> UserCV Network</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="widget widget_text">
+<h4 class="widget-title">Site Adherence</h4>
+<div class="textwidget">
+<ul class="list-unstyled">
+<li><a href="https://codercv.com/post/3/terms-of-service">Terms &amp; Condition</a></li>
+<li><a href="http://www.usercv.com/post/14/privacy-policy" target="_blank">Privacy Policy</a></li>
+<li><a href="https://codercv.com/post/3/terms-of-service">Disclaimer</a></li>
+</ul>
+</div>
+</div>
+<div class="widget widget_text">
+<h4 class="widget-title">Connect with Us</h4>
+<div class="textwidget content-share">
+<ul class="list-unstyled noo-social">
+<li><a class="facebook-footer" target="_blank" href="https://www.facebook.com/iFreelancers"><i class="fa fa-facebook"></i> Facebook</a></li>
+<li><a class="twitter-footer" target="_blank" href="https://www.twitter.com/CoderCV"><i class="fa fa-twitter"></i> Twitter</a></li>
+<li><a class="google-footer" target="_blank" href="https://plus.google.com/b/108841914234176773842/+Codercv"><i class="fa fa-google-plus"></i> Google+</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="widget widget_text">
+<h4 class="widget-title">Get in Touch</h4>
+<div class="textwidget">
+<ul class="list-unstyled">
+<li><a href="https://www.codercv.com/conversation/1/app-team"><i class="fa fa-support"></i> Support Team</a></li>
+<li><a href="https://codercv.com/post/6/contact"><i class="fa fa-envelope"></i> Contact Us</a></li>
+<li><a href="https://api.whatsapp.com/send?phone=919205642415&text=CoderCV.com%20Support" title="Whatsapp Support" target="_blank"><i class="fa fa-whatsapp"></i> WhatsApp Support</a></li>
+</ul>
+</div>
+</div>
+<div class="widget mailchimp-widget">
+<h4 class="widget-title">App Link</h4>
+<p class="text-center"><a href="https://play.google.com/store/apps/details?id=com.codercv.freelancer" target="_blank"><img class="mr-2 mt-3 img-responsive" src="https://www.codercv.com/images/app-googleplay.png" alt="customer"></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="colophon site-info">
+<div class="container-full">
+<div class="footer-more">
+<div class="container-boxed">
+<div class="row">
+<div class="col-md-12">
+<div class="noo-bottom-bar-content">
+<p class="white">Copyright &copy; 2018 <a class="white text-primary" href="https://www.codercv.com">CoderCV</a> (UserCV Services Pvt. Ltd., India). All rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<a href="#" class="go-to-top hidden-print"><i class="fa fa-angle-up"></i></a>
+<script src="https://www.codercv.com/js/jquery.js" type="e15bcc63b065c5730b1b8de1-text/javascript"></script>
+<script src="https://www.codercv.com/js/jquery-migrate.min.js" type="e15bcc63b065c5730b1b8de1-text/javascript"></script>
+<script src="https://www.codercv.com/js/isotope-2.0.0.min.js" type="e15bcc63b065c5730b1b8de1-text/javascript"></script>
+<script src="https://www.codercv.com/js/bootstrap.min.js" type="e15bcc63b065c5730b1b8de1-text/javascript"></script>
+<script src="https://www.codercv.com/js/hoverIntent-r7.min.js" type="e15bcc63b065c5730b1b8de1-text/javascript"></script>
+<script src="https://www.codercv.com/js/superfish-1.7.4.min.js" type="e15bcc63b065c5730b1b8de1-text/javascript"></script>
+<script src="https://www.codercv.com/js/script.js" type="e15bcc63b065c5730b1b8de1-text/javascript"></script>
+<script src="https://www.codercv.com/js/chosen.jquery.min.js" type="e15bcc63b065c5730b1b8de1-text/javascript"></script>
+<script type="e15bcc63b065c5730b1b8de1-text/javascript">
+function sendAjax(e,t,r,n){jQuery.ajax({url:e,type:t,headers:{"X-CSRF-TOKEN":jQuery('meta[name="csrf-token"]').attr("content")},error:function(e){jQuery(r).html('<div class="alrt alert-error">'+e.responseText+"</div>")},beforeSend:function(e){jQuery(r).html('<p class="text-center"><i class="fa fa-spin fa-spinner"></i></p>')},success:function(e){void 0===n||null===n?jQuery(r).html(e):jQuery(r).text(e)}})}!function(e){"use strict";jQuery(document).ready(function(){jQuery("#flash-overlay-modal").modal(),jQuery.ajaxSetup({headers:{"X-CSRF-TOKEN":jQuery('meta[name="csrf-token"]').attr("content")}})})}(jQuery);
+</script>
+<script type="e15bcc63b065c5730b1b8de1-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-80202287-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="e15bcc63b065c5730b1b8de1-" defer=""></script></body>
+</html>

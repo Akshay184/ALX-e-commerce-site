@@ -52,6 +52,7 @@ body{
     font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    
     /* padding: 0 20px; */
 }
 
@@ -188,14 +189,15 @@ body{
 .slider{
     
     overflow: hidden;
-    height: 100%;
+    weight: 100%;
+    height: auto;
     margin-top: 8%;
     
 }
 .slider figure img{
     width: 20%;
     float: left;
-    height: 500px;
+    height: 450px;
     
     
 }
@@ -206,7 +208,6 @@ body{
     left: 0;
     animation: slider 15s infinite;
     background-size: 100% 100%;
-    top: 0px;
 }
 
 @keyframes slider{
@@ -255,11 +256,12 @@ body{
     /* padding-bottom: 50px; */
     padding-left: 10px;
     margin-left: 50%;
-    padding-top: 40%;
+    margin-top: 30%;
     transform: translate(-50%,-50%);
     
     width: 90%;
     display: flex;
+   
     
     
     
@@ -387,17 +389,26 @@ body{
         display: none;
         
     }
+    
 }
     @media (max-width: 768px)
     {
         .container{
            display: initial;
+           
         }
         .container .box{
             width: 50%;
             height: 250px;
             float: left;
     
+        }
+        
+        .slider{
+            margin-top: 0;
+        }
+        .slider figure img{
+            height: 200px;
         }
     }
     @media (max-width: 480px)
@@ -406,6 +417,9 @@ body{
            top: 0;
            left: 0;
            transform: translate(0);
+        }
+        .slider figure img{
+            height: 120px;
         }
         .container .box{
             width: 100%;
@@ -488,6 +502,34 @@ body{
     padding-left: 120px;
     color: #88CCF1;
     
+}
+
+@media (max-width:940px)
+{
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:640px)
+{
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+        .txt{
+               font-size:0.5em;
+        }
+     .end-logo{
+         font-size: 0;
+     }
+    }
+@media (max-width:500px)
+{
+    .overlay input[type=text]{
+        width: 50%;
+        font-size: 30px;
+    }
 }
 
 

@@ -15,53 +15,68 @@ namespace ALX.USER_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
-            ds = GetData();
-            lblDescription.Text = ds.Tables[0].Rows[0]["Description"].ToString();
-            lblProductName.Text = ds.Tables[0].Rows[0]["ProductName"].ToString();
-            lblPrice.Text = ds.Tables[0].Rows[0]["Price"].ToString();
-            imgPic.ImageUrl = ds.Tables[0].Rows[0]["images"].ToString();
-            btnAddToCart.CommandArgument = ds.Tables[0].Rows[0]["ProductId"].ToString();
-            btnContactNumber.Text = ds.Tables[0].Rows[0]["ContactNumber"].ToString();
-            btnEmail.Text = ds.Tables[0].Rows[0]["Email"].ToString();
+            if (Session["UserId"] == null)
+            {
+                Response.Redirect("~/USER_PANEL/Login.aspx");
+            }
+            else
+            {
+
+                DataSet ds = new DataSet();
+
+                ds = GetData();
+                lblDescription.Text = ds.Tables[0].Rows[0]["Description"].ToString();
+                lblProductName.Text = ds.Tables[0].Rows[0]["ProductName"].ToString();
+                lblPrice.Text = ds.Tables[0].Rows[0]["Price"].ToString();
+                imgPic.ImageUrl = ds.Tables[0].Rows[0]["images"].ToString();
+                btnAddToCart.CommandArgument = ds.Tables[0].Rows[0]["ProductId"].ToString();
+                btnContactNumber.Text = ds.Tables[0].Rows[0]["ContactNumber"].ToString();
+                btnEmail.Text = ds.Tables[0].Rows[0]["Email"].ToString();
+            }
 
             if(Session["UserId"] != null)
             {
+              
 
-                HtmlGenericControl li1 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li1);
-                HtmlGenericControl anchor1 = new HtmlGenericControl("a");
-                anchor1.Attributes.Add("href", "AddProduct.aspx");
-                anchor1.InnerText = "Sell";
-                li1.Controls.Add(anchor1);
+                    HtmlGenericControl li1 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li1);
+                    HtmlGenericControl anchor1 = new HtmlGenericControl("a");
+                    anchor1.Attributes.Add("href", "AddProduct.aspx");
+                    anchor1.InnerText = "Sell";
+                    li1.Controls.Add(anchor1);
 
-                HtmlGenericControl li2 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li2);
-                HtmlGenericControl anchor2 = new HtmlGenericControl("a");
-                anchor2.Attributes.Add("href", "#");
-                anchor2.InnerText = "Profile";
-                li2.Controls.Add(anchor2);
+                    HtmlGenericControl li2 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li2);
+                    HtmlGenericControl anchor2 = new HtmlGenericControl("a");
+                    anchor2.Attributes.Add("href", "EditProfile");
+                    anchor2.InnerText = "Profile";
+                    li2.Controls.Add(anchor2);
 
-                HtmlGenericControl li3 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li3);
-                HtmlGenericControl anchor3 = new HtmlGenericControl("a");
-                anchor3.Attributes.Add("href", "Products.aspx");
-                anchor3.InnerText = "Account";
-                li3.Controls.Add(anchor3);
+                    HtmlGenericControl li3 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li3);
+                    HtmlGenericControl anchor3 = new HtmlGenericControl("a");
+                    anchor3.Attributes.Add("href", "Account.aspx");
+                    anchor3.InnerText = "Account";
+                    li3.Controls.Add(anchor3);
 
-                HtmlGenericControl li4 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li4);
-                LinkButton link = new LinkButton();
-                link.Text = "Logout";
-                link.ID = "lnkLogout";
-                link.Click += new System.EventHandler(lnkLogout_Click);
-                li4.Controls.Add(link);
+                    HtmlGenericControl li4 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li4);
+                    LinkButton link = new LinkButton();
+                    link.Text = "Logout";
+                    link.ID = "lnkLogout";
+                    link.Click += new System.EventHandler(lnkLogout_Click);
+                    li4.Controls.Add(link);
+                
             }
         }
 
         protected void lnkLogout_Click(object sender, EventArgs e)
         {
             Session["UserId"] = null;
+            ulLogin.Controls.RemoveAt(0);
+            ulLogin.Controls.RemoveAt(1);
+            ulLogin.Controls.RemoveAt(2);
+            ulLogin.Controls.RemoveAt(3);
         }
 
         protected void Books(object sender, EventArgs e)

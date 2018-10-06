@@ -17,43 +17,55 @@ namespace ALX.USER_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserId"] != null)
+            {
+                Response.Redirect("~/USER_PANEL/ALXHome.aspx");
+            }
+            lblSignup.Text = "";
             if(Session["UserId"] != null)
             {
+                
 
-                HtmlGenericControl li1 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li1);
-                HtmlGenericControl anchor1 = new HtmlGenericControl("a");
-                anchor1.Attributes.Add("href", "AddProduct.aspx");
-                anchor1.InnerText = "Sell";
-                li1.Controls.Add(anchor1);
 
-                HtmlGenericControl li2 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li2);
-                HtmlGenericControl anchor2 = new HtmlGenericControl("a");
-                anchor2.Attributes.Add("href", "#");
-                anchor2.InnerText = "Profile";
-                li2.Controls.Add(anchor2);
+                    HtmlGenericControl li1 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li1);
+                    HtmlGenericControl anchor1 = new HtmlGenericControl("a");
+                    anchor1.Attributes.Add("href", "AddProduct.aspx");
+                    anchor1.InnerText = "Sell";
+                    li1.Controls.Add(anchor1);
 
-                HtmlGenericControl li3 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li3);
-                HtmlGenericControl anchor3 = new HtmlGenericControl("a");
-                anchor3.Attributes.Add("href", "Products.aspx");
-                anchor3.InnerText = "Account";
-                li3.Controls.Add(anchor3);
+                    HtmlGenericControl li2 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li2);
+                    HtmlGenericControl anchor2 = new HtmlGenericControl("a");
+                    anchor2.Attributes.Add("href", "EditProfile");
+                    anchor2.InnerText = "Profile";
+                    li2.Controls.Add(anchor2);
 
-                HtmlGenericControl li4 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li4);
-                LinkButton link = new LinkButton();
-                link.Text = "Logout";
-                link.ID = "lnkLogout";
-                link.Click += new System.EventHandler(lnkLogout_Click);
-                li4.Controls.Add(link);
+                    HtmlGenericControl li3 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li3);
+                    HtmlGenericControl anchor3 = new HtmlGenericControl("a");
+                    anchor3.Attributes.Add("href", "Account.aspx");
+                    anchor3.InnerText = "Account";
+                    li3.Controls.Add(anchor3);
+
+                    HtmlGenericControl li4 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li4);
+                    LinkButton link = new LinkButton();
+                    link.Text = "Logout";
+                    link.ID = "lnkLogout";
+                    link.Click += new System.EventHandler(lnkLogout_Click);
+                    li4.Controls.Add(link);
+                
             }
         }
 
         protected void lnkLogout_Click(object sender, EventArgs e)
         {
             Session["UserId"] = null;
+            ulLogin.Controls.RemoveAt(0);
+            ulLogin.Controls.RemoveAt(1);
+            ulLogin.Controls.RemoveAt(2);
+            ulLogin.Controls.RemoveAt(3);
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
@@ -83,7 +95,7 @@ namespace ALX.USER_PANEL
                     int ReturnCount = (int)cmd.ExecuteScalar();
                     if (ReturnCount == 1)
                     {
-                        Response.Write("User or Email Already exist");
+                       lblSignup.Text="UserName Or Email Already Exists";
                     }
                     else
                     {
@@ -125,10 +137,14 @@ namespace ALX.USER_PANEL
             string ActivationCode = "";
             using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("select ActivationCode from tblUserInformation where UserName=@UserName", con);
-                cmd.Parameters.AddWithValue("@UserName", txtUserName.Text);
+                SqlDataAdapter da = new SqlDataAdapter("select ActivationCode, UserID from tblUserInformation where UserName = @UserName", con);
+                da.SelectCommand.Parameters.AddWithValue("@UserName", Session["UserName"]);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+
                 con.Open();
-                ActivationCode = cmd.ExecuteScalar().ToString();
+                ActivationCode = ds.Tables[0].Rows[0]["ActivationCode"].ToString();
+                string User = ds.Tables[0].Rows[0]["UserId"].ToString();
 
             }
 
@@ -138,7 +154,7 @@ namespace ALX.USER_PANEL
                 mailmessage.Subject = "Email Verication For Your ALX Account";
                 string body = "Hello " + txtUserName.Text;
                 body += "<br />  Please Follow the bellow link to verify your account";
-                body += "<br /> <a href='" + Request.Url.AbsoluteUri.Replace("Signup", "EmailVerification.aspx?ActivationCode=" + ActivationCode) + "' >Click here to activate your account</a>";
+                body += "<br /> <a href='" + Request.Url.AbsoluteUri.Replace("Signup", "Login.aspx?ActivationCode=" + ActivationCode ) + "' >Click here to activate your account</a>";
                 body += "<br/ >Thanks";
                 mailmessage.Body = body;
                 mailmessage.IsBodyHtml = true;

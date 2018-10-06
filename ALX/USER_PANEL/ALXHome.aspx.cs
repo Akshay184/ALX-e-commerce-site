@@ -12,57 +12,67 @@ using System.Configuration;
 namespace ALX.USER_PANEL
 {
     public partial class ALXHome : System.Web.UI.Page
+
+    
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public void Page_Load(object sender, EventArgs e)
         {
            
-            if (Session["UserId"] == null)
+           
+            if(Session["UserId"] != null)
             {
-                //Response.Redirect("~/USER_PANEL/Login.aspx");
-            }
-            else
-            {
-                //ulLogin.Controls.Add(new LiteralControl("<li>1</li>"));
-                //ulLogin.Controls.Add(new LiteralControl("<li></li>"));
+               
 
-                HtmlGenericControl li1 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li1);
-                HtmlGenericControl anchor1 = new HtmlGenericControl("a");
-                anchor1.Attributes.Add("href", "AddProduct.aspx");
-                anchor1.InnerText = "Sell";
-                li1.Controls.Add(anchor1);
 
-                HtmlGenericControl li2 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li2);
-                HtmlGenericControl anchor2 = new HtmlGenericControl("a");
-                anchor2.Attributes.Add("href", "#");
-                anchor2.InnerText = "Profile";
-                li2.Controls.Add(anchor2);
+                  HtmlGenericControl  li1 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li1);
+                    HtmlGenericControl anchor1 = new HtmlGenericControl("a");
+                    anchor1.Attributes.Add("href", "AddProduct.aspx");
+                    anchor1.InnerText = "Sell";
+                    li1.Controls.Add(anchor1);
 
-                HtmlGenericControl li3 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li3);
-                HtmlGenericControl anchor3 = new HtmlGenericControl("a");
-                anchor3.Attributes.Add("href", "Products.aspx");
-                anchor3.InnerText = "Account";
-                li3.Controls.Add(anchor3);
+                    HtmlGenericControl li2 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li2);
+                    HtmlGenericControl anchor2 = new HtmlGenericControl("a");
+                    anchor2.Attributes.Add("href", "EditProfile");
+                    anchor2.InnerText = "Profile";
+                    li2.Controls.Add(anchor2);
 
-                HtmlGenericControl li4 = new HtmlGenericControl("li");
-                ulLogin.Controls.Add(li4);
-                LinkButton link = new LinkButton();
-                link.Text = "Logout";
-                link.ID = "lnkLogout";
-                link.Click += new System.EventHandler(lnkLogout_Click);
-                li4.Controls.Add(link);
+                    HtmlGenericControl li3 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li3);
+                    HtmlGenericControl anchor3 = new HtmlGenericControl("a");
+                    anchor3.Attributes.Add("href", "Account.aspx");
+                    anchor3.InnerText = "Account";
+                    li3.Controls.Add(anchor3);
+
+                    HtmlGenericControl li4 = new HtmlGenericControl("li");
+                    ulLogin.Controls.Add(li4);
+                    LinkButton link = new LinkButton();
+                    link.Text = "Logout";
+                    link.ID = "lnkLogout";
+                    link.Click += new System.EventHandler(lnkLogout_Click);
+                    li4.Controls.Add(link);
+                
 
             }
         }
+
+       
 
         protected void lnkLogout_Click(object sender, EventArgs e)
         {
             Session["UserId"] = null;
+            ulLogin.Controls.RemoveAt(0);
+            ulLogin.Controls.RemoveAt(1);
+            ulLogin.Controls.RemoveAt(2);
+            ulLogin.Controls.RemoveAt(3);
+
+
+
+
         }
 
-       
+
 
         protected void Books(object sender, EventArgs e)
         {

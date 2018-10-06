@@ -35,12 +35,21 @@
             </asp:HyperLink>
         <div class="menu">
             <ul>
-                   <li><asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></li>
-                   <li><asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></li>
-                   <li><asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></li>
-                   <li><asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></li>
-                   <li><asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></li>
-                   <li><button class="logo-btn" onclick="openSearch();return false;"><i class="fa fa-search"></i></button></li>
+                     <li>
+                            <b><asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></b></li>
+                        <li>
+                           <b>  <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></b></li>
+                        <li>
+                            <b> <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></b></li>
+                        <li>
+                            <b> <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></b></li>
+                        <li>
+                           <b>  <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></b></li>
+                        <%--<asp:Button ID="btnSearch" runat="server"  OnClick="openSearch()" />--%>
+                        <li>
+                            <%--<asp:Button ID="btnSearch" runat="server" class="fa fa-search"  OnClientClick="openSearch(); return false;" />--%>
+                            <button id="btnSearch" class="logo-btn" onclick="openSearch();return false;"><i class="fa fa-search"></i></button>
+                        </li>
                     
                     
                    <li> <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/USER_PANEL/Login.aspx"><b><i class="fas fa-user-circle"></i></b></asp:HyperLink>
@@ -89,8 +98,7 @@
                     <h1> <asp:Label ID="lblProducuNmae" runat="server" Text='<%# Eval("ProductName") %>'></asp:Label></h1>
                     <p> <asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label></p>
 
-                    <p class="button"> <asp:Button ID="btnAddToCart" runat="server"  OnCommand="AddToCart1" CommandArgument='<%# Eval("ProductId") %>' Text="Add to Cart" />     </p>
-                     
+                    <%--<p class="button"> <asp:Button ID="btnAddToCart" runat="server"  OnCommand="AddToCart1" CommandArgument='<%# Eval("ProductId") %>' Text="Add to Cart" />     </p>--%>
                  </asp:LinkButton>
             </div>
                 </ItemTemplate>

@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background:url(../images/upload.jpg) ;
+    background: url(..images/upload.jpg);
     display: 100% 100%;
     /* background-size: cover; */
 }
@@ -13,7 +13,7 @@ body{
 }
 .sell{
     margin-left: 37%;
-    margin-top: 7%;
+    margin-top: 8%;
     margin-bottom: 8%;
     padding-top: -10px;
     
@@ -55,7 +55,7 @@ border-radius: 5px;
 .sell .inputbox input:hover,textarea:hover,select:hover{
     opacity: 1;
 }
-.up
+
 .upload input{
     border: none;
     outline: none;
@@ -68,11 +68,10 @@ border-radius: 5px;
     border: none;
     margin-top: 5%;
 }
-
 .sell input[type="submit"]{
+    margin-top: 10%;
     border-radius: 18px;
     color: white;
-    margin-top:10%;
     background-color: #2274A5;
     border: none;
     padding: 10px 100px;
@@ -85,6 +84,6 @@ border-radius: 5px;
 .sell [type="submit"]:hover{
     background-color: white;
     color: #2274A5;
-    border:1px solid #2274A5;
+    border: 1px solid #2274A5; 
     transition: all 0.2s ease-in;
 }

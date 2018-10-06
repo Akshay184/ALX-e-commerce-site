@@ -23,12 +23,21 @@
                 <div class="menu">
                     <ul>
 
-                          <li> <asp:LinkButton ID="lnkBooks2" runat="server"  CssClass="line" OnCommand="Books">BOOKS</asp:LinkButton></li>
-                 <li>   <asp:LinkButton ID="lnlClothes" runat="server" class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></li>
-                   <li> <asp:LinkButton ID="lnkElectronics" runat="server" class="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></li>
-                   <li> <asp:LinkButton ID="lnkFurniture" runat="server" class="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></li>
-                  <li>  <asp:LinkButton ID="lnkVehicles" runat="server" class="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></li>
-                           <li> <button class="logo-btn" onclick="openSearch();return false;"><i class="fa fa-search"></i></button></li>
+                         <li>
+                            <b><asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></b></li>
+                        <li>
+                           <b>  <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></b></li>
+                        <li>
+                            <b> <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></b></li>
+                        <li>
+                            <b> <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></b></li>
+                        <li>
+                           <b>  <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></b></li>
+                        <%--<asp:Button ID="btnSearch" runat="server"  OnClick="openSearch()" />--%>
+                        <li>
+                            <%--<asp:Button ID="btnSearch" runat="server" class="fa fa-search"  OnClientClick="openSearch(); return false;" />--%>
+                            <button id="btnSearch" class="logo-btn" onclick="openSearch();return false;"><i class="fa fa-search"></i></button>
+                        </li>
                         
                         <li>
                             <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/USER_PANEL/Login.aspx"><b><i class="fas fa-user-circle"></i></b></asp:HyperLink>
@@ -56,6 +65,7 @@
                 <!-- <div class="align2">
                     
                     </div> -->
+                 <asp:Label ID="lblSignup" runat="server" ></asp:Label>
                 <div class="align">
 
                     <h2>Sign Up</h2>
@@ -63,11 +73,12 @@
 
 
                 <div class="inputbox">
+                   
                     <asp:TextBox ID="txtName" runat="server" AutoCompleteType="Disabled"></asp:TextBox>
                     <asp:Label ID="lblName" Text="Name" runat="server"></asp:Label>
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
-                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtName" ForeColor="Red">
+                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtName"  ValidationGroup="Signup" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                     </p>
 
@@ -77,7 +88,7 @@
                     <asp:Label ID="lblEmail" Text="Email" runat="server"></asp:Label>
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
-                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtEmail" ForeColor="Red">
+                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtEmail"  ValidationGroup="Signup" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                       <%--  <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"
                             ErrorMessage="Email Address Not Valid" ForeColor="Red" ControlToValidate="txtEmail" ValidationExpression="[a-zA-Z0-9.-]+@[a-zA-Z0-9]+\.com"
@@ -87,11 +98,11 @@
                     </p>
                 </div>
                 <div class="inputbox">
-                    <asp:TextBox ID="txtUserName" runat="server" AutoCompleteType="Disabled"></asp:TextBox>
+                    <asp:TextBox ID="txtUserName" runat="server" AutoCompleteType="Disabled" ValidationGroup="Signup"></asp:TextBox>
                     <asp:Label ID="lblUserName" Text="Username" runat="server"></asp:Label>
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
-                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtUserName" ForeColor="Red">
+                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtUserName"  ValidationGroup="Signup" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                     </p>
                 </div>
@@ -100,12 +111,10 @@
                     <asp:Label ID="lblPassword" Text="Password" runat="server"></asp:Label>
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"
-                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtPassword" ForeColor="Red">
-                        </asp:RequiredFieldValidator>
+                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtPassword" ForeColor="Red" ValidationGroup="Signup"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
                             ErrorMessage="Type Valid Password" ControlToValidate="txtPassword" ForeColor="Red"
-                            Display="Dynamic" ValidationExpression="[A-Z]+[A-Za-z0-9\W]+\W+[0-9]+[A-Za-z0-9]*"
-                            runat="server">
+                            Display="Dynamic" ValidationExpression="[A-Z]+[A-Za-z0-9\W]+\W+[0-9]+[A-Za-z0-9]*"  runat="server">
 
                         </asp:RegularExpressionValidator>
                     </p>
@@ -115,11 +124,11 @@
                     <asp:Label ID="lblConfirmPassword" Text="Confirm Password" runat="server"></asp:Label>
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
-                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtConfirmPassword" ForeColor="Red">
+                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtConfirmPassword"   ValidationGroup="Signup" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidatorPassword" runat="server"
                             ErrorMessage="Password does not match" FortColor="Red" ControlToValidate="txtConfirmPassword" ControlToCompare="txtPassword"
-                            Operator="Equal" Type="String" Display="Dynamic" ForeColor="Red" ></asp:CompareValidator>
+                            Operator="Equal" Type="String" Display="Dynamic" ForeColor="Red" ValidationGroup="Signup" ></asp:CompareValidator>
                     </p>
                 </div>
                 <div class="inputbox">
@@ -127,16 +136,14 @@
                     <asp:Label ID="lblContactNumber" Text="Contact Number" runat="server"></asp:Label>
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
-                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtContactNumber" ForeColor="Red">
+                            ErrorMessage="This Field Is REQUIED" ControlToValidate="txtContactNumber"  ValidationGroup="Signup" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                         
                       <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="Only 10 digits number are allowed"
-                         ControlToValidate="txtContactNumber" ForeColor="Red" ValidationExpression="\d\d\d\d\d\d\d\d\d\d"> 
-
-            </asp:RegularExpressionValidator>
+                         ControlToValidate="txtContactNumber" ForeColor="Red" ValidationExpression="\d\d\d\d\d\d\d\d\d\d" ValidationGroup="Signup"></asp:RegularExpressionValidator>
                     </p>
                 </div>
-                <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
+                <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" ValidationGroup="Signup" />
 
 
                 <div class="align-txt">

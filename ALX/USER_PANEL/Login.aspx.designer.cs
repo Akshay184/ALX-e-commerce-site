@@ -76,6 +76,15 @@ namespace ALX.USER_PANEL {
         protected global::System.Web.UI.WebControls.LinkButton lnkVehicles;
         
         /// <summary>
+        /// lnkSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkSearch;
+        
+        /// <summary>
         /// HyperLink12 control.
         /// </summary>
         /// <remarks>
@@ -128,6 +137,15 @@ namespace ALX.USER_PANEL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEmail;
+        
+        /// <summary>
+        /// lblEmailVerified control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEmailVerified;
         
         /// <summary>
         /// txtUserName control.

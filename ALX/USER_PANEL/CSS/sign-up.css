@@ -2,8 +2,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(../alx/images/login.jpg);
-    background-size: cover;
+    background: url(../images/login.jpg);
+    display: 100% 100%;
+    /* background-size: cover; */
 }
 
 .box{

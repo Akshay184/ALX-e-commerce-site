@@ -34,19 +34,20 @@
                     <img class="logo" src="images/alx-logo.png"></a>
                 <div class="menu">
                     <ul>
+                          <li>
+                            <b><asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></li>
+                           <b>  <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></li>
+                            <b> <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></li>
+                            <b> <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></li>
-                        <li>
-                            <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></li>
+                           <b>  <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></b></li>
                         <%--<asp:Button ID="btnSearch" runat="server"  OnClick="openSearch()" />--%>
                         <li>
-                            <button class="logo-btn" onclick="openSearch();return false;"><i class="fa fa-search"></i></button>
+                            <%--<asp:Button ID="btnSearch" runat="server" class="fa fa-search"  OnClientClick="openSearch(); return false;" />--%>
+                            <button id="btnSearch" class="logo-btn" onclick="openSearch();return false;"><i class="fa fa-search"></i></button>
                         </li>
                         <li>
                             <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/USER_PANEL/Login.aspx"><b><i class="fas fa-user-circle"></i></b></asp:HyperLink>
@@ -54,7 +55,7 @@
                         <p></p><p></p><p></p>      
                     </ul>
                         </li>
-
+                         <li> <asp:HyperLink ID="hylAddToCart" runat="server" NavigateUrl="~/USER_PANEL/AddToCart.aspx"><i class="fa fa-shopping-cart"></i> </asp:HyperLink></li>
                     </ul>
                 </div>
             </div>
@@ -81,16 +82,24 @@
 
                     <asp:TextBox ID="txtTitle" runat="server" placeholder="Title"></asp:TextBox>
 
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtTitle" ErrorMessage="The Field Is Required" ForeColor="Red" ValidationGroup="SellProduct"></asp:RequiredFieldValidator>
+
                 </div>
                 <div class="inputbox">
 
                     <asp:TextBox ID="txtDescription" runat="server" placeholder="Description..." TextMode="MultiLine"></asp:TextBox>
 
 
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtDescription" ErrorMessage="The Field Is Required" ForeColor="Red" ValidationGroup="SellProduct"></asp:RequiredFieldValidator>
+
+
                 </div>
                 <div class="inputbox">
 
                     <asp:TextBox ID="txtPrice" runat="server" placeholder="Price"></asp:TextBox>
+
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtPrice" Display="Dynamic" ErrorMessage="The Field Is Required" ForeColor="Red" ValidationGroup="SellProduct"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtPrice" Display="Dynamic" ErrorMessage="Enter a Valid Price Range" ForeColor="Red" ValidationExpression="[0-9]+" ValidationGroup="SellProduct"></asp:RegularExpressionValidator>
 
                 </div>
                 <div class="inputbox">
@@ -116,9 +125,10 @@
                 <div class="upload">
                     <p>Upload image:</p>
                     <asp:FileUpload ID="fileuploadProducts" runat="server" />
+                    <asp:Label ID="lblFile" runat="server"></asp:Label>
                 </div>
                 <div>
-                    <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
+                    <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" ValidationGroup="SellProduct" />
                 </div>
     </form>
     </div>

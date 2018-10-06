@@ -15,14 +15,16 @@
 <script>
     function openSearch() {
         document.getElementById("myOverlay").style.display = "block";
+       
     }
 
     function closeSearch() {
         document.getElementById("myOverlay").style.display = "none";
     }
+   
 </script>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server"  >
         <div>
             <!-- navigation -->
             <div class="navigation">
@@ -32,20 +34,22 @@
 
                 <div class="menu">
                     <ul>
+                          <li>
+                            <b><asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></li>
+                           <b>  <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></li>
+                            <b> <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></li>
+                            <b> <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></li>
-                        <li>
-                            <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></li>
-
+                           <b>  <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></b></li>
                         <%--<asp:Button ID="btnSearch" runat="server"  OnClick="openSearch()" />--%>
                         <li>
-                            <button class="logo-btn" onclick="openSearch();return false;"><i class="fa fa-search"></i></button>
+                            <%--<asp:Button ID="btnSearch" runat="server"   OnClientClick="openSearch(); return false;" />--%>
+                           <%--<asp:Button id="btnSearch" class="logo-btn" />--%>
+                            <%--<asp:Button ID="btnSearch"  runat="server" OnClientClick="openSearch();return false;" useSubmitBehavior="false" > <i class="fa fa-search"></i></asp:Button>--%>
+                            <asp:LinkButton ID="lnkSearch" runat="server" OnClientClick="openSearch();return false;"  useSubmitBehavior="false"><i class="fa fa-search"></i></asp:LinkButton>
                         </li>
 
 
@@ -65,7 +69,7 @@
                 <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                 <div class="overlay-content animate">
 
-                     <asp:TextBox ID="txtSearch" runat="server"  placeholder="Search.."></asp:TextBox>
+                     <asp:TextBox ID="txtSearch" runat="server"  placeholder="Search.." ></asp:TextBox>
                    <asp:Button ID="btnSearch1" runat="server" OnClick="btnSearch1_Click" Text="Search" />
 
                 </div>
@@ -77,7 +81,7 @@
             </h2>
             <!-- login modal -->
             <div class="box">
-
+                <asp:Label ID="lblEmailVerified" runat="server"></asp:Label>
                 <div class="align">
                     <h2>Login</h2>
 
@@ -85,13 +89,13 @@
 
 
                 <div class="inputbox">
-                    <asp:TextBox ID="txtUserName" runat="server" AutoCompleteType="Disabled" CssClass="input"></asp:TextBox>
+                    <asp:TextBox ID="txtUserName" runat="server" AutoCompleteType="Disabled" CssClass="input"  onkeydown="return (event.KeyCode!=13);"></asp:TextBox>
                     <%--<input type="text" name="" runat="server" id="txtUserName11" />--%>
-                    <asp:Label ID="lblUserName" Text="Username" runat="server"></asp:Label>
+                    <asp:Label ID="lblUserName" Text="Username/Email" runat="server"></asp:Label>
 
                 </div>
                 <div class="inputbox">
-                    <asp:TextBox ID="txtPassword" Type="Password" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtPassword" Type="Password" runat="server"  onkeydown="return (event.KeyCode!=13);"></asp:TextBox>
                     <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
 
                 </div>

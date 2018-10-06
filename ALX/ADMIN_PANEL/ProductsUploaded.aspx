@@ -80,7 +80,7 @@
                              <asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label>
                         </td>
                         <td>
-                            <asp:Label ID="lblDescription" runat="server" Text='<%# Eval("Description") %>'></asp:Label>
+                            <asp:Label ID="lblDescription" runat="server" Text='<%# Eval("Description") %>'  Width="300px" Style="word-wrap:normal;word-break:break-all;"></asp:Label>
                         </td>
                         <td>
                              <asp:Image ID="imgProducts" ImageUrl='<%# Eval("images") %>' runat="server" />

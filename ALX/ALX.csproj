@@ -217,22 +217,34 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ImagesUpload\profile-picture.jpg" />
     <Content Include="Profile.aspx" />
+    <Content Include="USER_PANEL\Account.aspx" />
     <Content Include="USER_PANEL\AddProduct.aspx" />
     <Content Include="USER_PANEL\AddToCart.aspx" />
     <Content Include="USER_PANEL\ALXHome.aspx" />
     <Content Include="USER_PANEL\CSS\account.css" />
+    <Content Include="USER_PANEL\CSS\edit-profile.css" />
+    <Content Include="USER_PANEL\CSS\home.css" />
     <Content Include="USER_PANEL\CSS\log-nav.css" />
     <Content Include="USER_PANEL\CSS\login.css" />
     <Content Include="USER_PANEL\CSS\products.css" />
+    <Content Include="USER_PANEL\CSS\res-nav.css" />
+    <Content Include="USER_PANEL\CSS\rev-nav1.css" />
+    <Content Include="USER_PANEL\CSS\sell.css" />
     <Content Include="USER_PANEL\CSS\sign-up.css" />
     <Content Include="USER_PANEL\CSS\single-product.css" />
     <Content Include="USER_PANEL\CSS\ss.css" />
     <Content Include="USER_PANEL\CSS\style.css" />
     <Content Include="USER_PANEL\Description.aspx" />
+    <Content Include="USER_PANEL\EditProfile.aspx" />
     <Content Include="USER_PANEL\images\01.jpeg" />
+    <Content Include="USER_PANEL\images\0d635160-d6c2-4a9d-881e-f306ff74c2c61538308204725-Maybelline_Desktop_Banner.jpg" />
+    <Content Include="USER_PANEL\images\0dca6520-05b1-4079-9751-7c25c1d8e2db1538308204714-Reebok_Desktop_Banner.jpg" />
     <Content Include="USER_PANEL\images\17924-fashion-illustration-women-wallpapers.jpg" />
+    <Content Include="USER_PANEL\images\33.jpg" />
     <Content Include="USER_PANEL\images\49985694-home-electronics-sketch-icons-isolation-white-background-vector-horizontal-banner-electronics-vector.jpg" />
+    <Content Include="USER_PANEL\images\76713462-ecommerce-online-service-pattern-background-vector.jpg" />
     <Content Include="USER_PANEL\images\800px_COLOURBOX5227270.jpg" />
     <Content Include="USER_PANEL\images\915801.jpg" />
     <Content Include="USER_PANEL\images\9257a5f844a4229.jpg" />
@@ -240,16 +252,34 @@
     <Content Include="USER_PANEL\images\alx1.png" />
     <Content Include="USER_PANEL\images\alx1.svg" />
     <Content Include="USER_PANEL\images\book.jpeg" />
+    <Content Include="USER_PANEL\images\boys.jpg" />
     <Content Include="USER_PANEL\images\car.jpg" />
+    <Content Include="USER_PANEL\images\cars-seamless-pattern_1284-7808.jpg" />
+    <Content Include="USER_PANEL\images\cars.jpg" />
     <Content Include="USER_PANEL\images\Cool-Books-Vector.jpg" />
+    <Content Include="USER_PANEL\images\f6b827fc-4bd5-4127-af90-7b44a744888d1538308204765-DK_Desktop_Banner.jpg" />
+    <Content Include="USER_PANEL\images\fbc15a10-4161-485e-82cb-c39fd3bfbad81538308204745-Harpa_Desktop_Banner.jpg" />
+    <Content Include="USER_PANEL\images\furn.jpg" />
+    <Content Include="USER_PANEL\images\furniture1.jpg" />
+    <Content Include="USER_PANEL\images\gadgets.jpg" />
+    <Content Include="USER_PANEL\images\girl.jpg" />
     <Content Include="USER_PANEL\images\IMG_0321.JPG" />
     <Content Include="USER_PANEL\images\interior-decor-background-colored-furniture-icons-cover.png" />
     <Content Include="USER_PANEL\images\login.jpg" />
     <Content Include="USER_PANEL\images\login1.png" />
+    <Content Include="USER_PANEL\images\pattern-about-shopping_1061-495.jpg" />
     <Content Include="USER_PANEL\images\product.jpg" />
+    <Content Include="USER_PANEL\images\product1.jpg" />
+    <Content Include="USER_PANEL\images\product3jpg.jpg" />
     <Content Include="USER_PANEL\images\product4.jpg" />
+    <Content Include="USER_PANEL\images\profile-picture.jpg" />
+    <Content Include="USER_PANEL\images\profile.png" />
+    <Content Include="USER_PANEL\images\ree.jpg" />
+    <Content Include="USER_PANEL\images\seamless-pattern-with-online-shopping-icons-in-vector-20791409.jpg" />
     <Content Include="USER_PANEL\images\upload.jpg" />
+    <Content Include="USER_PANEL\images\user.png" />
     <Content Include="USER_PANEL\images\vector_cartoon_children_clothes_hanger_drying_296255.jpg" />
+    <Content Include="USER_PANEL\images\watch.jpg" />
     <Content Include="USER_PANEL\Login.aspx" />
     <Content Include="USER_PANEL\Products.aspx" />
     <Content Include="USER_PANEL\Signup.aspx" />
@@ -529,6 +559,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="USER_PANEL\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
     <Compile Include="USER_PANEL\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -556,6 +593,13 @@
     </Compile>
     <Compile Include="USER_PANEL\Description.aspx.designer.cs">
       <DependentUpon>Description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_PANEL\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="USER_PANEL\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -595,7 +639,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ImagesUpload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_LocalResources\Login.aspx.resx" />

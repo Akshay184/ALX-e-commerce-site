@@ -7,6 +7,7 @@
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1" />
     <link href="CSS/style.css" rel="stylesheet" />
     <link href="CSS/log-nav.css" rel="stylesheet" />
+    <link href="CSS/home.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous" />
     <title>ALX</title>
@@ -32,15 +33,15 @@
                 <div class="menu">
                     <ul>
                         <li>
-                            <asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></li>
+                            <b><asp:LinkButton ID="lnkBooks2" runat="server" Class="line" OnCommand="Books">BOOKS</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></li>
+                           <b>  <asp:LinkButton ID="lnlClothes" runat="server" Class="line" OnCommand="Clothes">CLOTHING</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></li>
+                            <b> <asp:LinkButton ID="lnkElectronics" runat="server" CssClass="line" OnCommand="Electronics">ELECTRONICS</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></li>
+                            <b> <asp:LinkButton ID="lnkFurniture" runat="server" CssClass="line" OnCommand="Furniture">FURNITURE</asp:LinkButton></b></li>
                         <li>
-                            <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></li>
+                           <b>  <asp:LinkButton ID="lnkVehicles" runat="server" CssClass="line" OnCommand="Vehicles">VEHICLES</asp:LinkButton></b></li>
                         <%--<asp:Button ID="btnSearch" runat="server"  OnClick="openSearch()" />--%>
                         <li>
                             <%--<asp:Button ID="btnSearch" runat="server" class="fa fa-search"  OnClientClick="openSearch(); return false;" />--%>
@@ -83,16 +84,16 @@
                 <div class="slider">
                     <figure>
 
-                        <img src="images/01.jpeg" />
-                        <img src="images/17924-fashion-illustration-women-wallpapers.jpg" />
-                        <img src="images/915801.jpg" />
-                        <img src="images/interior-decor-background-colored-furniture-icons-cover.png" />
-                        <img src="images/01.jpeg" />
+                        <img src="images/watch.jpg" />
+                        <img src="images/girl.jpg" />
+                        <img src="images/ree.jpg" />
+                        <img src="images/furn.jpg" />
+                        <img src="images/watch.jpg" />
                     </figure>
                 </div>
             </div>
 
-
+            <h1 data-text="Designed for Sell,Engineered to Last">Designed for Sell,Engineered to Last</h1>
 
             <!-- Contents -->
 
@@ -128,7 +129,7 @@
 
                 <div class="box">
                     <div class="thumb">
-                        <img src="images/01.jpeg" height="250em">
+                        <img src="images/gadgets.jpg" height="250em">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -141,7 +142,7 @@
 
                 <div class="box">
                     <div class="thumb">
-                        <img src="images/800px_COLOURBOX5227270.jpg" height="250em">
+                        <img src="images/furniture1.jpg" height="250em">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -154,7 +155,7 @@
 
                 <div class="box">
                     <div class="thumb">
-                        <img src="images/car.jpg" height="250em">
+                        <img src="images/cars.jpg" height="250em">
                     </div>
                     <div class="details">
                         <div class="content">

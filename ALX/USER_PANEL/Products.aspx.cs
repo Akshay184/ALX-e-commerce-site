@@ -15,19 +15,29 @@ namespace ALX.USER_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserId"] == null)
+
+
+            if (!Page.IsPostBack)
             {
-                Response.Redirect("~/USER_PANEL/Login.aspx");
-            }
-            else
-            {
-                if (!IsPostBack)
+
+
+                rptProducts.DataSource = GetData();
+                rptProducts.DataBind();
+
+                try
                 {
-                    rptProducts.DataSource = GetData();
-                    rptProducts.DataBind();
+
+                    Search();
                 }
-                if (Session["UserId"] != null)
+                catch
                 {
+
+                }
+
+            }
+            if (Session["UserId"] != null)
+                {
+
 
                     HtmlGenericControl li1 = new HtmlGenericControl("li");
                     ulLogin.Controls.Add(li1);
@@ -39,14 +49,14 @@ namespace ALX.USER_PANEL
                     HtmlGenericControl li2 = new HtmlGenericControl("li");
                     ulLogin.Controls.Add(li2);
                     HtmlGenericControl anchor2 = new HtmlGenericControl("a");
-                    anchor2.Attributes.Add("href", "#");
+                    anchor2.Attributes.Add("href", "EditProfile");
                     anchor2.InnerText = "Profile";
                     li2.Controls.Add(anchor2);
 
                     HtmlGenericControl li3 = new HtmlGenericControl("li");
                     ulLogin.Controls.Add(li3);
                     HtmlGenericControl anchor3 = new HtmlGenericControl("a");
-                    anchor3.Attributes.Add("href", "Products.aspx");
+                    anchor3.Attributes.Add("href", "Account.aspx");
                     anchor3.InnerText = "Account";
                     li3.Controls.Add(anchor3);
 
@@ -57,50 +67,40 @@ namespace ALX.USER_PANEL
                     link.ID = "lnkLogout";
                     link.Click += new System.EventHandler(lnkLogout_Click);
                     li4.Controls.Add(link);
-
-                    try
-                    {
-
-
-                        String cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-                        SqlConnection con = new SqlConnection(cs);
-                        string SearchText = Request.QueryString["Text"].ToString();
-                        DataSet ds = new DataSet();
-                        SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%' Order BY price ASC", con);
-
-                        da.SelectCommand.Parameters.AddWithValue("ProductName", SearchText);
-                        da.Fill(ds);
-                        rptProducts.DataSource = ds;
-                        rptProducts.DataBind();
-                    }
-                    catch
-                    {
-
-                    }
                 }
 
-            }
+
+             
 
         }
 
         protected void lnkLogout_Click(object sender, EventArgs e)
         {
             Session["UserId"] = null;
+            ulLogin.Controls.RemoveAt(0);
+            ulLogin.Controls.RemoveAt(1);
+            ulLogin.Controls.RemoveAt(2);
+            ulLogin.Controls.RemoveAt(3);
         }
 
         protected void AddToCart(object sender, CommandEventArgs e)
         {
-            string CurrentProductId = e.CommandArgument.ToString();
-            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(cs))
+            if (Session["UserId"] != null)
             {
-                SqlCommand cmd = new SqlCommand("insert into tblAddToCart values(@ProductID,@UserID)", con);
-                cmd.Parameters.AddWithValue("@ProductID", CurrentProductId);
-                cmd.Parameters.AddWithValue("@UserID", Session["UserId"]);
-                con.Open();
-                cmd.ExecuteNonQuery();
 
+                string CurrentProductId = e.CommandArgument.ToString();
+                string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+                using (SqlConnection con = new SqlConnection(cs))
+                {
+                    SqlCommand cmd = new SqlCommand("insert into tblAddToCart values(@ProductID,@UserID)", con);
+                    cmd.Parameters.AddWithValue("@ProductID", CurrentProductId);
+                    cmd.Parameters.AddWithValue("@UserID", Session["UserId"]);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+
+                }
             }
+           
         }
 
         protected void Description(object sender, CommandEventArgs e)
@@ -172,6 +172,31 @@ namespace ALX.USER_PANEL
             if (txtSearch.Text != "")
             {
                 Response.Redirect("~/USER_PANEL/Products.aspx?Text=" + txtSearch.Text);
+            }
+        }
+
+        protected DataSet Search()
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+
+
+                String cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+                SqlConnection con = new SqlConnection(cs);
+                string SearchText = Request.QueryString["Text"].ToString();
+               
+                SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%' Order BY price ASC", con);
+
+                da.SelectCommand.Parameters.AddWithValue("ProductName", SearchText);
+                da.Fill(ds);
+                rptProducts.DataSource = ds;
+                rptProducts.DataBind();
+                return ds;
+            }
+            catch
+            {
+                return ds;
             }
         }
 
