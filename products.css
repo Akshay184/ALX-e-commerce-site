@@ -7,16 +7,23 @@ body{
     /* background-size: cover; */
     
 }
-
+.heading1{
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    font-size: 130px;
+    color: #228CDB;
+    font-family: sans-serif;
+}
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-top: 13%; 
-    left: 81%;
+    margin-top: 14%; 
+    left: 85%;
 }
 
 .dropbtn {
-    background-color: #2274A5;
+    background-color: #228CDB;
     color: white;
     padding: 20px 110px 20px 20px;
     font-size: 16px;
@@ -127,6 +134,9 @@ body{
       color: #13294B;
       transition: all 0.2s ease-in;
 }
+.price .fas{
+    padding-right: 5px;
+}
 
 @media (max-width:1274px)
 {
@@ -134,6 +144,9 @@ body{
         display:grid;
         grid-template-columns:repeat(3,1fr);
         
+        }
+        .heading1{
+            font-size: 100px
         }
 }
 @media (max-width:940px)
@@ -145,6 +158,10 @@ body{
     .dropdown{
         left: 20%;
         margin-top: 45%;
+    }
+    .heading1{
+        font-size: 80px;
+        top: 27%;
     }
         
 }
@@ -159,6 +176,13 @@ body{
             left: 30%;
             margin-top: 85%;
         }
+      
+}
+@media (max-width:470px)
+{
+    .heading1{
+        display: none;
+    }
 }
 
 /* pagination */
