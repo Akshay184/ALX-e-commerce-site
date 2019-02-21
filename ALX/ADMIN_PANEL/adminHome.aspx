@@ -41,7 +41,7 @@
     <div >
         <div id="navBar">
         <ul >
-            <li><asp:HyperLink ID="hylUserHome" runat="server" NavigateUrl="~/Welcome.aspx">User Home</asp:HyperLink></li> 
+            <li><asp:HyperLink ID="hylUserHome" runat="server" NavigateUrl="#">User Home</asp:HyperLink></li> 
                         <li>
                             <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout"></asp:LinkButton>
                             <%--<asp:HyperLink ID="hylAdminHome" runat="server" NavigateUrl="~/ADMIN_PANEL/adminHome.aspx">Admin Home</asp:HyperLink></li>--%>          

@@ -14,7 +14,7 @@ namespace ALX.ADMIN_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["AdminId"] != null)
+            if (Session["UserId"] != null)
             {
                 if (!IsPostBack)
                 {

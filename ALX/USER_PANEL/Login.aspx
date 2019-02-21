@@ -91,7 +91,7 @@
                 <div class="inputbox">
                     <asp:TextBox ID="txtUserName" runat="server" AutoCompleteType="Disabled" CssClass="input"  onkeydown="return (event.KeyCode!=13);"></asp:TextBox>
                     <%--<input type="text" name="" runat="server" id="txtUserName11" />--%>
-                    <asp:Label ID="lblUserName" Text="Username/Email" runat="server"></asp:Label>
+                    <asp:Label ID="lblUserName" Text="Email" runat="server"></asp:Label>
 
                 </div>
                 <div class="inputbox">

@@ -11,7 +11,7 @@
     <link href="CSS/products.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous" />
-    <title>products</title>
+    <title>Account</title>
 </head>
 <body>
      <script>
@@ -73,16 +73,19 @@
            
         </div>
     </div>
+        <h1 class="heading1">
+        <asp:Label ID="lblHeading" runat="server"></asp:Label>
+            </h1>
          <div class="dropdown">
             
-            <button class="dropbtn">Sort </button>
+           <%-- <button class="dropbtn">Sort </button>
             
             <div class="dropdown-content">
                 <asp:DropDownList ID="DropDownList1" runat="server">
                     <asp:ListItem Value="1" Text="Price:Low-High"></asp:ListItem>
                     <asp:ListItem Value="1" Text="Price:High-Low"></asp:ListItem>
                 </asp:DropDownList>
-              
+              --%>
              
             </div>
     </div>

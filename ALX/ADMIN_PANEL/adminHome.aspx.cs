@@ -14,7 +14,7 @@ namespace ALX.ADMIN_PANEL
         {
             if (!IsPostBack)
             {
-                if (Session["AdminId"] == null)
+                if (Session["UserId"] == null)
                 {
                     Response.Redirect("~/ADMIN_PANEL/AdminLogin.aspx");
                 }
@@ -23,7 +23,7 @@ namespace ALX.ADMIN_PANEL
 
         protected void btnLogout_Click(object sender, EventArgs e)
         {
-            Session["AdminId"] = null;
+            Session["UserId"] = null;
             
             Response.Redirect("~/ADMIN_PANEL/AdminLogin.aspx");
         }

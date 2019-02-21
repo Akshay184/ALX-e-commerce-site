@@ -16,7 +16,7 @@ namespace ALX.ADMIN_PANEL
         {
            
             
-                if (Session["AdminId"] != null)
+                if (Session["UserId"] != null)
                 {
                 if (!IsPostBack)
                 {

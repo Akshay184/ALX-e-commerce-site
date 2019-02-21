@@ -32,8 +32,8 @@ namespace ALX.USER_PANEL
                     using (SqlConnection con = new SqlConnection(cs))
 
                     {
-                        SqlCommand cmd = new SqlCommand("Select ActivationCode from tblUserInformation where UserName = @UserName", con);
-                        cmd.Parameters.AddWithValue("@UserName", Session["UserName"]);
+                        SqlCommand cmd = new SqlCommand("Select ActivationCode from tblUserInformation where ActivationCode = @UserName", con);
+                        cmd.Parameters.AddWithValue("@UserName", ActivationCode);
                         con.Open();
                         Code = cmd.ExecuteScalar().ToString();
                     }
@@ -105,14 +105,14 @@ namespace ALX.USER_PANEL
         {
             Session["ID"] = 0;
             string csLogIn = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            //try
-            //{
+            try
+            {
                 using (SqlConnection con = new SqlConnection(csLogIn))
                 {
                     string hashedPassword = FormsAuthentication.HashPasswordForStoringInConfigFile(txtPassword.Text, "SHA1");
 
-                    SqlCommand cmd = new SqlCommand("select UserId from tbluserinformation where UserName=@usernameaun or Email=@Email and password=@passwordaun and EmailVerified=1", con);
-                    cmd.Parameters.AddWithValue("@usernameaun", txtUserName.Text);
+                    SqlCommand cmd = new SqlCommand("select UserId from tbluserinformation where   password=@passwordaun and EmailVerified=1 and  Email=@Email", con);
+                  //  cmd.Parameters.AddWithValue("@usernameaun", txtUserName.Text);
                     cmd.Parameters.AddWithValue("@passwordaun", hashedPassword);
                 cmd.Parameters.AddWithValue("@Email", txtUserName.Text);
                 
@@ -124,15 +124,15 @@ namespace ALX.USER_PANEL
                     Response.Redirect("~/USER_PANEL/ALXHome.aspx");
                 }
 
-            //}
+            }
 
 
-            //catch
-            //{
+            catch
+            {
 
-            //     lblEmailVerified.Text = "Wrong UserName or Password";
-            //    lblEmailVerified.Attributes["style"] = "color:red; font-weight:bold;";
-            //}
+                lblEmailVerified.Text = "Wrong UserName or Password";
+                lblEmailVerified.Attributes["style"] = "color:red; font-weight:bold;";
+            }
 
 
         }

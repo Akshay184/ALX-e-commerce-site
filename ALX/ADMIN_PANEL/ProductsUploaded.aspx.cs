@@ -16,7 +16,7 @@ namespace ALX.ADMIN_PANEL
         {
             
             
-                if(Session["AdminId"] == null)
+                if(Session["UserId"] == null)
                 {
                 Response.Redirect("~/ADMIN_PANEL/AdminLogin.aspx");
 

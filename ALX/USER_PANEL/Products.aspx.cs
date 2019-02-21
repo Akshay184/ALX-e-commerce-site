@@ -92,6 +92,15 @@ namespace ALX.USER_PANEL
                 string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
                 using (SqlConnection con = new SqlConnection(cs))
                 {
+                    //string CurrentProductId = e.CommandArgument.ToString();
+                    //SqlCommand cmdCheck = new SqlCommand("Select * from tblAddToCart where ProductId = @ProductId and UserId = @UserId ", con);
+                    //cmdCheck.Parameters.AddWithValue("@ProductId", CurrentProductId);
+                    //cmdCheck.Parameters.AddWithValue("@UserId", Session["UserId"]);
+                    //con.Open();
+                    //string Check = cmdCheck.ExecuteScalar().ToString();
+                    //con.Close();
+                    //if (Check == "0")
+                    //{
                     SqlCommand cmd = new SqlCommand("insert into tblAddToCart values(@ProductID,@UserID)", con);
                     cmd.Parameters.AddWithValue("@ProductID", CurrentProductId);
                     cmd.Parameters.AddWithValue("@UserID", Session["UserId"]);
@@ -138,10 +147,39 @@ namespace ALX.USER_PANEL
         {
             try
             {
-                string Category = Request.QueryString["Category"].ToString();
+                //if(ddlFilter.SelectedValue == "1")
+                //{
+                //    String Filter = "ASC";
+                //}
+                //else if (ddlFilter.SelectedValue == "2")
+                //{
+                //    String Filter = "DESC";
+                //}
+
+                    string Category = Request.QueryString["Category"].ToString();
+                if(Category == "Furniture")
+                {
+                    lblheading.Text = "FURNITURE";
+                }
+                else if(Category == "Books")
+                {
+                    lblheading.Text = "BOOKS";
+                }
+                else if (Category == "Vehicles")
+                {
+                    lblheading.Text = "VEHICLES";
+                }
+                else if (Category == "Clothes")
+                {
+                    lblheading.Text = "CLOTHES";
+                }
+                else if (Category == "Electronics")
+                {
+                    lblheading.Text = "ELECTRONICS";
+                }
                 string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
                 SqlConnection con = new SqlConnection(cs);
-                SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where CATEGORY=@Category", con);
+                SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where CATEGORY=@Category  ", con);
                 da.SelectCommand.Parameters.AddWithValue("@Category", Category);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
@@ -202,36 +240,7 @@ namespace ALX.USER_PANEL
 
 
 
-        //if (DropDownListFilters.SelectedValue == "0")
-        //{
-        //    DataSet ds = new DataSet();
-        //    SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%'", con);
-
-        //    da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
-        //    da.Fill(ds);
-        //    rptProduct.DataSource = ds;
-        //    rptProduct.DataBind();
-        //}
-        //else if (DropDownListFilters.SelectedValue == "1")
-        //{
-        //    DataSet ds = new DataSet();
-        //    SqlDataAdapter da = new SqlDataAdapter("Select * from tblProducts where ProductName like '%' + @ProductName + '%' Order BY price DESC", con);
-
-        //    da.SelectCommand.Parameters.AddWithValue("ProductName", txtSearch.Text);
-        //    da.Fill(ds);
-        //    rptProduct.DataSource = ds;
-        //    rptProduct.DataBind();
-        //}
-        //else
-        //{
-
-
-        //}
-
-        //else
-        //{
-
-        //}
+       
     }
 
 

@@ -125,7 +125,7 @@ namespace ALX.USER_PANEL
             string ProductId =   Request.QueryString["ProductId"].ToString();
             //string  ProductId = "8";
             //string Category = Request.QueryString["Category"].ToString();
-            string query = "select* from tblProducts inner join tblUserInformation on tblProducts.UserId = tblUserInformation.UserID where tblProducts.ProductId = @ProductId";
+            string query = "select * from tblProducts inner join tblUserInformation on tblProducts.UserId = tblUserInformation.UserID where tblProducts.ProductId = @ProductId";
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             SqlConnection con = new SqlConnection(cs);
 

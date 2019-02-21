@@ -32,6 +32,10 @@
             text-decoration:none;
             color:white;
         }
+         .ImageProducts{
+             width:5%;
+             height:auto;
+         }
     </style>
 </head>
 <body>
@@ -39,7 +43,7 @@
     <div>
         <div id="navBar">
         <ul >
-            <li><asp:HyperLink ID="hylUserHome" runat="server" NavigateUrl="~/Welcome.aspx">User Home</asp:HyperLink></li> 
+            <li><asp:HyperLink ID="hylUserHome" runat="server" NavigateUrl="#">User Home</asp:HyperLink></li> 
                         <li><asp:HyperLink ID="hylAdminHome" runat="server" NavigateUrl="~/ADMIN_PANEL/adminHome.aspx">Admin Home</asp:HyperLink></li>          
             <li><asp:HyperLink ID="hylUserProfile" runat="server" NavigateUrl="~/ADMIN_PANEL/UserProfile.aspx">User Profile</asp:HyperLink></li>
             <li><asp:HyperLink ID="hylUploadedProducts" runat="server" NavigateUrl="~/ADMIN_PANEL/ProductsUploaded.aspx">Products Uploaded</asp:HyperLink></li>
@@ -83,7 +87,7 @@
                             <asp:Label ID="lblDescription" runat="server" Text='<%# Eval("Description") %>'  Width="300px" Style="word-wrap:normal;word-break:break-all;"></asp:Label>
                         </td>
                         <td>
-                             <asp:Image ID="imgProducts" ImageUrl='<%# Eval("images") %>' runat="server" />
+                             <asp:Image ID="imgProducts" CssClass="ImageProducts" ImageUrl='<%# Eval("images") %>' runat="server" Width="150px" />
                         </td>
                         <td>
                             <asp:LinkButton ID="btnEdit" runat="server" Text="Edit"  OnCommand="Edit" CommandArgument='<%# Eval("ProductId") %>' ></asp:LinkButton>

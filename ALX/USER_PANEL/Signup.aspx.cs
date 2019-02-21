@@ -148,7 +148,7 @@ namespace ALX.USER_PANEL
 
             }
 
-            using (MailMessage mailmessage = new MailMessage("ucancallmeakshay@gmail.com", txtEmail.Text))
+            using (MailMessage mailmessage = new MailMessage("projectmanagementcommunity@gmail.com", txtEmail.Text))
             {
                 String a = Request.Url.AbsoluteUri.Replace("SignUp", "EmailVerification.aspx?ActivationCode=" + ActivationCode);
                 mailmessage.Subject = "Email Verication For Your ALX Account";
@@ -160,7 +160,7 @@ namespace ALX.USER_PANEL
                 mailmessage.IsBodyHtml = true;
                 SmtpClient smptclient = new SmtpClient("smtp.gmail.com", 587);
                 smptclient.EnableSsl = true;
-                smptclient.Credentials = new System.Net.NetworkCredential("ucancallmeakshay@gmail.com", "akshay123");
+                smptclient.Credentials = new System.Net.NetworkCredential("projectmanagementcommunity@gmail.com", "Akshay@123");
                 smptclient.Send(mailmessage);
             }
 

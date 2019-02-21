@@ -19,7 +19,7 @@ namespace ALX.USER_PANEL
             {
                 Response.Redirect("~/USER_PANEL/Login.aspx");
             }
-
+            lblHeading.Text = "ACCOUNT";
             if (Session["UserId"] != null)
             {
                 GetData();

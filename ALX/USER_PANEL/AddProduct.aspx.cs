@@ -118,7 +118,7 @@ namespace ALX.USER_PANEL
                         fileuploadProducts.SaveAs(Server.MapPath("~/ImagesUpload/" + fileName));
                         SqlCommand cmd = new SqlCommand("insert into tblProducts values(@ID,@price,@Category,@ProductName,@Description,@ImageName)", con);
                         cmd.Parameters.AddWithValue("@ID", Session["UserId"]);
-                        cmd.Parameters.AddWithValue("@Price", txtPrice.Text);
+                        cmd.Parameters.AddWithValue("@Price","Rs."+ txtPrice.Text);
                         cmd.Parameters.AddWithValue("@Category", DropDownList1.SelectedItem.Text);
                         cmd.Parameters.AddWithValue("@ProductName", txtTitle.Text);
                         cmd.Parameters.AddWithValue("@ImageName", "~/ImagesUpload/" + fileName);

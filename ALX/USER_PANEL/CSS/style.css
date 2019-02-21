@@ -422,9 +422,11 @@ body{
             height: 120px;
         }
         .container .box{
-            width: 100%;
+            width: 70%;
             height: 250px;
             float: none;
+            left: 20%;
+            margin-top: 6%;
     
         }
     }

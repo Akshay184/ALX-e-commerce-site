@@ -18,6 +18,7 @@ namespace ALX.USER_PANEL
             if(Session["UserId"] == null){
                 Response.Redirect("~/USER_PANEL/Login.aspx");
             }
+            lblHeading.Text = "CART";
             GetData();
             if(Session["UserId"] != null)
             {
@@ -90,11 +91,19 @@ namespace ALX.USER_PANEL
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("insert into tblAddToCart values(@ProductID,@UserID)", con);
-                cmd.Parameters.AddWithValue("@ProductID", CurrentProductId);
-                cmd.Parameters.AddWithValue("@UserID", Session["UserId"]);
-                con.Open();
-                cmd.ExecuteNonQuery();
+                //SqlCommand cmdCheck = new SqlCommand("Select * from tblAddToCart where ProductId = @ProductId and UserId = @UserId where UserId = @UserId",con);
+                //cmdCheck.Parameters.AddWithValue("@ProductId",CurrentProductId);
+                //cmdCheck.Parameters.AddWithValue("@UserId", Session["UserId"]);
+                //string Check = cmdCheck.ExecuteScalar().ToString();
+                //if (Check == "0")
+                //{
+
+                    SqlCommand cmd = new SqlCommand("insert into tblAddToCart values(@ProductID,@UserID) ", con);
+                    cmd.Parameters.AddWithValue("@ProductID", CurrentProductId);
+                    cmd.Parameters.AddWithValue("@UserID", Session["UserId"]);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                
 
             }
         }
@@ -152,7 +161,7 @@ namespace ALX.USER_PANEL
                                           SqlDataAdapter da = new SqlDataAdapter(query, con);
             da.SelectCommand.Parameters.AddWithValue("@UserId", Session["UserId"]);
             DataSet ds = new DataSet();
-            da.Fill(ds);
+           da.Fill(ds);
             rptProducts.DataSource = ds;
             rptProducts.DataBind();
             return ds;

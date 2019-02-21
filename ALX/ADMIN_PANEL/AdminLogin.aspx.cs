@@ -14,12 +14,15 @@ namespace ALX.ADMIN_PANEL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["UserId"] != null)
+            {
+               //Response.Redirect("~/ADMIN_PANEL/AdminHome.aspx");
+            }
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            Session["AdminId"] = "";
+            Session["UserId"] = "";
             try
             {
                 string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
@@ -29,9 +32,9 @@ namespace ALX.ADMIN_PANEL
                     cmd.Parameters.AddWithValue("@UserName", txtUsername.Text);
                     cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
                     con.Open();
-                    Session["AdminId"] = cmd.ExecuteScalar();
+                    Session["UserId"] = cmd.ExecuteScalar();
                     lblLoginText.Text = "Login Successful";
-                    Response.Redirect("~/ADMIN_PANEL/adminHome.aspx");
+                    Response.Redirect("~/ADMIN_PANEL/AdminHome.aspx");
                 }
             }
             catch

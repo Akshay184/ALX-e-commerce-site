@@ -11,7 +11,7 @@
     <link href="CSS/products.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous" />
-    <title>products</title>
+    <title>Cart</title>
 
     <script>
         function openSearch() {
@@ -63,7 +63,7 @@
             </ul>
         </div>
     </div>
-
+        
     <div id="myOverlay" class="overlay ">
         <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
         <div class="overlay-content animate">
@@ -73,16 +73,19 @@
            
         </div>
     </div>
+        <h1 class="heading1">
+        <asp:Label ID="lblHeading" runat="server"></asp:Label>
+            </h1>
          <div class="dropdown">
             
-            <button class="dropbtn">Sort </button>
+           <%-- <button class="dropbtn">Sort </button>
             
             <div class="dropdown-content">
                 <asp:DropDownList ID="DropDownList1" runat="server">
                     <asp:ListItem Value="1" Text="Price:Low-High"></asp:ListItem>
                     <asp:ListItem Value="1" Text="Price:High-Low"></asp:ListItem>
                 </asp:DropDownList>
-              
+              --%>
              
             </div>
     </div>
@@ -98,7 +101,7 @@
                     <h1> <asp:Label ID="lblProducuNmae" runat="server" Text='<%# Eval("ProductName") %>'></asp:Label></h1>
                     <p> <asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label></p>
                  <%--<i class="fa fa-shopping-cart"></i>--%>
-                 
+                 <input type="submit" value="In Cart" />
                     <%--<p class="button"> <asp:Button ID="btnAddToCart" runat="server"  OnCommand="AddToCart1" CommandArgument='<%# Eval("ProductId") %>' Text="Add to Cart" />     </p>--%>
                  </asp:LinkButton>
             </div>
